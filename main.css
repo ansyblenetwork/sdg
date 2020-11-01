@@ -130,7 +130,7 @@ h2 a:hover {
     position: fixed;
     margin-left: 0px;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     overflow:auto;
   }
     
@@ -155,7 +155,7 @@ h2 a:hover {
     
    .outersidebar{
      width:100vw;
-     height:100vh;
+     height:100%;
      z-index:1;
      position:absolute;
      overflow:auto;
