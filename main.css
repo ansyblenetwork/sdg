@@ -137,7 +137,7 @@ h2 a:hover {
   .sidebar {
     position: absolute;
     box-shadow: none;
-    width: 175vw;    
+    width: calc(175vw - 1px);    
     background-color: initial;
     padding:0px;
     pointer-events:none;
@@ -147,7 +147,7 @@ h2 a:hover {
     width: 75vw;
     resize:initial;
     max-width:initial;
-    box-shadow: #d4d4d4 0px 0px 7px;
+    /*box-shadow: #d4d4d4 0px 0px 7px; */
     background-color: white;
     padding:15px;
     pointer-events:auto;
@@ -163,6 +163,7 @@ h2 a:hover {
     
   .aboutpanel {
     bottom:15px;
+    pointer-events:none;
   }
 
 
