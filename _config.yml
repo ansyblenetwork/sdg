@@ -1,0 +1,4 @@
+name: Soli Deo gloria
+permalink: /:title
+plugins:
+  - jekyll-seo-tag
