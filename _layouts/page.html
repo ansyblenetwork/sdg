@@ -21,7 +21,7 @@
 				{% for post in site.posts %}					
 					{% if page.title == post.title %}	
 						<li id="specialPost" style="background-color:#f4f4f4">&raquo;&nbsp;<span class="date-format">{{ post.date | date: "%B %-d, %Y" }}</span><br>
-							<a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+							{{ post.title }}</li>
 					{% else %}				
 						<li>&raquo;&nbsp;<span class="date-format">{{ post.date | date: "%B %-d, %Y" }}</span><br>
 							<a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>					
