@@ -14,7 +14,7 @@
 	<body>	
 		<div class="sidenav">
 		<div class="rpanel" style="flex-grow: 1; position:relative; min-width:250px; margin-bottom:0px" id="accountPanel">
-		<h2 style="margin-bottom:5px"><a href="{{ site.url }}">Soli Deo gloria</a></h2>
+		<h2 style="margin-bottom:5px"><a href="{{ site.url | absolute_url }}">Soli Deo gloria</a></h2>
 		<ul>
 			{% for post in site.posts %}	
 				<li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> &laquo;&nbsp;<span class="date-format">{{ post.date | date: "%B %-d, %Y" }}</span></li>
@@ -41,7 +41,7 @@
 			else {
 			  D("accountPanel").onclick = function() { 
 			    var w = D('accountPanel').offsetWidth + 30;
-			    D("main").style.width = `calc(100% - ${w}px)`;
+			    D("main").style.right = `${w}px)`;
 			  }  
 			}
 			
