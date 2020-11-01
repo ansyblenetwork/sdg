@@ -1,21 +1,22 @@
-body {
-    font-family: Segoe UI, Roboto, Helvetica, sans-serif;  
-    max-width: 960px;
-    margin: auto;
-    line-height: 1.6;
-    color: #333;
-    background-color: #fff;
-    min-width: 320px;
-}
-
 html {
     max-width: 95%;
     margin: auto;
 }
 
+body {
+    font-family: Segoe UI, Roboto, Helvetica, sans-serif;  
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    
+    max-width: 960px;
+    min-width: 320px;
+    margin: auto;
+    padding-top:15px;
+}
+
 h1 {     
     font-family: Segoe UI, Roboto, Helvetica, sans-serif;  
     font-size: 1.5em;
-    
     margin: 0px;
 }
