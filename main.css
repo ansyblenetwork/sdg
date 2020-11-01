@@ -41,6 +41,7 @@
   top:0px;
   padding:20px;
   max-width:960px;
+  overflow:auto;
 }
 
 .media {
