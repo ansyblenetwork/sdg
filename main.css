@@ -159,11 +159,11 @@ h2 a:hover {
      z-index:1;
      position:absolute;
      overflow:auto;
+    pointer-events:none;
     }
     
   .aboutpanel {
     bottom:15px;
-    pointer-events:none;
   }
 
 
