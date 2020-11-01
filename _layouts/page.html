@@ -19,7 +19,7 @@
 			<div style="margin-bottom:10px" class="date-format" style="padding-bottom:15px">&raquo;&nbsp;Music composition for the classically trained pianist</div>
 			<ul>
 				{% for post in site.posts %}	
-					<li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> &raquo;&nbsp;<span class="date-format">{{ post.date | date: "%B %-d, %Y" }}</span></li>
+					<li><span class="date-format">{{ post.date | date: "%B %-d, %Y" }}</span> &raquo;&nbsp;<a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
 				{% endfor %}
 			</ul>
 			
