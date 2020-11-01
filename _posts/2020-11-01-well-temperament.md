@@ -1,6 +1,6 @@
 ---
-title:"Well temperament"
-layout:page
+title: "Well temperament"
+layout: page
 ---
 
 Coming soon!
