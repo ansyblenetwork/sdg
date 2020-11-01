@@ -29,7 +29,7 @@
   box-sizing:border-box;
   position: fixed; 
   width:calc(100% - 350px);
-  right:350px;
+  left:350px;
   top:0px;
   padding:20px;
   max-width:960px;
