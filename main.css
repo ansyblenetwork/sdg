@@ -125,7 +125,6 @@ h2 a:hover {
 @media only screen 
   and (max-device-width: 450px), (max-device-height: 450px) { 
 
-    
   .main {    
     position: static;
     margin-left: 0px;
@@ -137,5 +136,11 @@ h2 a:hover {
     box-shadow: none;
     width: 100vw;
   }
-    
+
+  .rpanel {	
+    resize:initial;
+    width:initial;
+    max-width:initial;
+  }
+
 }
