@@ -143,7 +143,7 @@ h2 a:hover {
      width:100vw;
      height:100%;
      z-index:1;
-     position:absolute;
+     position:fixed;
      overflow:auto;
     pointer-events:none;
     }
