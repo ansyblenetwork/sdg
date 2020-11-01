@@ -126,6 +126,10 @@ h2 a:hover {
 @media only screen 
   and (max-device-width: 450px), (max-device-height: 450px) { 
 
+  body, html {
+    height:100%;
+  }
+    
   .main {    
     position: fixed;
     margin-left: 0px;
