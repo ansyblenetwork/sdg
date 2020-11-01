@@ -24,6 +24,10 @@
     color: #333 !important;  
 }
 
+.sidebar li {
+  margin-bottom:5px;
+}
+
 .sidebar a:hover {
     color: #888 !important;
 }
