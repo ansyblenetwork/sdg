@@ -19,6 +19,10 @@
   flex-wrap:wrap;
 }
 
+.aboutpanel {
+  background-color:white;
+}
+
 .sidebar a {
     text-decoration: none;
     color: #333 !important;  
