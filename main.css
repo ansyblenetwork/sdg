@@ -29,9 +29,9 @@
 .main {  
   box-sizing:border-box;
   position: fixed; 
-  width:calc(100% - 365px);
+  width:calc(100% - 350px);
   right:0px;
-  margin:0px;
+  margin:15px;
   height:100%;
 }
 
