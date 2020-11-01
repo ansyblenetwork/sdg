@@ -1,5 +1,5 @@
 
-.sidenav {
+.sidebar {
   position: fixed;
   z-index: 1;
   top: 0;
@@ -16,16 +16,15 @@
   outline: none;
 }
 
-.sidenav a {
+.sidebar a {
     text-decoration: none;
     color: #333 !important;  
 }
 
 
-.sidenav a:hover {
+.sidebar a:hover {
     color: #888 !important;
 }
-
 
 .rpanel {  
   overflow:auto; 
@@ -144,6 +143,15 @@ h2 a:hover {
     width:100%;
     height:100%;
     overflow:auto;
+  }
+    
+    
+  .sidebar {
+    position: relative; 
+    
+    box-shadow: none;
+    flex-shrink:0;
+    width:100%;
   }
     
 }
