@@ -5,7 +5,7 @@ title: What's new
 
 {% for post in site.posts limit:6 %}
 
-<div style="margin-bottom:30px">
+<div style="padding-bottom:20px; margin-bottom:20px; border-bottom: solid 1px #d4d4d4;">
 	<h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
 		<div class="date-format" style="margin-bottom:15px">{{ post.date | date: "%B %-d, %Y" }}</div>
 	{{ post.content | strip_html | truncatewords: 50 }}
