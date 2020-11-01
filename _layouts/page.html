@@ -45,17 +45,18 @@
 		
 		<script>
 			var mobile = false;
-			if (screen.width <= 550 || screen.height <= 550) {
-				mobile = true;	
-			}
+			if (screen.width <= 550 || screen.height <= 550) mobile = true;	
 			else {				
-			  window.addEventListener("resize", resizeFunction);
-			  D("accountPanel").onclick = resizeFunction;
-			  function resizeFunction() { 
-			    var w = D('accountPanel').offsetWidth + 40;
-			    D("main").style.marginLeft = `${w}px`;
-			    //D("main").style.width = `calc(100% - ${w}px)`;
-			  }  
+				window.addEventListener("resize", resizeFunction);
+				D("accountPanel").onclick = resizeFunction;
+				function resizeFunction() { 
+					var w = D('accountPanel').offsetWidth + 40;
+					D("main").style.marginLeft = `${w}px`;
+					setTimeout(function(){					
+						var w = D('accountPanel').offsetWidth + 40;
+						D("main").style.marginLeft = `${w}px`;
+					}, 150);			 
+				}  
 			}
 			
 			function D(string) { return document.getElementById(string);}	
