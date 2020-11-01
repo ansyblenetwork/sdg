@@ -39,6 +39,9 @@
 				mobile = true;	
 			}
 			else {
+			    var w = D('accountPanel').offsetWidth + 30;
+			    D("main").style.left = `${w}px`;
+				
 			  D("accountPanel").onclick = function() { 
 			    var w = D('accountPanel').offsetWidth + 30;
 			    D("main").style.left = `${w}px`;
