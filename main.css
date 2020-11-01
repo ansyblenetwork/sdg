@@ -10,10 +10,6 @@
   height:calc(100% - 30px);
   padding: 15px;
   outline: none;
-  
-  display: flex;
-  flex-direction: column; 
-  outline: none;
 }
 
 .sidebar a {
@@ -21,23 +17,22 @@
     color: #333 !important;  
 }
 
-
 .sidebar a:hover {
     color: #888 !important;
 }
 
 .rpanel {  
-  overflow:auto; 
-  
+  overflow:auto;   
   resize:both;
+  
   width:320px;
-  max-width:calc(100vw - 460px);
   min-width:275px;
+  max-width:calc(100vw - 460px);
 }
 
 .main {  
   box-sizing:border-box;
-  position: fixed; 
+  position: fixed;
   width:calc(100% - 350px);
   left:350px;
   top:0px;
@@ -56,11 +51,6 @@
 
 /*-----------*/
 
-html {
-  height:100%;
-  margin: 0;
-}
-
 body {
     font-family: Segoe UI, Roboto, Helvetica, sans-serif;  
     line-height: 1.6;
@@ -76,7 +66,6 @@ h1 {
     font-size: 1.5em;
     margin: 0px;
 }
-
 
 h2 {     
     font-family: Segoe UI, Roboto, Helvetica, sans-serif;  
@@ -135,9 +124,10 @@ h2 a:hover {
     touch-action: manipulation;
     scroll-snap-type: y proximity;
     scroll-snap-stop: normal;
+    overflow:auto;
   }
     
-  main {    
+  .main {    
     position: static;
     margin-left: 0px;
     width: 100%;
