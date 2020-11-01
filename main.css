@@ -126,9 +126,6 @@ h2 a:hover {
   and (max-device-width: 450px), (max-device-height: 450px) { 
 
     
-  html, body {
-  }
-    
   .main {    
     position: static;
     margin-left: 0px;
