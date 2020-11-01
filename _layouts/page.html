@@ -14,7 +14,8 @@
 	<body>	
 		<div class="sidenav">
 		<div class="rpanel" style="flex-grow: 1; position:relative; min-width:250px; margin-bottom:0px" id="accountPanel">
-			<h2><a href="{{ site.baseurl | relative_url }}">Soli Deo gloria</a></h2>
+		<h2><a href="{{ site.baseurl | relative_url }}">Soli Deo gloria</a></h2>
+		<br>
 		<ul>
 			{% for post in site.posts %}	
 				<li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> &laquo;&nbsp;<span class="date-format">{{ post.date | date: "%B %-d, %Y" }}</span></li>
