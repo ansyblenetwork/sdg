@@ -127,8 +127,8 @@ h2 a:hover {
 
   .main {    
     position: static;
-    margin-left: 66vw;
-    width: calc(100% + 66vw);
+    margin-left: 0px;
+    width: 100%;
   }
     
   .sidebar {
@@ -141,6 +141,7 @@ h2 a:hover {
     width: 66vw;
     resize:initial;
     max-width:initial;
+    background-color: initial;
   }
 
 }
