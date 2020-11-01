@@ -31,7 +31,7 @@
   width:calc(100% - 390px);
   right:0px;
   margin:20px;
-  height:100%;
+  height:calc(100% - 40px);
 }
 
 html {
