@@ -181,5 +181,8 @@ h2 a:hover {
     bottom:15px;
   }
 
+  ::-webkit-scrollbar {
+    height: 0px;
+  }
 
 }
