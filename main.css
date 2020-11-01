@@ -126,7 +126,7 @@ h2 a:hover {
   and (max-device-width: 450px), (max-device-height: 450px) { 
 
   .main {    
-    position: static;
+    position: fixed;
     margin-left: 0px;
     width: 100%;
   }
@@ -136,6 +136,7 @@ h2 a:hover {
     width: 166vw;    
     background-color: initial;
     padding:0px;
+    pointer-events:none;
   }
 
   .rpanel {	
@@ -144,6 +145,11 @@ h2 a:hover {
     max-width:initial;
     background-color: white;
     padding:15px;
+    pointer-events:auto;
   }
+    
+   .outersidebar{
+     width:100%;
+    }
 
 }
