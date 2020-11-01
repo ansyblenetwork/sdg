@@ -16,6 +16,17 @@
   outline: none;
 }
 
+.sidenav a {
+    text-decoration: none;
+    color: #333 !important;  
+}
+
+
+.sidenav a:hover {
+    color: #888 !important;
+}
+
+
 .rpanel {  
   overflow:auto; 
   
