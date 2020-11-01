@@ -1,4 +1,6 @@
 name: Soli Deo gloria
 baseurl: solideogloria
+
+permalink: /:year/:month/:day/:title
 plugins:
   - jekyll-seo-tag
