@@ -1,5 +1,5 @@
 name: Soli Deo gloria
 permalink: /:year/:month/:day/:title
-baseurl: solideogloria
+baseurl: ""
 plugins:
   - jekyll-seo-tag
