@@ -151,7 +151,7 @@ h2 a:hover {
     width: 75vw;
     resize:initial;
     max-width:initial;
-    /*box-shadow: #d4d4d4 0px 0px 7px; */
+    box-shadow: #d4d4d4 0px 0px 7px; 
     background-color: white;
     padding:15px;
     pointer-events:auto;
