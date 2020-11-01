@@ -14,8 +14,8 @@
 	<body>	
 		<div class="sidenav">
 		<div class="rpanel" style="flex-grow: 1; position:relative; min-width:250px; margin-bottom:0px" id="accountPanel">
-			<h2 style="margin-bottom:10px"><a href="{{ "" | absolute_url }}">Soli Deo gloria</a></h2>
-			<div class="date-format" style="padding-bottom:15px">Theory and composition for the classically trained pianist</div>
+			<h2><a href="{{ "" | absolute_url }}">Soli Deo gloria</a></h2>
+			<div style="margin-bottom:10px" class="date-format" style="padding-bottom:15px">Theory and composition for the classically trained pianist</div>
 			<ul>
 				{% for post in site.posts %}	
 					<li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> &laquo;&nbsp;<span class="date-format">{{ post.date | date: "%B %-d, %Y" }}</span></li>
