@@ -9,7 +9,6 @@
   box-shadow: #d4d4d4 0px 0px 7px;
   height:calc(100% - 30px);
   padding: 15px;
-  margin-right:15px;
   outline: none;
   
   display: flex;
@@ -31,7 +30,7 @@
   position: fixed; 
   width:calc(100% - 350px);
   right:0px;
-  margin:15px;
+  margin:20px;
   height:100%;
 }
 
