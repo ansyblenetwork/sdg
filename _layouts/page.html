@@ -13,7 +13,7 @@
 	
 	<body>	
 		<div class="sidenav">
-		<div class="rpanel" style="flex-grow: 1; position:relative; min-width:250px; margin-bottom:0px">	
+		<div class="rpanel" style="flex-grow: 1; position:relative; min-width:250px; margin-bottom:0px" id="accountPanel">	
 		<ul>
 			{% for post in site.posts %}	
 				<li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> &laquo;&nbsp;<span class="date-format">{{ post.date | date: "%B %-d, %Y" }}</span></li>
@@ -31,5 +31,17 @@
 
 		{{ content }}		
 		</div>		
+		
+		<script>			
+			if (screen.width <= 550 || screen.height <= 550) {
+			}
+			else  D("accountPanel").onclick = function() { resizeSidebar();};
+
+			function resizeSidebar() {
+				var w = D('accountPanel').offsetWidth + 45;
+				D("windowHolder").style.width = `calc(100% - ${w}px)`;
+				D("accountPanel").style.width = `${w - 45}px`;
+			}
+		</script>
 	</body>		
 </html>
