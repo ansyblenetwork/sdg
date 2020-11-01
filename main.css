@@ -5,6 +5,7 @@
   top: 0;
   left: 0;
   
+  background-color: white;
   box-shadow: #d4d4d4 0px 0px 7px;
   height:calc(100% - 30px);
   padding: 15px;
