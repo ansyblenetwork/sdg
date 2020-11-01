@@ -1,15 +1,18 @@
 
 .sidenav {
-  width: 160px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   
-  box-shadow: var(--slight) 0px 0px 7px;
+  box-shadow: #d4d4d4 0px 0px 7px;
   height:calc(100% - 30px);
   padding: 15px;
   margin-right:15px;
+  outline: none;
+  
+  display: flex;
+  flex-direction: column; 
   outline: none;
 }
 
@@ -19,7 +22,6 @@
   max-width:calc(100vw - 460px);
   min-width:275px;
 }
-
 
 .main {  
   box-sizing:border-box;
