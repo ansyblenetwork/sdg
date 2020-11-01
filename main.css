@@ -141,7 +141,8 @@ h2 a:hover {
     width: 66vw;
     resize:initial;
     max-width:initial;
-    background-color: initial;
+    background-color: white;
+    padding:15px;
   }
 
 }
