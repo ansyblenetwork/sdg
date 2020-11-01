@@ -49,7 +49,9 @@
 				mobile = true;	
 			}
 			else {				
-			  D("accountPanel").onclick = function() { 
+			  window.addEventListener("resize", resizeFunction);
+			  D("accountPanel").onclick = resizeFunction;
+			  function resizeFunction() { 
 			    var w = D('accountPanel').offsetWidth + 40;
 			    D("main").style.marginLeft = `${w}px`;
 			    //D("main").style.width = `calc(100% - ${w}px)`;
