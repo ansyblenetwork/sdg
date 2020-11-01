@@ -32,8 +32,7 @@
 
 .sidebar li {
   /*margin-bottom:10px;*/
-  padding-top:10px;
-  padding-bottom:10px;
+  padding:10px;
   border-bottom: solid 1px #d4d4d4;
 }
 
