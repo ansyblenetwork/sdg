@@ -127,19 +127,19 @@ h2 a:hover {
 
   .main {    
     position: static;
-    margin-left: 0px;
-    width: 100%;
+    margin-left: 66vw;
+    width: calc(100% + 66vw);
   }
     
   .sidebar {
-    position: relative;     
     box-shadow: none;
-    width: 100vw;
+    width: 166vw;    
+    background-color: initial;
   }
 
   .rpanel {	
+    width: 66vw;
     resize:initial;
-    width:initial;
     max-width:initial;
   }
 
