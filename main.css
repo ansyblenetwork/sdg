@@ -137,7 +137,7 @@ h2 a:hover {
   .sidebar {
     position: absolute;
     box-shadow: none;
-    width: calc(175vw - 1px);    
+    width: calc(175vw - 15px);    
     background-color: initial;
     padding:0px;
     pointer-events:none;
