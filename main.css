@@ -41,6 +41,8 @@
   width:320px;
   min-width:275px;
   max-width:calc(100vw - 460px);
+  display: flex;
+  flex-direction: column;
 }
 
 .main {  
