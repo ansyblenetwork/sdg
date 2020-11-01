@@ -14,6 +14,8 @@
   display: flex;
   flex-direction: column; 
   outline: none;
+  
+  height:100%;  
 }
 
 .rpanel {
