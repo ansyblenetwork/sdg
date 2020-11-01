@@ -17,7 +17,6 @@
 }
 
 .rpanel {  
-  display: flex;
   overflow:auto; 
   
   resize:both;
