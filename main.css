@@ -133,6 +133,7 @@ h2 a:hover {
   }
     
   .sidebar {
+    position:absolute;
     box-shadow: none;
     width: 166vw;    
     background-color: initial;
