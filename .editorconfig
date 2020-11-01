@@ -1,8 +1,0 @@
-# top-most EditorConfig file
-root = true
-
-# Unix-style newlines with a newline ending every file
-[*.html]
-word_wrap = true
-soft_wrap = true
-wrap = true
