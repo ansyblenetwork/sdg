@@ -22,7 +22,7 @@
 					<li>&raquo;&nbsp;<span class="date-format">{{ post.date | date: "%B %-d, %Y" }}</span><br>
 						<a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
 				{% endfor %}
-				<li></li>
+				<br>
 			</ul>
 			<div class="aboutpanel">
 				<a href="{{ site.posts.last.url | relative_url }}">About</a>
