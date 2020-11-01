@@ -1,4 +1,9 @@
-
 body {
-    font-family: 'Segoe UI', 'Source Sans Pro', 'PT Serif', Sans-Serif;
+    font-family: Sans-Serif;    
+    max-width: 960px;
+    margin: auto;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    min-width: 320px;
 }
