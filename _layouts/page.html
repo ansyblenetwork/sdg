@@ -21,7 +21,10 @@
 					<li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> &laquo;&nbsp;<span class="date-format">{{ post.date | date: "%B %-d, %Y" }}</span></li>
 				{% endfor %}
 			</ul>
-			<a href="{{ site.posts.last.url | relative_url }}">About</a>
+			
+			<div style="position:absolute; bottom:0px">
+				<a href="{{ site.posts.last.url | relative_url }}">About</a>
+			</div>
 		</div>
 		</div>
 		
