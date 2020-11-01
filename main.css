@@ -135,14 +135,14 @@ h2 a:hover {
   .sidebar {
     position: absolute;
     box-shadow: none;
-    width: calc(166vw + 15px);    
+    width: calc(175vw + 15px);    
     background-color: initial;
     padding:0px;
     pointer-events:none;
   }
 
   .rpanel {	
-    width: 66vw;
+    width: 75vw;
     resize:initial;
     max-width:initial;
     box-shadow: #d4d4d4 0px 0px 7px;
