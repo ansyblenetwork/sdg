@@ -1,6 +1,7 @@
 * {  
   box-sizing:border-box;
 }
+
 .sidebar {
   position: fixed;
   z-index: 1;
@@ -58,7 +59,8 @@
 body {
     font-family: Segoe UI, Roboto, Helvetica, sans-serif;  
     line-height: 1.6;
-    color: #333; 
+    color: #333;   
+    margin:0px;
 }
 
 .date-format {
@@ -125,7 +127,6 @@ h2 a:hover {
 
     
   html, body {
-    margin:0px;
   }
     
   .main {    
