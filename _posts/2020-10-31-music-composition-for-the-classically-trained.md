@@ -13,4 +13,4 @@ The objective of this blog is to track my progress as I learn about music theory
 
 <h3>About me</h3>
 
-I took classical piano lessons for about 10 years before college. I have played regularly "at home" for about another decade since then. The extent of my theory knowledge at the time of writing comes from studying for an ABRSM grade 5 theory exam over ten years ago. I am a mathematician by profession.
+I took classical piano lessons for about ten years before college. I have played regularly "at home" for about another decade since then. The extent of my theory knowledge at the time of writing comes from studying for an ABRSM grade 5 theory exam over ten years ago. I am a mathematician by profession.
