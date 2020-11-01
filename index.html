@@ -8,7 +8,6 @@ title: What's new
 <div class="excerpt">
 	<h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
 		<div class="date-format">{{ post.date | date: "%B %-d, %Y" }}</div>
-	<br>
 	{{ post.content | strip_html | truncatewords: 50 }}
 </div>
 {% endfor %}
