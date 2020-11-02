@@ -16,11 +16,11 @@ The experience of sound is the detection of air waves, and different pitches cor
 
 $$\frac{1}{2}, \frac{1}{3}, \frac{1}{5}, \frac{1}{7}, \frac{3}{5}, \frac{3}{7}, \frac{5}{7}.$$
 
-Here I have chosen fractions involving 1 and primes from 3 through 7. The lower the integers, the greater the consonance. I have also included 1/2 but ommitted other pairings involving 2, due to _octave equivalence_, discussed next.
+Here I have chosen fractions involving 1 and primes from 3 through 7. The lower the integers, the greater the consonance. I have also included 1/2 but omitted other pairings involving 2, due to _octave equivalence_, discussed next.
 
 ### Octave equivalence
 
-The most consonant wavelength ratio of 1 to 2 corresponds to an octave interval; the notes sound "the same." The question of why such octave-separated pitches sound similar is an empirical question and doesn't have a clean answer. For instance, studies have found that chimpanzees also experience octave equivalence. On the other hand, [other studies](https://www.quantamagazine.org/perceptions-of-musical-octaves-are-learned-not-wired-in-the-brain-20191030/) have discovered isolated cultures which do not:
+The most consonant wavelength ratio of 1 to 2 corresponds to an octave interval; the notes sound "the same." The question of why such octave-separated pitches sound similar is an empirical question for neuroscientists and doesn't have a clean answer. For instance, studies have found that chimpanzees also experience octave equivalence. On the other hand, [other studies](https://www.quantamagazine.org/perceptions-of-musical-octaves-are-learned-not-wired-in-the-brain-20191030/) have discovered isolated cultures which do not:
 
 <div class="media">
 <p>Computer analyses that compared the Tsimané participants with those in the United States found that both groups generally preserved the pitch intervals between the notes played to them — for example, maintaining the difference between a middle C and middle A...</p>
