@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Music composition for the classically trained pianist"
 ---
 
