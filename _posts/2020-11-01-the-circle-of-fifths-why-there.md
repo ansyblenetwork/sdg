@@ -1,5 +1,5 @@
 ---
-title: "Temperament: Why there are twelve notes in Western music"
+title: "The circle of fifths: Why there are twelve notes in Western music"
 ---
 
 The short answer: Because
@@ -28,7 +28,7 @@ The most consonant wavelength ratio of 1 to 2 corresponds to an octave interval;
 <p>A curious difference emerged, however, in how they sang the notes back. When the notes played were very high or low, U.S. participants accurately shifted the notes into an octave within their vocal range. The Tsimané didn’t. To them, it seemingly wasn’t clear what notes in their range best corresponded to the ones they heard. Their responses didn’t seem to reflect a perception of octave structure at all.</p>
 </div>
 
-### The circle of perfect fifths
+### The circle of fifths
 
 The next most consonant wavelength ratio of 1 to 3 essentially corresponds to a perfect fifth. As written, this interval is actually larger than an octave; an actual perfect fifth corresponds to raising the lower note of the interval by an octave, for a 2 to 3 ratio. 
 
