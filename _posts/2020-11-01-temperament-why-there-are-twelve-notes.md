@@ -16,7 +16,7 @@ The experience of sound is the detection of air waves, and different pitches cor
 
 $$\frac{1}{2}, \frac{1}{3}, \frac{1}{5}, \frac{1}{7}, \frac{3}{5}, \frac{3}{7}, \frac{5}{7}.$$
 
-Here I have chosen fractions involving 1 and primes from 2 through 7. The lower the integers, the greater the supposed consonance. 
+Here I have chosen fractions involving 1 and primes from 2 through 7. The lower the integers, the greater the consonance. 
 
 ### Octave equivalence
 
