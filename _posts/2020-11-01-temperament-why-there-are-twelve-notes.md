@@ -20,7 +20,7 @@ Here I have chosen fractions involving 1 and primes from 2 through 7. The lower 
 
 ### Octave equivalence
 
-In particular, the most consonant ratio of 1 to 2, where one pitch has double the length of the other, corresponds to an octave interval; the notes sound "the same." The question of why such octave-separated pitches sound similar is an empirical question and doesn't have a clean answer. For instance, studies have found that chimpanzees also experience octave equivalence. On the other hand, [other studies](https://www.quantamagazine.org/perceptions-of-musical-octaves-are-learned-not-wired-in-the-brain-20191030/) have discovered isolated cultures which do not:
+In particular, the most consonant wavelength ratio of 1 to 2 corresponds to an octave interval; the notes sound "the same." The question of why such octave-separated pitches sound similar is an empirical question and doesn't have a clean answer. For instance, studies have found that chimpanzees also experience octave equivalence. On the other hand, [other studies](https://www.quantamagazine.org/perceptions-of-musical-octaves-are-learned-not-wired-in-the-brain-20191030/) have discovered isolated cultures which do not:
 
 <div class="media">
   Computer analyses that compared the Tsimané participants with those in the United States found that both groups generally preserved the pitch intervals between the notes played to them — for example, maintaining the difference between a middle C and middle A...
