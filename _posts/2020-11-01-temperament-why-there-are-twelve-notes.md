@@ -27,3 +27,13 @@ The most consonant wavelength ratio of 1 to 2 corresponds to an octave interval;
 
 <p>A curious difference emerged, however, in how they sang the notes back. When the notes played were very high or low, U.S. participants accurately shifted the notes into an octave within their vocal range. The Tsimané didn’t. To them, it seemingly wasn’t clear what notes in their range best corresponded to the ones they heard. Their responses didn’t seem to reflect a perception of octave structure at all.</p>
 </div>
+
+### The circle of perfect fifths
+
+The next most consonant wavelength ratio of 1 to 3 essentially corresponds to a perfect fifth. As written, this interval is actually larger than an octave; an actual perfect fifth corresponds to raising the lower note of the interval by an octave, for a 2 to 3 ratio. 
+
+Perfect fifths are desirable as they are not equivalent to existing notes, and yet are very consonant. As a result, is natural to extend another perfect fifth up from our note of wavelength 3, resulting inh a new note of wavelength 9/2. Repeating this process and allowing octave equivalences, we find ourselves having all notes with wavelengths of length
+
+$$\frac{2^n}{3^m}.$$
+
+We should restrict this process to wavelengths that are not too short or too long (high pitched or low pitched, respectively). This corresponds to keeping the ratio $$n/m$$ bounded. However, without further restriction, we still have infinitely many notes: Choose $$m$$ large but $$n$$ appropriately larger; we obtain a wavelength close to 1). We thus return to the short answer at the start: Every time we see $$3^{12}$$ either in the numerator or denominator, we exchange it for $$2^{19}$$, which is equivalent to 1. This ensures that we have finitely many notes - precisely the 12 notes of Western music.
