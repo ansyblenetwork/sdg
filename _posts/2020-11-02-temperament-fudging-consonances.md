@@ -2,7 +2,7 @@
 title: "Temperament: Fudging consonances"
 ---
 
-Recall from our [discussion of consonance]({{ "" | relative_url }}{% post_url 2020-11-01-the-circle-of-fifths-why-there %}) the list of small integer ratios:
+Recall the list of small integer ratios from our [discussion of consonance]({{ "" | relative_url }}{% post_url 2020-11-01-the-circle-of-fifths-why-there %}):
 
 $$\frac{1}{2}, \frac{1}{3}, \frac{1}{5}, \frac{1}{7}, \frac{3}{5}, \frac{3}{7}, \frac{5}{7}.$$
 
@@ -38,6 +38,4 @@ $$1 = \frac{2^{19}}{\tilde 3^{12}}.$$
 
 The error on $$\tilde 3$$ is essentially the twelvth root of the wolf interval error and is almost imperceptible. It turns out that the major third approximation is also improved.
 
-### The Well-Tempered Clavier
-
-The legend goes that Bach intended the WTC to be played on an keyboard tuned with equal temperament. Historians have since [invented a lot of other ideas](https://en.wikipedia.org/wiki/The_Well-Tempered_Clavier#Well-Tempered_tuning).
+The legend goes that Bach intended the WTC to be played on a keyboard tuned with equal temperament. Historians have since [invented a lot of other ideas](https://en.wikipedia.org/wiki/The_Well-Tempered_Clavier#Well-Tempered_tuning).
