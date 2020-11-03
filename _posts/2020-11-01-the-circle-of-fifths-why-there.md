@@ -12,11 +12,11 @@ The long answer:
 
 ### Consonance, or small integer ratios
 
-The experience of sound is the detection of air waves, and different pitches correspond to different wavelengths - high pitches correspond to short wavelengths. The traditional physical explanation for consonance between two notes is that the ratio of their wavelengths is a ratio of small primes (or their powers). For later reference, I list the best such ratios here:
+The experience of sound is the detection of air waves, and different pitches correspond to different wavelengths - high pitches correspond to short wavelengths. The traditional physical explanation for consonance between two notes is that the ratio of their wavelengths is a ratio of small integers. For later reference, I list the best such ratios here:
 
 $$\frac{1}{2}; \frac{1}{3}, \frac{2}{3}, \frac{3}{4}; \frac{1}{5}, \frac{2}{5}, \frac{4}{5}; \frac{3}{5}.$$
 
-I have grouped the ratios involving the prime 2 alone; the primes 2 and 3; the primes 2 and 5; and the primes 3 and 5. The lower the primes, the greater the consonance.
+I have grouped the ratios involving the prime 2 alone; the primes 2 and 3; the primes 2 and 5; and the primes 3 and 5.
 
 ### Octave equivalence
 
