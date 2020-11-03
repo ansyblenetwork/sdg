@@ -17,14 +17,14 @@
 		<div class="sidebar">
 		<div class="rpanel" style="flex-grow: 1; position:relative; min-width:250px;" id="accountPanel">
 			<h2><a href="{{ "" | absolute_url }}">Soli Deo gloria</a></h2>
-			<div style="margin-bottom:15px" class="date-format" style="padding-bottom:15px">&raquo;&nbsp;Music composition for the classically trained pianist</div>
+			<div style="margin-bottom:15px" class="date-format" style="padding-bottom:15px">Music composition for the classically trained pianist</div>
 			<ul style="overflow:auto;">
 				{% for post in site.posts %}					
 					{% if page.title == post.title %}	
-						<li id="specialPost" style="background-color:#f4f4f4">&raquo;&nbsp;<span class="date-format">{{ post.date | date: "%B %-d, %Y" }}</span><br>
+						<li id="specialPost" style="background-color:#f4f4f4"><span class="date-format">{{ post.date | date: "%B %-d, %Y" }}</span><br>
 							{{ post.title }}</li>
 					{% else %}				
-						<li>&raquo;&nbsp;<span class="date-format">{{ post.date | date: "%B %-d, %Y" }}</span><br>
+						<li><span class="date-format">{{ post.date | date: "%B %-d, %Y" }}</span><br>
 							<a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>					
 					{% endif %}
 				{% endfor %}
