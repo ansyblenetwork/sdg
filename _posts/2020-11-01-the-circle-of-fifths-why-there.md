@@ -30,7 +30,7 @@ The most consonant wavelength ratio of 1 to 2 corresponds to an octave interval;
 
 ### The circle of fifths
 
-The next most consonant wavelength ratio of 1 to 3 essentially corresponds to a perfect fifth. As written, this interval is actually larger than an octave; an actual perfect fifth corresponds to lowering the higher note of the interval by an octave, for a 2 to 3 ratio. 
+The next most consonant wavelength ratio of 1 to 3 essentially corresponds to a perfect fifth. As written, this interval is larger than an octave; an actual perfect fifth corresponds to lowering the higher note of the interval by an octave, for a 2 to 3 ratio. 
 
 Perfect fifths are desirable as they are not equivalent to existing notes, and yet are very consonant. They are the most natural, deliberate way to select new musical pitches. As a result, we extend another perfect fifth down from our note of wavelength 3, resulting in a new note of wavelength 9/2. Repeating this process and allowing octave equivalences, we find ourselves having all notes with wavelengths of length
 
