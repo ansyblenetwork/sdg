@@ -18,8 +18,8 @@ The hope is that all other consonant intervals may be similarly approximated by 
 
 The note generation scheme outlined so far using the [circle of fifths]({{ "" | relative_url }}{% post_url 2020-11-01-the-circle-of-fifths-why-there %}) is known as the _Pythagorean tuning_ and strongly favors perfect fifths, at the cost of the major third and other consonant intervals. 
 
-_Temperament_ refers to any system which adjusts note wavelengths to compromise between these consonant intervals. Meantone temperament, introduced in the 16th century, "redefine 3" into say, $$\tilde 3$$ so that
+_Temperament_ refers to any system which adjusts note wavelengths to compromise between these consonant intervals. Meantone temperament, introduced in the 16th century, "redefines 3" into say, $$\tilde 3$$ so that
 
 $$\frac{4}{5} = \frac{2^6}{\tilde 3^4}.$$
 
-This of course means that the perfect fifth is replaced by a tempered fifth. However, the error in $$\tilde 3$$ is essentially the fourth root of the error for the major third in Pythagorean tuning, which is acceptable.
+This means that major thirds sound as they should, but that the perfect fifth is replaced by a tempered fifth. However, the error in $$\tilde 3$$ is essentially the fourth root of the error for the major third in Pythagorean tuning, which is acceptable.
