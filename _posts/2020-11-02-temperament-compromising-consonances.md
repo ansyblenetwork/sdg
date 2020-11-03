@@ -8,7 +8,7 @@ $$\frac{1}{2}; \frac{2}{3}, \frac{3}{4}; \frac{4}{5}; \frac{3}{5}.$$
 
 There, we discussed the ratios 1/2 (octave equivalence) and 2/3 (the perfect fifth). The next most consonant ratio of 3/4 can be constructed from the perfect fifth by lowering the upper note by an octave to get a 4/3 wavelengh note (and then interchanging the roles of the notes to get 3/4). The procedure we just described is known as an _inversion_. The pianist will also recognize this as a perfect fourth.
 
-The next most consonant wavelength ratio of 4/5 corresponds to a major third. This nwavelength introduces the new prime 5, and would be a natural candidate for a new note.
+The next most consonant wavelength ratio of 4/5 corresponds to a major third. This wavelength introduces the new prime 5, and would be a natural candidate for a new note.
 
 ### Pythagorean tuning
 
