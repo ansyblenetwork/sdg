@@ -22,4 +22,4 @@ _Temperament_ refers to any system which adjusts note wavelengths to compromise 
 
 $$\frac{4}{5} = \frac{2^6}{\tilde 3^4}.$$
 
-This means that major thirds sound as they should, but that the perfect fifth is replaced by a tempered fifth. However, the error in $$\tilde 3$$ is essentially the fourth root of the error for the major third in Pythagorean tuning, which is acceptable.
+This means that major thirds sound as they should, but also that the perfect fifth is replaced by a tempered fifth. However, the error in $$\tilde 3$$ is essentially the fourth root of the error for the major third in Pythagorean tuning, which is acceptable.
