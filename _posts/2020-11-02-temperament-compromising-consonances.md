@@ -1,5 +1,5 @@
 ---
-title: "Temperament: Fudging consonances"
+title: "Temperament: Compromising consonances"
 ---
 
 Recall the list of small integer ratios from our [discussion of consonance]({{ "" | relative_url }}{% post_url 2020-11-01-the-circle-of-fifths-why-there %}):
