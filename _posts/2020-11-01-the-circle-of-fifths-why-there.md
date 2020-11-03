@@ -16,7 +16,7 @@ The experience of sound is the detection of air waves, and different pitches cor
 
 $$\frac{1}{2}; \frac{1}{3}, \frac{2}{3}, \frac{3}{4}; \frac{1}{5}, \frac{2}{5}, \frac{4}{5}; \frac{3}{5}.$$
 
-Here I have grouped the ratios involving the prime 2 alone; the primes 2 and 3; the primes 2 and 5; and the primes 3 and 5. The lower the primes, the greater the consonance.
+I have grouped the ratios involving the prime 2 alone; the primes 2 and 3; the primes 2 and 5; and the primes 3 and 5. The lower the primes, the greater the consonance.
 
 ### Octave equivalence
 
@@ -34,7 +34,7 @@ $$\frac{1}{2}; \frac{2}{3}, \frac{3}{4}; \frac{4}{5}; \frac{3}{5}.$$
 
 ### The circle of fifths
 
-The next most consonant wavelength ratio of 2/3 corresponds to a perfect fifth. Perfect fifths are desirable as they are not equivalent to existing notes, and yet are very consonant. They are the most natural, deliberate way to select new musical pitches. As a result, we extend another perfect fifth down from our note of wavelength 3, resulting in a new note of wavelength 9/2. Repeating this process and allowing octave equivalences, we find ourselves having all notes with wavelengths of length
+The next most consonant wavelength ratio of 2/3 corresponds to a perfect fifth. Perfect fifths are desirable as they are not equivalent to existing notes, and yet are very consonant. They are the most natural, deliberate way to select new musical pitches. As a result, we extend another perfect fifth up from our note of wavelength 2/3, resulting in a new note of wavelength 4/9. Repeating this process and lowering by octave equivalences as necessary, we find ourselves having all notes with wavelengths of length
 
 $$\frac{2^n}{3^m}.$$
 
