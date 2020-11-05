@@ -1,5 +1,5 @@
 ---
-title: "Just intonation: Understanding and ranking the intervals by consonance"
+title: "Just intonation: Understanding and ordering the intervals by consonance"
 ---
 
 Previously, we discussed why there are at least [twelve notes]({{ "" | relative_url }}{% post_url 2020-11-01-the-circle-of-fifths-why-there %}) in Western music, and why they [suffice]({{ "" | relative_url }}{% post_url 2020-11-02-temperament-compromising-consonances %}). In a nutshell, the selection of twelve notes prioritizes the ability to play perfect fifths, and the choice of temperament compromises this with the ability to play other consonant intervals.
