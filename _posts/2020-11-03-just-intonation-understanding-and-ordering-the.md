@@ -40,7 +40,7 @@ $$\frac{2}{3}, \frac{8}{9}, \frac{3}{5}, \frac{4}{5}, \frac{8}{15}, \frac{32}{45
 
 ### Ordering by consonance
 
-We list the final wavelengths, which are the wavelengths used in _just intonation_:
+We list our final set of wavelengths, which are the wavelengths used in _just intonation_:
 
 | Wavelength | Name |
 | ------------- | ------------- |
@@ -57,7 +57,7 @@ We list the final wavelengths, which are the wavelengths used in _just intonatio
 | 3/4 | perfect fourth (inversion of perfect fifth) |
 | 1/1 | octave |
 
-We can reorder these by consonance:
+In modern music, these wavelengths are only approximate due to [equal temperament]({{ "" | relative_url }}{% post_url 2020-11-02-temperament-compromising-consonances %}), but this analysis explains why and how we can order the intervals by consonance:
 
 | Wavelength | Name |
 | ------------- | ------------- |
@@ -68,5 +68,4 @@ We can reorder these by consonance:
 | 8/15 | major seventh (inversion of minor second) |
 | 32/45 | diminished fifth |
 
-The first row consists of the perfect consonances, the next three consist of imperfect consonances, and the last two consist of dissonances.
-
+The first row consists of the perfect consonances, the next three consist of imperfect consonances, and the last two consist of dissonances. 
