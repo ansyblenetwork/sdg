@@ -30,7 +30,7 @@ Unfortunately, it turns out that the approximation
 
 $$1 \approx \frac{2^{19}}{\tilde 3^{12}}$$
 
-closing the [circle of fifths]({{ "" | relative_url }}{% post_url 2020-11-01-the-circle-of-fifths-why-there %}) is worse compared to Pythagorean tuning, and is known as the wolf interval.
+closing the [circle of fifths]({{ "" | relative_url }}{% post_url 2020-11-01-the-circle-of-fifths-why-there %}) is worse compared to Pythagorean tuning, and causes out-of-tune intervals known as _wolf intervals_.
 
 ### Equal temperament
 
