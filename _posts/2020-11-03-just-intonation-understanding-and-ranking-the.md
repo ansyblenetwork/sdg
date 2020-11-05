@@ -44,17 +44,27 @@ We list the final wavelengths, which are the wavelengths used in _just intonatio
 
 | Wavelength | Name |
 | ------------- | ------------- |
-| $$\frac{2}{3}$$ | perfect fifth |
-| $$\frac{8}{9}$$ | major second |
-| $$\frac{3}{5}$$ | major sixth |
-| $$\frac{4}{5}$$ | major third |
-| $$\frac{8}{15}$$ | major seventh |
-| $$\frac{32}{45}$$ | minor fifth |
-| $$\frac{15}{16}$$ | minor second |
-| $$\frac{5}{8}$$ | minor sixth |
-| $$\frac{5}{6}$$ | minor third |
-| $$\frac{9}{16}$$ | minor seventh |
-| $$\frac{3}{4}$$ | perfect fourth |
-| $$\frac{1}{1}$$ | octave |
+| 2/3 | perfect fifth (inversion of perfect fourth) |
+| 8/9 | major second (inversion of minor seventh)  |
+| 3/5 | major sixth (inversion of minor third)  |
+| 4/5 | major third (inversion of perfect fourth)  |
+| 8/15 | major seventh (inversion of perfect fourth)  |
+| 32/45 | minor fifth |
+| 15/16 | minor second (inversion of major seventh) |
+| 5/8 | minor sixth (inversion of major third) |
+| 5/6 | minor third (inversion of major sixth) |
+| 9/16 | minor seventh (inversion of major second) |
+| 3/4 | perfect fourth (inversion of perfect fifth) |
+| 1/1 | octave |
 
+We can reorder these by consonance:
+
+| Wavelength | Name |
+| ------------- | ------------- |
+| 2/3 | perfect fifth (inversion of perfect fourth) |
+| 4/5 | major third (inversion of perfect fourth)  |
+| 3/5 | major sixth (inversion of minor third)  |
+| 8/9 | major second (inversion of minor seventh)  |
+| 8/15 | major seventh (inversion of perfect fourth)  |
+| 32/45 | minor fifth |
 
