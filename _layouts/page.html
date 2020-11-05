@@ -24,8 +24,8 @@
 						<li id="specialPost" style="background-color:#f4f4f4"><span class="date-format">{{ post.date | date: "%B %-d, %Y" }}</span><br>
 							{{ post.title }}</li>
 					{% else %}				
-						<li><span class="date-format">{{ post.date | date: "%B %-d, %Y" }}</span><br>
-							<a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>					
+						<a href="{{ post.url | relative_url }}"><li><span class="date-format">{{ post.date | date: "%B %-d, %Y" }}</span><br>
+							{{ post.title }}</li></a>				
 					{% endif %}
 				{% endfor %}
 				<br>
