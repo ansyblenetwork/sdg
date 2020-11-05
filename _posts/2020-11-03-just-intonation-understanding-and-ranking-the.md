@@ -22,9 +22,9 @@ $$\frac{2}{3}, \frac{2^3}{3^2}, \frac{2^4}{3^3}, \frac{2^6}{3^4}, \frac{2^7}{3^5
 
 $$\frac{4}{5} \approx \frac{2^6}{3^4}, \qquad 1 \approx \frac{2^{19}}{3^{12}}.$$
 
-We implement these approximations in our list of notes:
+We implement these approximations in our list of notes, keeping in mind this also provides approximations for inversions:
 
-$$\frac{2}{3}, \frac{8}{9}, \frac{2^4}{3^3}, \frac{4}{5}, \frac{2^7}{3^5}, \frac{2^9}{3^6}, \frac{2^{11}}{3^7}, \frac{16}{25}, \frac{3^3}{2^5}, \frac{9}{16}, \frac{3}{4}, 1.$$
+$$\frac{2}{3}, \frac{8}{9}, \frac{2^4}{3^3}, \frac{4}{5}, \frac{5}{8}, \frac{2^9}{3^6}, \frac{2^{11}}{3^7}, \frac{16}{25}, \frac{3^3}{2^5}, \frac{9}{16}, \frac{3}{4}, 1.$$
 
 3) Recall our list of small integer ratios:
 
