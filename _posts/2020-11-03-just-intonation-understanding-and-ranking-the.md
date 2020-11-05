@@ -30,7 +30,7 @@ $$\frac{2}{3}, \frac{8}{9}, \frac{2^4}{3^3}, \frac{4}{5}, \frac{2^7}{3^5}, \frac
 
 $$\frac{1}{2}; \frac{2}{3}, \frac{3}{4}; \frac{4}{5}; \frac{3}{5}.$$
 
-The remaining ratio, 3/5, has the approximation
+The remaining ratio, 3/5, corresponds to a major sixth and has the approximation
 
 $$\frac{3}{5} \approx \frac{2^4}{3^3}.$$
 
