@@ -12,14 +12,28 @@ Recall that we have 12 notes corresponding to the following wavelengths, derived
 
 $$\frac{1}{3}, \frac{1}{3^2}, \frac{1}{3^3}, \frac{1}{3^4}, \frac{1}{3^5}, \frac{1}{3^6}, \frac{1}{3^7}, \frac{1}{3^8}, \frac{1}{3^9}, \frac{1}{3^{10}}, \frac{1}{3^{11}}, \frac{1}{3^{12}}$$
 
-These notes actually have extremely small wavelengths, far over an octave above the root note of wavelength 1. We can exchange them for their octave equivalents with wavelength between 1/2 and 1 - within an octave above the root note:
+We perform successive simplifications:
+
+1) These notes actually have extremely small wavelengths, far over an octave above the root note of wavelength 1. We can exchange them for their octave equivalents with wavelength between 1/2 and 1 - within an octave above the root note:
 
 $$\frac{2}{3}, \frac{2^3}{3^2}, \frac{2^4}{3^3}, \frac{2^6}{3^4}, \frac{2^7}{3^5}, \frac{2^9}{3^6}, \frac{2^{11}}{3^7}, \frac{2^{12}}{3^8}, \frac{2^{14}}{3^9}, \frac{2^{15}}{3^{10}}, \frac{2^{17}}{3^{11}}, \frac{2^{19}}{3^{12}}.$$
 
-Recall the approximations for the major third and closing the circle of fifths:
+2) Recall the approximations for the major third and closing the circle of fifths:
 
 $$\frac{4}{5} \approx \frac{2^6}{3^4}, \qquad 1 \approx \frac{2^{19}}{3^{12}}.$$
 
 We implement these approximations in our list of notes:
 
-$$\frac{2}{3}, \frac{8}{9}, \frac{2^4}{3^3}, \frac{4}{5}, \frac{2^7}{3^5}, \frac{2^9}{3^6}, \frac{2^{11}}{3^7}, \frac{16}{25}, \frac{3^3}{2^5}, \frac{3^2}{2^4}, \frac{3}{4}, 1.$$
+$$\frac{2}{3}, \frac{8}{9}, \frac{2^4}{3^3}, \frac{4}{5}, \frac{2^7}{3^5}, \frac{2^9}{3^6}, \frac{2^{11}}{3^7}, \frac{16}{25}, \frac{3^3}{2^5}, \frac{9}{16}, \frac{3}{4}, 1.$$
+
+3) Recall our list of small integer ratios:
+
+$$\frac{1}{2}; \frac{2}{3}, \frac{3}{4}; \frac{4}{5}; \frac{3}{5}.$$
+
+The remaining ratio, 3/5, has the approximation
+
+$$\frac{3}{5} \approx \frac{2^4}{3^3}.$$
+
+We implement this and its inversion:
+
+$$\frac{2}{3}, \frac{8}{9}, \frac{3}{5}, \frac{4}{5}, \frac{2^7}{3^5}, \frac{2^9}{3^6}, \frac{2^{11}}{3^7}, \frac{16}{25}, \frac{5}{6}, \frac{9}{16}, \frac{3}{4}, 1.$$
