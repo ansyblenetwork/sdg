@@ -20,7 +20,11 @@ How did I choose these ratios? I have grouped the ratios involving the prime 2 a
 
 ### Octave equivalence
 
-The most consonant wavelength ratio of 1 to 2 corresponds to an octave interval; the notes sound "the same." The question of why such octave-separated pitches sound similar is an empirical question for neuroscientists and doesn't have a clean answer. For instance, studies have found that chimpanzees also experience octave equivalence. On the other hand, [other studies](https://www.quantamagazine.org/perceptions-of-musical-octaves-are-learned-not-wired-in-the-brain-20191030/) have discovered isolated human cultures which do not:
+The most consonant wavelength ratio of 1 to 2 corresponds to an octave interval; the notes in fact sound "the same." Due to octave equivalence, we may remove from our list the ratios less than 1/2. For instance, 1/3 is equivalent to 2/3; we are simply lowering the note by an octave:
+
+$$\frac{1}{2}; \frac{2}{3}, \frac{3}{4}; \frac{4}{5}; \frac{3}{5}.$$
+
+The question of why such octave-separated pitches sound similar is an empirical question for neuroscientists and doesn't have a clean answer. For instance, studies have found that chimpanzees also experience octave equivalence. On the other hand, [other studies](https://www.quantamagazine.org/perceptions-of-musical-octaves-are-learned-not-wired-in-the-brain-20191030/) have discovered isolated human cultures which do not:
 
 <div class="media">
 <p>Computer analyses that compared the Tsimané participants with those in the United States found that both groups generally preserved the pitch intervals between the notes played to them — for example, maintaining the difference between a middle C and middle A...</p>
@@ -28,9 +32,6 @@ The most consonant wavelength ratio of 1 to 2 corresponds to an octave interval;
 <p>A curious difference emerged, however, in how they sang the notes back. When the notes played were very high or low, U.S. participants accurately shifted the notes into an octave within their vocal range. The Tsimané didn’t. To them, it seemingly wasn’t clear what notes in their range best corresponded to the ones they heard. Their responses didn’t seem to reflect a perception of octave structure at all.</p>
 </div>
 
-Due to octave equivalence, we may remove from our list the ratios less than 1/2. For instance, 1/3 is equivalent to 2/3; we are simply lowering the note by an octave:
-
-$$\frac{1}{2}; \frac{2}{3}, \frac{3}{4}; \frac{4}{5}; \frac{3}{5}.$$
 
 ### The circle of fifths
 
