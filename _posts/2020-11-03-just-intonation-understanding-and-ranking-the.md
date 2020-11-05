@@ -45,3 +45,10 @@ $$\frac{8}{15} \approx \frac{2^7}{3^5},$$
 where the ratio 8/15 corresponds to a major seventh. Implementing this and its inversion, we have
 
 $$\frac{2}{3}, \frac{8}{9}, \frac{3}{5}, \frac{4}{5}, \frac{8}{15}, \frac{32}{45}, \frac{15}{16}, \frac{5}{8}, \frac{5}{6}, \frac{9}{16}, \frac{3}{4}, 1.$$
+
+### Ordering by consonance
+
+We list the final wavelengths, which are the wavelengths used in _just intonation_:
+
+| Wavelength | Name |
+| $$\frac{2}{3}$$ | perfect fifth |
