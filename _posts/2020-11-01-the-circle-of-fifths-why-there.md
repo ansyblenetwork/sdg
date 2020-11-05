@@ -16,7 +16,7 @@ The experience of sound is the detection of air waves, and different pitches cor
 
 $$\frac{1}{2}; \frac{1}{3}, \frac{2}{3}, \frac{3}{4}; \frac{1}{5}, \frac{2}{5}, \frac{4}{5}; \frac{3}{5}.$$
 
-How did I choose these ratios? I have grouped the ratios involving the prime 2 alone; the primes 2 and 3; the primes 2 and 5; and the primes 3 and 5. I have considered only ratios under 1 by taking reciprocals as necessary. I have sometimes allowed 4 in the groups where I have included 2, but this allowance is at some level redundant, due to _octave equivalence_, which we discuss below.
+How did I choose these ratios? I have grouped the ratios involving the prime 2 alone; the primes 2 and 3; the primes 2 and 5; and the primes 3 and 5. I have considered only ratios under 1 by taking reciprocals as necessary. I have sometimes allowed 4 in the groups where I have included 2, but this allowance is at some level redundant, due to _octave equivalence_, which we discuss next.
 
 ### Octave equivalence
 
