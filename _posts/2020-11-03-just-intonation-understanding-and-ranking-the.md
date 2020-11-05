@@ -36,4 +36,4 @@ $$\frac{3}{5} \approx \frac{2^4}{3^3}.$$
 
 We implement this and its inversion:
 
-$$\frac{2}{3}, \frac{8}{9}, \frac{3}{5}, \frac{4}{5}, \frac{2^7}{3^5}, \frac{2^9}{3^6}, \frac{2^{11}}{3^7}, \frac{16}{25}, \frac{5}{6}, \frac{9}{16}, \frac{3}{4}, 1.$$
+$$\frac{2}{3}, \frac{8}{9}, \frac{3}{5}, \frac{4}{5}, \frac{5}{8}, \frac{2^9}{3^6}, \frac{2^{11}}{3^7}, \frac{16}{25}, \frac{5}{6}, \frac{9}{16}, \frac{3}{4}, 1.$$
