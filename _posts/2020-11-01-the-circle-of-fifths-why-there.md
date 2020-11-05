@@ -35,7 +35,7 @@ The question of why such octave-separated pitches sound similar is an empirical 
 
 ### The circle of fifths
 
-The next most consonant wavelength ratio of 2/3 corresponds to a perfect fifth. Perfect fifths are desirable as they are not equivalent to existing notes, and yet are very consonant. They are the most natural, deliberate way to select new musical pitches. As a result, we extend another perfect fifth up from our note of wavelength 2/3, resulting in a new note of wavelength 4/9. Repeating this process and lowering by octave equivalences as necessary, we find ourselves having all notes with wavelengths of length
+The next most consonant wavelength ratio of 2/3 corresponds to a perfect fifth. Perfect fifths are desirable as they are not equivalent to existing notes, and yet are very consonant. They are the most natural, deliberate way to select new musical notes. As a result, we extend another perfect fifth up from our note of wavelength 2/3, resulting in a new note of wavelength 4/9. Repeating this process and lowering by octave equivalences as necessary, we find ourselves having all notes with wavelengths of length
 
 $$\frac{2^n}{3^m}.$$
 
