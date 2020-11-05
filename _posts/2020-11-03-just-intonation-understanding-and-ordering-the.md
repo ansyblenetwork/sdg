@@ -6,13 +6,13 @@ Previously, we discussed why there are at least [twelve notes]({{ "" | relative_
 
 In today's post we look for such consonances approximated by these 12 notes. It is clear that not all 12 intervals are consonant: This corresponds with the fact that slamming a piano with random notes does not sound good, and why despite all of the combinatorial possibilities, simultaneous notes in classical music almost always stem from canonical chords and triads.
 
-### Tempering the intervals
+### Justifying the intervals
 
 Recall that we have 12 notes corresponding to the following wavelengths, derived from successive extension by perfect fifths:
 
 $$\frac{2}{3}, \frac{2^3}{3^2}, \frac{2^4}{3^3}, \frac{2^6}{3^4}, \frac{2^7}{3^5}, \frac{2^9}{3^6}, \frac{2^{11}}{3^7}, \frac{2^{12}}{3^8}, \frac{2^{14}}{3^9}, \frac{2^{15}}{3^{10}}, \frac{2^{17}}{3^{11}}, \frac{2^{19}}{3^{12}}.$$
 
-Here, we have used the octave equivalents with wavelength between 1/2 and 1 - within an octave above the root note. We perform successive simplifications:
+Here, we have used the octave equivalents with wavelength between 1/2 and 1 - within an octave above the root note. We perform successive approximations which justify the intervals (pun intended...?):
 
 1) Recall the approximations for the major third and closing the circle of fifths:
 
