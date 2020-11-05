@@ -22,4 +22,4 @@ $$\frac{4}{5} \approx \frac{2^6}{3^4}, \qquad 1 \approx \frac{2^{19}}{3^{12}}.$$
 
 We implement these approximations in our list of notes:
 
-$$\frac{2}{3}, \frac{8}{9}, \frac{2^4}{3^3}, \frac{4}{5}, \frac{2^7}{3^5}, \frac{2^9}{3^6}, \frac{2^{11}}{3^7}, \frac{16}{25}, \frac{2^{14}}{3^9}, \frac{9}{16}, \frac{3}{4}, 1.$$
+$$\frac{2}{3}, \frac{8}{9}, \frac{2^4}{3^3}, \frac{4}{5}, \frac{2^7}{3^5}, \frac{2^9}{3^6}, \frac{2^{11}}{3^7}, \frac{16}{25}, \frac{3^3}{2^5}, \frac{3^2}{2^4}, \frac{3}{4}, 1.$$
