@@ -37,3 +37,11 @@ $$\frac{3}{5} \approx \frac{2^4}{3^3}.$$
 We implement this and its inversion:
 
 $$\frac{2}{3}, \frac{8}{9}, \frac{3}{5}, \frac{4}{5}, \frac{2^7}{3^5}, \frac{2^9}{3^6}, \frac{2^{11}}{3^7}, \frac{5}{8}, \frac{5}{6}, \frac{9}{16}, \frac{3}{4}, 1.$$
+
+4) We proceed to consider the remaining intervals, which are suboptimal and may be viewed as dissonant. Still, we may mildly temper them with the approximations
+
+$$\frac{8}{15} \approx \frac{2^7}{3^5},$$
+
+where the ratio 8/15 corresponds to a major seventh. Implementing this and its inversion, we have
+
+$$\frac{2}{3}, \frac{8}{9}, \frac{3}{5}, \frac{4}{5}, \frac{8}{15}, \frac{32}{45}, \frac{15}{16}, \frac{5}{8}, \frac{5}{6}, \frac{9}{16}, \frac{3}{4}, 1.$$
