@@ -30,7 +30,7 @@ We implement this and its inversion:
 
 $$\frac{2}{3}, \frac{8}{9}, \frac{3}{5}, \frac{4}{5}, \frac{2^7}{3^5}, \frac{2^9}{3^6}, \frac{2^{11}}{3^7}, \frac{5}{8}, \frac{5}{6}, \frac{9}{16}, \frac{3}{4}, 1.$$
 
-3) We proceed to consider the remaining intervals, which are suboptimal and may be viewed as dissonant. Still, we may mildly temper them with the approximations
+3) We proceed to consider the remaining intervals, which are suboptimal and may be viewed as dissonant, since they do not come naturally from a list of small integer ratios. Still, we may mildly temper them with the approximations
 
 $$\frac{8}{15} \approx \frac{2^7}{3^5},$$
 
@@ -49,7 +49,7 @@ We list the final wavelengths, which are the wavelengths used in _just intonatio
 | 3/5 | major sixth (inversion of minor third) |
 | 4/5 | major third (inversion of minor sixth) |
 | 8/15 | major seventh (inversion of minor second) |
-| 32/45 | minor fifth |
+| 32/45 | diminished fifth |
 | 15/16 | minor second (inversion of major seventh) |
 | 5/8 | minor sixth (inversion of major third) |
 | 5/6 | minor third (inversion of major sixth) |
@@ -66,5 +66,7 @@ We can reorder these by consonance:
 | 3/5 | major sixth (inversion of minor third) |
 | 8/9 | major second (inversion of minor seventh) |
 | 8/15 | major seventh (inversion of minor second) |
-| 32/45 | minor fifth |
+| 32/45 | diminished fifth |
+
+The first row consists of the perfect consonances, the next three consist of imperfect consonances, and the last two consist of dissonances.
 
