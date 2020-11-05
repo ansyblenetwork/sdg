@@ -43,7 +43,7 @@ $$\frac{2}{3}, \frac{8}{9}, \frac{3}{5}, \frac{4}{5}, \frac{8}{15}, \frac{32}{45
 We list the final wavelengths, which are the wavelengths used in _just intonation_:
 
 | Wavelength | Name |
-| :-------------: | ------------- |
+| ------------- | ------------- |
 | 2/3 | perfect fifth (inversion of perfect fourth) |
 | 8/9 | major second (inversion of minor seventh)  |
 | 3/5 | major sixth (inversion of minor third) |
@@ -60,7 +60,7 @@ We list the final wavelengths, which are the wavelengths used in _just intonatio
 We can reorder these by consonance:
 
 | Wavelength | Name |
-| :------------- | -------------: |
+| ------------- | ------------- |
 | 2/3 | perfect fifth (inversion of perfect fourth) |
 | 4/5 | major third (inversion of minor sixth) |
 | 3/5 | major sixth (inversion of minor third) |
