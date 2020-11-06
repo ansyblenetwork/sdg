@@ -71,8 +71,8 @@ In modern music, these wavelengths are only approximate due to [equal temperamen
 The first row consists of the perfect consonances, the next three consist of imperfect consonances, and the last two consist of dissonances. 
 
 <div id="paper"></div>
-<button id="activate-audio">Activate Audio Context And Play</button>
-<button id="stop-audio" style="display:none;">Stop Audio</button>
+<button id="activate-audio">Play</button>
+<button id="stop-audio" style="display:none;">Stop</button>
 <div id='audio-error' style="display:none;">Audio is not supported in this browser.</div>
 
 <script>
@@ -80,7 +80,6 @@ The first row consists of the perfect consonances, the next three consist of imp
 // NOTE: If you want just the sound without showing the music, use "*" instead of "paper" in the renderAbc call.
 var visualObj = ABCJS.renderAbc("paper", "X:1\nK:D\nDDAA|BBA2|\n", { responsive: "resize" })[0];
 var midiBuffer = new ABCJS.synth.CreateSynth();
-
 var startAudioButton = D("activate-audio");
 var stopAudioButton = D("stop-audio");
 var audioError = D("audio-error");
