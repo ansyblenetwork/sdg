@@ -101,7 +101,8 @@ var startAudioButton = D("activate-audio");
 var stopAudioButton = D("stop-audio");
 var audioError = D("audio-error");
 
-startAudioButton.addEventListener("click", function() {
+
+
     startAudioButton.setAttribute("style", "display:none;");
     if (ABCJS.synth.supportsAudio()) {
         stopAudioButton.setAttribute("style", "");
@@ -136,7 +137,6 @@ startAudioButton.addEventListener("click", function() {
                 return midiBuffer.prime();
             }).then(function () {
                 // At this point, everything slow has happened. midiBuffer.start will return very quickly and will start playing very quickly without lag.
-                midiBuffer.start();
                 return Promise.resolve();
             }).catch(function (error) {
                 if (error.status === "NotSupported") {
@@ -146,6 +146,13 @@ startAudioButton.addEventListener("click", function() {
             });
         });
     } else audioError.setAttribute("style", "");
+    
+    
+    
+
+startAudioButton.addEventListener("click", function() {
+    startAudioButton.setAttribute("style", "display:none;");
+    if (midiBuffer) midiBuffer.start();
 });
 
 stopAudioButton.addEventListener("click", stopFunction);
