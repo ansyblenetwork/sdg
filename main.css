@@ -106,7 +106,6 @@ input[type=number] {
 }
 
 .abcjs-inline-audio .abcjs-midi-clock {
-	/*margin-left: 4px;*/
 	margin-top: 1px;
 	margin-right: 2px;
 	display: inline-block;
