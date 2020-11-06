@@ -73,7 +73,7 @@ The first row consists of the perfect consonances, the next three consist of imp
 <div id="paper">test</div>
 
 <script>
-window.ABCJS.renderAbc("paper", "X:1\nK:D\nDDAA|BBA2|\n");
+window.ABCJS.renderAbc("paper", "X:1\nK:C\nCGCG|\n");
 alert("hi");
 console.log("hi");
 </script>
