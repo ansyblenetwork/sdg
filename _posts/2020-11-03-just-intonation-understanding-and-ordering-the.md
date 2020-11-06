@@ -155,11 +155,11 @@ var audioError = D("audio-error");
                     });
                 });
             }
-        },
+        }
         animateCallback(lastRange, currentRange, context) {
             this.colorRange(lastRange, "#000000");
             this.colorRange(currentRange, "#3D9AFC");
-        },
+        }
     
 
 startAudioButton.addEventListener("click", function() {
