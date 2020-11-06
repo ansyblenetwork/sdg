@@ -181,3 +181,9 @@ function D(string) { return document.getElementById(string);}
 let tempo = document.querySelector("abcjs-tempo");
 tempo.style.display="none";
 </script>
+
+<style>
+    svg .abcjs-tempo {
+	display:none;
+    }
+<style>
