@@ -71,7 +71,7 @@ In modern music, these wavelengths are only approximate due to [equal temperamen
 The first row consists of the perfect consonances, the next three consist of imperfect consonances, and the last two consist of dissonances. 
 
 <div id="paper"></div>
-<p class="suspend-explanation">Browsers won't allow audio to work unless the audio is started in response to a user action. This prevents auto-playing web sites. Therefore, the following button is needed to do the initialization:</p>
+<p class="suspend-explanation">Browsers require a button:</p>
 <button class="activate-audio">Activate Audio Context And Play</button>
 <button class="stop-audio" style="display:none;">Stop Audio</button>
 <div class='audio-error' style="display:none;">Audio is not supported in this browser.</div>
@@ -130,8 +130,7 @@ function load() {
                         stopAudioButton.setAttribute("style", "display:none;");
                         var audioError = document.querySelector(".audio-error");
                         audioError.setAttribute("style", "");
-                    } else
-                        console.warn("synth error", error);
+                    } else console.warn("synth error", error);
                 });
             });
         } else {
@@ -144,8 +143,7 @@ function load() {
         startAudioButton.setAttribute("style", "");
         explanationDiv.setAttribute("style", "");
         stopAudioButton.setAttribute("style", "display:none;");
-        if (midiBuffer)
-            midiBuffer.stop();
+        if (midiBuffer) midiBuffer.stop();
     });
 }
 </script>
