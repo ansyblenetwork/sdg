@@ -30,7 +30,7 @@ We implement this and its inversion:
 
 $$\frac{2}{3}, \frac{8}{9}, \frac{3}{5}, \frac{4}{5}, \frac{2^7}{3^5}, \frac{2^9}{3^6}, \frac{2^{11}}{3^7}, \frac{5}{8}, \frac{5}{6}, \frac{9}{16}, \frac{3}{4}, 1.$$
 
-3) We proceed to consider the remaining intervals, which are suboptimal and may be viewed as dissonant, since they do not come naturally from a list of small integer ratios. Still, we may mildly temper them with the approximations
+3) The remaining intervals may be viewed as dissonant, since they do not come naturally from our list of small integer ratios. Still, we may mildly temper them with the approximations
 
 $$\frac{8}{15} \approx \frac{2^7}{3^5},$$
 
