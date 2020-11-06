@@ -40,4 +40,4 @@ $$1 = \frac{2^{19}}{\tilde 3^{12}}.$$
 
 The error on $$\tilde 3$$ is essentially the twelvth root of the wolf interval error and is almost imperceptible. It turns out that the major third approximation is also improved.
 
-The legend goes that Bach intended the WTC to be played on a keyboard tuned with equal temperament. Historians have since [invented a lot of other ideas](https://en.wikipedia.org/wiki/The_Well-Tempered_Clavier#Well-Tempered_tuning).
+A happy byproduct of using equal temperament is that it is harmless to change the root note, allowing for lossless modulation. The legend goes that Bach intended the WTC to be played on a keyboard tuned with equal temperament. Historians have since [invented a lot of other ideas](https://en.wikipedia.org/wiki/The_Well-Tempered_Clavier#Well-Tempered_tuning).
