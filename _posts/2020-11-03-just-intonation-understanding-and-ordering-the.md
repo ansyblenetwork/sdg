@@ -105,6 +105,7 @@ startAudioButton.addEventListener("click", function() {
                 visualObj: visualObj,
                 audioContext: audioContext,
                 millisecondsPerMeasure: visualObj.millisecondsPerMeasure(),
+                onEnded: function() {console.log("hi");},
                 options: {
                     onEnded: function() {console.log("hi");}
                 }
