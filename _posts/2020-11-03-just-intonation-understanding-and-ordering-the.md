@@ -80,7 +80,7 @@ The first row consists of the perfect consonances, the next three consist of imp
 <script>
 // First draw the music - this supplies an object that has a lot of information about how to create the synth.
 // NOTE: If you want just the sound without showing the music, use "*" instead of "paper" in the renderAbc call.
-var visualObj = ABCJS.renderAbc("paper", "X:1\nK:D\nDDAA|BBA2|\n", { responsive: "resize" })[0];
+var visualObj = ABCJS.renderAbc("paper", "X:1\nK:D\nQ:1/4=60\nDDAA|BBA2|\n", { responsive: "resize" })[0];
 var midiBuffer = new ABCJS.synth.CreateSynth();
 var startAudioButton = D("activate-audio");
 var stopAudioButton = D("stop-audio");
