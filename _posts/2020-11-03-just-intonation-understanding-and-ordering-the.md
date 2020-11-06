@@ -81,7 +81,7 @@ The first row consists of the perfect consonances, the next three consist of imp
 <script>
 // First draw the music - this supplies an object that has a lot of information about how to create the synth.
 // NOTE: If you want just the sound without showing the music, use "*" instead of "paper" in the renderAbc call.
-var visualObj = ABCJS.renderAbc("paper", "X:1\nK:C\nCG[CG]2|CE[CE]2|CA[CA]2|CD[CD]2|CB[CB]2|C_G[C_G]2|\n", { responsive: "resize" })[0];
+var visualObj = ABCJS.renderAbc("paper", "X:1\nK:C\nQ:1/4-60\nCG[CG]2|CE[CE]2|CA[CA]2|CD[CD]2|CB[CB]2|C_G[C_G]2|\n", { responsive: "resize" })[0];
 var midiBuffer = new ABCJS.synth.CreateSynth();
 var cursorControl = {};
 var synthControl = new ABCJS.synth.SynthController();
@@ -119,7 +119,7 @@ var audioError = D("audio-error");
             return midiBuffer.init({
                 visualObj: visualObj,
                 audioContext: audioContext,
-                millisecondsPerMeasure: 6000, // visualObj.millisecondsPerMeasure(),
+                millisecondsPerMeasure: visualObj.millisecondsPerMeasure(),
                 options: {
                     onEnded: function() {console.log("hi");}
                 }
@@ -147,6 +147,19 @@ var audioError = D("audio-error");
     } else audioError.setAttribute("style", "");
     
     
+    colorRange(range, color) {
+            if (range && range.elements) {
+                range.elements.forEach(function (set) {
+                    set.forEach(function (item) {
+                        item.attr({fill: color});
+                    });
+                });
+            }
+        },
+        animateCallback(lastRange, currentRange, context) {
+            this.colorRange(lastRange, "#000000");
+            this.colorRange(currentRange, "#3D9AFC");
+        },
     
 
 startAudioButton.addEventListener("click", function() {
