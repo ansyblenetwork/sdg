@@ -95,7 +95,7 @@ synthControl.load("#controller",
             displayLoop: true, 
             displayRestart: true, 
             displayPlay: true, 
-          //  displayProgress: true, 
+            displayProgress: true, 
             displayWarp: true
         }
 );
