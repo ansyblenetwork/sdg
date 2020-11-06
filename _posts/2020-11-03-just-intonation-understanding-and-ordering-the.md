@@ -104,7 +104,14 @@ startAudioButton.addEventListener("click", function() {
             return midiBuffer.init({
                 visualObj: visualObj,
                 audioContext: audioContext,
-                millisecondsPerMeasure: visualObj.millisecondsPerMeasure()
+                millisecondsPerMeasure: visualObj.millisecondsPerMeasure(),
+                options: {
+                    onEnded: function() {                    
+                        startAudioButton.setAttribute("style", "");
+                        stopAudioButton.setAttribute("style", "display:none;");
+                        if (midiBuffer) midiBuffer.stop();
+                    }
+                }
             }).then(function (response) {
                 // console.log(response); // this contains the list of notes that were loaded.
                 // midiBuffer.prime actually builds the output buffer.
