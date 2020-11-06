@@ -83,8 +83,20 @@ The first row consists of the perfect consonances, the next three consist of imp
 // NOTE: If you want just the sound without showing the music, use "*" instead of "paper" in the renderAbc call.
 var visualObj = ABCJS.renderAbc("paper", "X:1\nK:C\nQ:1/4=600\nCG[CG]2|CE[CE]2|CA[CA]2|CD[CD]2|CB[CB]2|C_G[C_G]2|\n", { responsive: "resize" })[0];
 var midiBuffer = new ABCJS.synth.CreateSynth();
-var controller = new ABCJS.synth.SynthController();
-controller.load(D('controller'));
+var cursorControl = {};
+var synthControl = new ABCJS.synth.SynthController();
+
+	synthControl.load("#controller", 
+        cursorControl, 
+        {
+            displayLoop: true, 
+            displayRestart: true, 
+            displayPlay: true, 
+            displayProgress: true, 
+            displayWarp: true
+        }
+    );
+    
 var startAudioButton = D("activate-audio");
 var stopAudioButton = D("stop-audio");
 var audioError = D("audio-error");
@@ -111,6 +123,13 @@ startAudioButton.addEventListener("click", function() {
                 options: {
                     onEnded: function() {console.log("hi");}
                 }
+                
+                synthControl.setTune(visualObj[0], false, audioParams).then(function () {
+                    console.log("Audio successfully loaded.")
+                }).catch(function (error) {
+                    console.warn("Audio problem:", error);
+                });
+
             }).then(function (response) {
                 // console.log(response); // this contains the list of notes that were loaded.
                 // midiBuffer.prime actually builds the output buffer.
