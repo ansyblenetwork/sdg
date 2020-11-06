@@ -15,7 +15,7 @@ input[type=number] {
 	height: 26px;
 	padding: 0 5px;
 	border-radius: 3px;
-	background-color: #424242;
+	background-color: #f9f9f9;
 	display: flex;
 	align-items: center;
 	box-sizing: border-box;
@@ -52,20 +52,24 @@ input[type=number] {
 	border: 1px solid #cccccc;
 	background-color: #666666;
 	box-sizing: border-box;
+	filter:invert(100%);
 }
 
 .abcjs-inline-audio .abcjs-midi-reset.abcjs-pushed {
 	border: 1px solid #cccccc;
 	background-color: #666666;
 	box-sizing: border-box;
+	filter:invert(100%);
 }
 
 .abcjs-inline-audio .abcjs-midi-start .abcjs-pause-svg {
 	display: none;
+	filter:invert(100%);
 }
 
 .abcjs-inline-audio .abcjs-midi-start .abcjs-loading-svg {
 	display: none;
+	filter:invert(100%);
 }
 
 .abcjs-inline-audio .abcjs-midi-start.abcjs-pushed .abcjs-play-svg {
