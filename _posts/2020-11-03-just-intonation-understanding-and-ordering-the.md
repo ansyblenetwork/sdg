@@ -105,7 +105,6 @@ var audioError = D("audio-error");
 
     startAudioButton.setAttribute("style", "display:none;");
     if (ABCJS.synth.supportsAudio()) {
-        stopAudioButton.setAttribute("style", "");
 
         // An audio context is needed - this can be passed in for two reasons:
         // 1) So that you can share this audio context with other elements on your page.
