@@ -70,13 +70,10 @@ In modern music, these wavelengths are only approximate due to [equal temperamen
 
 The first row consists of the perfect consonances, the next three consist of imperfect consonances, and the last two consist of dissonances. 
 
-
 <div id="paper">test</div>
 
-<script type="text/javascript" src="/solideogloria/abc.js"></script>
-    
 <script>
-abcjs.renderAbc("paper", "X:1\nK:D\nDDAA|BBA2|\n");
+window.ABCJS.renderAbc("paper", "X:1\nK:D\nDDAA|BBA2|\n");
 alert("hi");
 console.log("hi");
 </script>
