@@ -85,7 +85,7 @@ input[type=number] {
 	height: 10px;
 	border-radius: 5px;
 	border: 2px solid #cccccc;
-	margin: 0 8px 0 15px;
+	margin: 0 8px 0 0;
 	position: relative;
 	flex: 1;
 	padding: 0;
