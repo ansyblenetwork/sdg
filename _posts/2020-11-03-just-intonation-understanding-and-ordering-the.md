@@ -119,7 +119,7 @@ var audioError = D("audio-error");
             return midiBuffer.init({
                 visualObj: visualObj,
                 audioContext: audioContext,
-                millisecondsPerMeasure: 3000 // visualObj.millisecondsPerMeasure(),
+                millisecondsPerMeasure: 3000, // visualObj.millisecondsPerMeasure(),
                 options: {
                     onEnded: function() {console.log("hi");}
                 }
