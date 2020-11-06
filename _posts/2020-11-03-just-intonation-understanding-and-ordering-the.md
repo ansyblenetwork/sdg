@@ -71,9 +71,26 @@ In modern music, these wavelengths are only approximate due to [equal temperamen
 The first row consists of the perfect consonances, the next three consist of imperfect consonances, and the last two consist of dissonances. 
 
 <div id="paper">test</div>
+<div id="player">test</div>
 
 <script>
-window.ABCJS.renderAbc("paper", "X:1\nK:C\nCGCG|\n");
-alert("hi");
-console.log("hi");
+var myContext = new AudioContext();
+var synthControl = new ABCJS.synth.SynthController();
+synthControl.load("player");
+var visualObj = ABCJS.renderAbc("paper", "X:1\nK:C\nCGCG|\n");
+synth.init({
+    audioContext: myContext,
+    visualObj: visualObj[0],
+    millisecondsPerMeasure: 500,
+    options: {
+        soundFontUrl: "https://paulrosen.github.io/midi-js-soundfonts/FluidR3_GM/",
+        pan: [ -0.3, 0.3 ] 
+    }
+}).then(function (results) {
+    // Ready to play. The results are details about what was loaded.
+}).catch(function (reason) {
+    console.log(reason)
+});
+
+
 </script>
