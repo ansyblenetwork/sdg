@@ -106,7 +106,7 @@ startAudioButton.addEventListener("click", function() {
                 audioContext: audioContext,
                 millisecondsPerMeasure: visualObj.millisecondsPerMeasure(),
                 options: {
-                    onEnded: function() {console.log("hi");
+                    onEnded: function() {console.log("hi");}
                 }
             }).then(function (response) {
                 // console.log(response); // this contains the list of notes that were loaded.
