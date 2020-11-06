@@ -71,10 +71,10 @@ In modern music, these wavelengths are only approximate due to [equal temperamen
 The first row consists of the perfect consonances, the next three consist of imperfect consonances, and the last two consist of dissonances. 
 
 <div id="paper"></div>
-<p class="suspend-explanation">Browsers require a button:</p>
-<button class="activate-audio">Activate Audio Context And Play</button>
-<button class="stop-audio" style="display:none;">Stop Audio</button>
-<div class='audio-error' style="display:none;">Audio is not supported in this browser.</div>
+<p id="suspend-explanation">Browsers require a button:</p>
+<button id="activate-audio">Activate Audio Context And Play</button>
+<button id="stop-audio" style="display:none;">Stop Audio</button>
+<div id='audio-error' style="display:none;">Audio is not supported in this browser.</div>
 
 <script>
     load();
@@ -87,9 +87,10 @@ function load() {
     // This object is the class that will contain the buffer
     var midiBuffer;
 
-    var startAudioButton = document.querySelector(".activate-audio");
-    var stopAudioButton = document.querySelector(".stop-audio");
-    var explanationDiv = document.querySelector(".suspend-explanation");
+    var startAudioButton = D("activate-audio");
+    var stopAudioButton = D("stop-audio");
+    var explanationDiv = D("suspend-explanation");
+    var audioError = D("audio-error");
 
     startAudioButton.addEventListener("click", function() {
         startAudioButton.setAttribute("style", "display:none;");
@@ -128,13 +129,11 @@ function load() {
                 }).catch(function (error) {
                     if (error.status === "NotSupported") {
                         stopAudioButton.setAttribute("style", "display:none;");
-                        var audioError = document.querySelector(".audio-error");
                         audioError.setAttribute("style", "");
                     } else console.warn("synth error", error);
                 });
             });
         } else {
-            var audioError = document.querySelector(".audio-error");
             audioError.setAttribute("style", "");
         }
     });
