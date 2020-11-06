@@ -128,7 +128,8 @@ startAudioButton.addEventListener("click", function() {
 
 stopAudioButton.addEventListener("click", stopFunction);
 
-function stopFunction() {           
+function stopFunction() {     
+    console.log("stopped");
     startAudioButton.setAttribute("style", "");
     stopAudioButton.setAttribute("style", "display:none;");
     if (midiBuffer) midiBuffer.stop();
