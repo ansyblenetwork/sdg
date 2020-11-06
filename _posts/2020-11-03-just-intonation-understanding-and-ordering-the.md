@@ -70,9 +70,9 @@ In modern music, these wavelengths are only approximate due to [equal temperamen
 
 The first row consists of the perfect consonances, the next three consist of imperfect consonances, and the last two consist of dissonances. 
 
-<div id="controller">test</div>
 <div style="display:flex; flex-direction:column; align-items:center">
 <div id="paper"></div>
+<div id="controller">test</div>
 <button id="activate-audio">Play</button>
 <button id="stop-audio" style="display:none;">Stop</button>
 <div id='audio-error' style="display:none;">Audio is not supported in this browser.</div>
@@ -81,7 +81,7 @@ The first row consists of the perfect consonances, the next three consist of imp
 <script>
 // First draw the music - this supplies an object that has a lot of information about how to create the synth.
 // NOTE: If you want just the sound without showing the music, use "*" instead of "paper" in the renderAbc call.
-var visualObj = ABCJS.renderAbc("paper", "X:1\nK:C\nQ:1/4=600\nCG[CG]2|CE[CE]2|CA[CA]2|CD[CD]2|CB[CB]2|C_G[C_G]2|\n", { responsive: "resize" })[0];
+var visualObj = ABCJS.renderAbc("paper", "X:1\nK:C\nQ:1/4=60\nCG[CG]2|CE[CE]2|CA[CA]2|CD[CD]2|CB[CB]2|C_G[C_G]2|\n", { responsive: "resize" })[0];
 var midiBuffer = new ABCJS.synth.CreateSynth();
 var cursorControl = {};
 var synthControl = new ABCJS.synth.SynthController();
