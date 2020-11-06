@@ -38,8 +38,8 @@ input[type=number] {
 }
 
 .abcjs-inline-audio .abcjs-btn:hover g {
-	fill: #cccccc;
-	stroke: #cccccc;
+	fill: #333;
+	stroke: #333;
 }
 
 .abcjs-inline-audio .abcjs-midi-selection.abcjs-pushed {
