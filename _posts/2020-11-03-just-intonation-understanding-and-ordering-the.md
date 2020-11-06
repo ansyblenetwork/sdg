@@ -86,7 +86,7 @@ var midiBuffer = new ABCJS.synth.CreateSynth();
 var cursorControl = {};
 var synthControl = new ABCJS.synth.SynthController();
 
-	synthControl.load("#controller", 
+synthControl.load("#controller", 
         cursorControl, 
         {
             displayLoop: true, 
@@ -95,7 +95,7 @@ var synthControl = new ABCJS.synth.SynthController();
             displayProgress: true, 
             displayWarp: true
         }
-    );
+);
     
 var startAudioButton = D("activate-audio");
 var stopAudioButton = D("stop-audio");
@@ -123,14 +123,14 @@ startAudioButton.addEventListener("click", function() {
                 options: {
                     onEnded: function() {console.log("hi");}
                 }
-                
+            }).then(function (response) {
+	    
                 synthControl.setTune(visualObj[0], false, audioParams).then(function () {
                     console.log("Audio successfully loaded.")
                 }).catch(function (error) {
                     console.warn("Audio problem:", error);
                 });
 
-            }).then(function (response) {
                 // console.log(response); // this contains the list of notes that were loaded.
                 // midiBuffer.prime actually builds the output buffer.
                 return midiBuffer.prime();
