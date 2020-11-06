@@ -147,7 +147,7 @@ var audioError = D("audio-error");
     } else audioError.setAttribute("style", "");
     
     
-    colorRange(range, color) {
+   function colorRange(range, color) {
             if (range && range.elements) {
                 range.elements.forEach(function (set) {
                     set.forEach(function (item) {
@@ -156,7 +156,7 @@ var audioError = D("audio-error");
                 });
             }
         }
-        animateCallback(lastRange, currentRange, context) {
+       function animateCallback(lastRange, currentRange, context) {
             this.colorRange(lastRange, "#000000");
             this.colorRange(currentRange, "#3D9AFC");
         }
