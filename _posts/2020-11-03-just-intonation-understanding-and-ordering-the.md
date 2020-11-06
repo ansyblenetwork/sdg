@@ -145,4 +145,6 @@ function load() {
         if (midiBuffer) midiBuffer.stop();
     });
 }
+
+			function D(string) { return document.getElementById(string);}	
 </script>
