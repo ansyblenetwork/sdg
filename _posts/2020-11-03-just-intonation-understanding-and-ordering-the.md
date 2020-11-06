@@ -121,6 +121,7 @@ var audioError = D("audio-error");
                 audioContext: audioContext,
                 millisecondsPerMeasure: visualObj.millisecondsPerMeasure(),
                 options: {
+			soundFontUrl: '',
                     onEnded: function() {console.log("hi");}
                 }
             }).then(function (response) {
