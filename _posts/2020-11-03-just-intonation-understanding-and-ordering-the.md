@@ -72,4 +72,7 @@ The first row consists of the perfect consonances, the next three consist of imp
 
 
 <div id="paper"></div>
+
+<script>
 abcjs.renderAbc("paper", "X:1\nK:D\nDDAA|BBA2|\n");
+</script>
