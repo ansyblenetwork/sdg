@@ -125,7 +125,7 @@ startAudioButton.addEventListener("click", function() {
                 }
             }).then(function (response) {
 	    
-                synthControl.setTune(visualObj[0], false, audioParams).then(function () {
+                synthControl.setTune(visualObj, false).then(function () {
                     console.log("Audio successfully loaded.")
                 }).catch(function (error) {
                     console.warn("Audio problem:", error);
