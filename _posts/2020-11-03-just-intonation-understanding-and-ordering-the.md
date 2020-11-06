@@ -94,7 +94,7 @@ function load() {
 
     startAudioButton.addEventListener("click", function() {
         startAudioButton.setAttribute("style", "display:none;");
-        explanationDiv.setAttribute("style", "opacity: 0;");
+        explanationDiv.setAttribute("style", "display:none;");
         if (ABCJS.synth.supportsAudio()) {
             stopAudioButton.setAttribute("style", "");
 
