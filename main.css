@@ -88,6 +88,21 @@ body {
     font-size: 0.8em;
 }
 
+button {
+  outline: none;
+  padding: 5px 10px;
+  font-family: Segoe UI, Roboto, Helvetica, sans-serif;  
+  color: #333;
+  border-radius: 5px;
+  border: 0px solid #fff;
+  background-color:#f4f4f4;
+}
+
+
+button:hover:enabled {  
+  background-color: white; /* #f5f5ff;  */
+}
+
 h1 {     
     font-family: Segoe UI, Roboto, Helvetica, sans-serif;  
     font-size: 1.5em;
