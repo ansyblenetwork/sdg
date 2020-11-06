@@ -76,71 +76,57 @@ The first row consists of the perfect consonances, the next three consist of imp
 <div id='audio-error' style="display:none;">Audio is not supported in this browser.</div>
 
 <script>
-load();
-function load() {
-    // First draw the music - this supplies an object that has a lot of information about how to create the synth.
-    // NOTE: If you want just the sound without showing the music, use "*" instead of "paper" in the renderAbc call.
-    var visualObj = ABCJS.renderAbc("paper", "X:1\nK:D\nDDAA|BBA2|\n", {
-        responsive: "resize" })[0];
+// First draw the music - this supplies an object that has a lot of information about how to create the synth.
+// NOTE: If you want just the sound without showing the music, use "*" instead of "paper" in the renderAbc call.
+var visualObj = ABCJS.renderAbc("paper", "X:1\nK:D\nDDAA|BBA2|\n", { responsive: "resize" })[0];
+var midiBuffer = new ABCJS.synth.CreateSynth();
 
-    // This object is the class that will contain the buffer
-    var midiBuffer;
+var startAudioButton = D("activate-audio");
+var stopAudioButton = D("stop-audio");
+var audioError = D("audio-error");
 
-    var startAudioButton = D("activate-audio");
-    var stopAudioButton = D("stop-audio");
-    var audioError = D("audio-error");
+startAudioButton.addEventListener("click", function() {
+    startAudioButton.setAttribute("style", "display:none;");
+    if (ABCJS.synth.supportsAudio()) {
+        stopAudioButton.setAttribute("style", "");
 
-    startAudioButton.addEventListener("click", function() {
-        startAudioButton.setAttribute("style", "display:none;");
-        if (ABCJS.synth.supportsAudio()) {
-            stopAudioButton.setAttribute("style", "");
+        // An audio context is needed - this can be passed in for two reasons:
+        // 1) So that you can share this audio context with other elements on your page.
+        // 2) So that you can create it during a user interaction so that the browser doesn't block the sound.
+        // Setting this is optional - if you don't set an audioContext, then abcjs will create one.
+        window.AudioContext = window.AudioContext || window.webkitAudioContext || navigator.mozAudioContext || navigator.msAudioContext;
+        var audioContext = new window.AudioContext();
+        audioContext.resume().then(function () {
+            // In theory the AC shouldn't start suspended because it is being initialized in a click handler, but iOS seems to anyway.
 
-            // An audio context is needed - this can be passed in for two reasons:
-            // 1) So that you can share this audio context with other elements on your page.
-            // 2) So that you can create it during a user interaction so that the browser doesn't block the sound.
-            // Setting this is optional - if you don't set an audioContext, then abcjs will create one.
-            window.AudioContext = window.AudioContext ||
-                window.webkitAudioContext ||
-                navigator.mozAudioContext ||
-                navigator.msAudioContext;
-            var audioContext = new window.AudioContext();
-            audioContext.resume().then(function () {
-                // In theory the AC shouldn't start suspended because it is being initialized in a click handler, but iOS seems to anyway.
-
-                // This does a bare minimum so this object could be created in advance, or whenever convenient.
-                midiBuffer = new ABCJS.synth.CreateSynth();
-
-                // midiBuffer.init preloads and caches all the notes needed. There may be significant network traffic here.
-                return midiBuffer.init({
-                    visualObj: visualObj,
-                    audioContext: audioContext,
-                    millisecondsPerMeasure: visualObj.millisecondsPerMeasure()
-                }).then(function (response) {
-                    // console.log(response); // this contains the list of notes that were loaded.
-                    // midiBuffer.prime actually builds the output buffer.
-                    return midiBuffer.prime();
-                }).then(function () {
-                    // At this point, everything slow has happened. midiBuffer.start will return very quickly and will start playing very quickly without lag.
-                    midiBuffer.start();
-                    return Promise.resolve();
-                }).catch(function (error) {
-                    if (error.status === "NotSupported") {
-                        stopAudioButton.setAttribute("style", "display:none;");
-                        audioError.setAttribute("style", "");
-                    } else console.warn("synth error", error);
-                });
+            // midiBuffer.init preloads and caches all the notes needed. There may be significant network traffic here.
+            return midiBuffer.init({
+                visualObj: visualObj,
+                audioContext: audioContext,
+                millisecondsPerMeasure: visualObj.millisecondsPerMeasure()
+            }).then(function (response) {
+                // console.log(response); // this contains the list of notes that were loaded.
+                // midiBuffer.prime actually builds the output buffer.
+                return midiBuffer.prime();
+            }).then(function () {
+                // At this point, everything slow has happened. midiBuffer.start will return very quickly and will start playing very quickly without lag.
+                midiBuffer.start();
+                return Promise.resolve();
+            }).catch(function (error) {
+                if (error.status === "NotSupported") {
+                    stopAudioButton.setAttribute("style", "display:none;");
+                    audioError.setAttribute("style", "");
+                } else console.warn("synth error", error);
             });
-        } else {
-            audioError.setAttribute("style", "");
-        }
-    });
+        });
+    } else audioError.setAttribute("style", "");
+});
 
-    stopAudioButton.addEventListener("click", function() {
-        startAudioButton.setAttribute("style", "");
-        stopAudioButton.setAttribute("style", "display:none;");
-        if (midiBuffer) midiBuffer.stop();
-    });
-}
+stopAudioButton.addEventListener("click", function() {
+    startAudioButton.setAttribute("style", "");
+    stopAudioButton.setAttribute("style", "display:none;");
+    if (midiBuffer) midiBuffer.stop();
+});
 
 function D(string) { return document.getElementById(string);}	
 </script>
