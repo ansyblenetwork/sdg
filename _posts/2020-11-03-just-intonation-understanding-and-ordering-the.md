@@ -106,11 +106,7 @@ startAudioButton.addEventListener("click", function() {
                 audioContext: audioContext,
                 millisecondsPerMeasure: visualObj.millisecondsPerMeasure(),
                 options: {
-                    onEnded: function() {                    
-                        startAudioButton.setAttribute("style", "");
-                        stopAudioButton.setAttribute("style", "display:none;");
-                        if (midiBuffer) midiBuffer.stop();
-                    }
+                    onEnded: stopFunction
                 }
             }).then(function (response) {
                 // console.log(response); // this contains the list of notes that were loaded.
@@ -130,11 +126,14 @@ startAudioButton.addEventListener("click", function() {
     } else audioError.setAttribute("style", "");
 });
 
-stopAudioButton.addEventListener("click", function() {
+stopAudioButton.addEventListener("click", stopFunction);
+});
+
+ function stopFunction() {           
     startAudioButton.setAttribute("style", "");
     stopAudioButton.setAttribute("style", "display:none;");
     if (midiBuffer) midiBuffer.stop();
-});
+}
 
 function D(string) { return document.getElementById(string);}	
 </script>
