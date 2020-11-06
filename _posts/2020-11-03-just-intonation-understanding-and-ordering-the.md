@@ -70,10 +70,12 @@ In modern music, these wavelengths are only approximate due to [equal temperamen
 
 The first row consists of the perfect consonances, the next three consist of imperfect consonances, and the last two consist of dissonances. 
 
+<div style="display:flex; flex-direction:column">
 <div id="paper"></div>
 <button id="activate-audio">Play</button>
 <button id="stop-audio" style="display:none;">Stop</button>
 <div id='audio-error' style="display:none;">Audio is not supported in this browser.</div>
+</div>
 
 <script>
 // First draw the music - this supplies an object that has a lot of information about how to create the synth.
