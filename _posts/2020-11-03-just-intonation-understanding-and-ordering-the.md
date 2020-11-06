@@ -71,13 +71,12 @@ In modern music, these wavelengths are only approximate due to [equal temperamen
 The first row consists of the perfect consonances, the next three consist of imperfect consonances, and the last two consist of dissonances. 
 
 <div id="paper"></div>
-<p id="suspend-explanation">Browsers require a button:</p>
 <button id="activate-audio">Activate Audio Context And Play</button>
 <button id="stop-audio" style="display:none;">Stop Audio</button>
 <div id='audio-error' style="display:none;">Audio is not supported in this browser.</div>
 
 <script>
-    load();
+load();
 function load() {
     // First draw the music - this supplies an object that has a lot of information about how to create the synth.
     // NOTE: If you want just the sound without showing the music, use "*" instead of "paper" in the renderAbc call.
@@ -89,12 +88,10 @@ function load() {
 
     var startAudioButton = D("activate-audio");
     var stopAudioButton = D("stop-audio");
-    var explanationDiv = D("suspend-explanation");
     var audioError = D("audio-error");
 
     startAudioButton.addEventListener("click", function() {
         startAudioButton.setAttribute("style", "display:none;");
-        explanationDiv.setAttribute("style", "display:none;");
         if (ABCJS.synth.supportsAudio()) {
             stopAudioButton.setAttribute("style", "");
 
@@ -140,11 +137,10 @@ function load() {
 
     stopAudioButton.addEventListener("click", function() {
         startAudioButton.setAttribute("style", "");
-        explanationDiv.setAttribute("style", "");
         stopAudioButton.setAttribute("style", "display:none;");
         if (midiBuffer) midiBuffer.stop();
     });
 }
 
-			function D(string) { return document.getElementById(string);}	
+function D(string) { return document.getElementById(string);}	
 </script>
