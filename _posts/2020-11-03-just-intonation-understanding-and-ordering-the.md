@@ -100,6 +100,11 @@ synthControl.load("#controller",
             displayWarp: true
         }
 );
+
+let tempos = document.querySelector(".abcjs-midi-tempo");
+for (let i = 0; i < tempos.length; i++) {
+	tempos.value = 99;
+}
     
 var startAudioButton = D("activate-audio");
 var stopAudioButton = D("stop-audio");
