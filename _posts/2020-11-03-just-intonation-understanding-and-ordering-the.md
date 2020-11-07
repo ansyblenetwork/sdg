@@ -101,12 +101,6 @@ synthControl.load("#controller",
         }
 );
 
-let tempos = document.querySelectorAll(".abcjs-midi-tempo");
-for (let i = 0; i < tempos.length; i++) {
-	tempos[i].value = 99;
-	tempos[i].value = 100;
-}
-    
 var startAudioButton = D("activate-audio");
 var stopAudioButton = D("stop-audio");
 var audioError = D("audio-error");
@@ -138,6 +132,13 @@ var audioError = D("audio-error");
 	    
                 synthControl.setTune(visualObj, false).then(function () {
                     console.log("Audio successfully loaded.")
+		    
+			let tempos = document.querySelectorAll(".abcjs-midi-tempo");
+			for (let i = 0; i < tempos.length; i++) {
+				tempos[i].value = 99;
+				tempos[i].value = 100;
+			}
+
                 }).catch(function (error) {
                     console.warn("Audio problem:", error);
                 });
