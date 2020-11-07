@@ -14,7 +14,7 @@ $$\frac{2}{3}, \frac{2^3}{3^2}, \frac{2^4}{3^3}, \frac{2^6}{3^4}, \frac{2^7}{3^5
 
 Here, we have used the octave equivalents with wavelength between 1/2 and 1 - within an octave above the root note. We perform successive approximations which justify the intervals (pun intended...?):
 
-1) Recall the approximations for the major third and closing the circle of fifths:
+1) Recall the approximations for the major third and closing the circle of fifths, respectively:
 
 $$\frac{4}{5} \approx \frac{2^6}{3^4}, \qquad 1 \approx \frac{2^{19}}{3^{12}}.$$
 
