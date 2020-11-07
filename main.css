@@ -2,7 +2,7 @@
 
 
 .sheetmusic {
-	overflow-x:auto;
+	overflow-x:auto !important;
 	width:100%;
 }
 
