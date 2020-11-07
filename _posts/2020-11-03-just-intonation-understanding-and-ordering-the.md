@@ -101,7 +101,7 @@ synthControl.load("#controller",
         }
 );
 
-let tempos = document.querySelector(".abcjs-midi-tempo");
+let tempos = document.querySelectorAll(".abcjs-midi-tempo");
 console.log("before trying to change");
 for (let i = 0; i < tempos.length; i++) {
 	tempos[i].value = 99;
