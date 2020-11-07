@@ -1,7 +1,10 @@
 /* Some basic CSS to make the Audio controls in abcjs presentable. */
 
 
-
+.sheetmusic {
+	overflow-x:auto;
+	width:100%;
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
