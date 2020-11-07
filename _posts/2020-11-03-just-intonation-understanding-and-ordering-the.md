@@ -102,10 +102,9 @@ synthControl.load("#controller",
 );
 
 let tempos = document.querySelectorAll(".abcjs-midi-tempo");
-console.log("before trying to change");
 for (let i = 0; i < tempos.length; i++) {
 	tempos[i].value = 99;
-	console.log("trying to change");
+	tempos[i].value = 100;
 }
     
 var startAudioButton = D("activate-audio");
