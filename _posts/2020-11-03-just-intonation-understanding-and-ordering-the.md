@@ -86,7 +86,7 @@ The first row consists of the perfect consonances, the next three consist of imp
 	var test = "X:1\nK:C\nQ:1/4=60\nCG[CG]2|CE[CE]2|CA[CA]2|CD[CD]2|CB[CB]2|C_G[C_G]2|\n";
 	
 var visualObj = ABCJS.renderAbc("paper", test, { add_classes: true, 
-			clickListener: self.clickListener, wrap: { minSpacing: 1.8, maxSpacing: 2.7, preferredMeasuresPerLine: 4 } })[0];
+			clickListener: self.clickListener, responsive: "resize" })[0];
 var midiBuffer = new ABCJS.synth.CreateSynth();
 var synthControl = new ABCJS.synth.SynthController();
 
