@@ -12,7 +12,7 @@ Recall that we have 12 notes corresponding to the following wavelengths, derived
 
 $$\frac{2}{3}, \frac{2^3}{3^2}, \frac{2^4}{3^3}, \frac{2^6}{3^4}, \frac{2^7}{3^5}, \frac{2^9}{3^6}, \frac{2^{11}}{3^7}, \frac{2^{12}}{3^8}, \frac{2^{14}}{3^9}, \frac{2^{15}}{3^{10}}, \frac{2^{17}}{3^{11}}, \frac{2^{19}}{3^{12}}.$$
 
-Here, we have used the octave equivalents with wavelength between 1/2 and 1 - within an octave above the root note. We perform successive approximations which justify the intervals (pun intended...?):
+Here, by choosing the numerators to be appropriate powers of 2, we have used the octave equivalents with wavelength between 1/2 and 1, lying within an octave above the root note. We perform successive approximations which justify the intervals (pun intended...?):
 
 1) Recall the approximations for the major third and closing the circle of fifths, respectively:
 
