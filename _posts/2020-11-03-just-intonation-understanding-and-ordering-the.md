@@ -143,7 +143,7 @@ var audioError = D("audio-error");
                 }
             }).then(function (response) {
 	    
-                synthControl.setTune(visualObj, false).then(function () {
+                synthControl.setTune(visualObj, false, {qpm: visualObj.getBpm()}).then(function () {
                     console.log("Audio successfully loaded.")
 		    
 			let tempos = document.querySelectorAll(".abcjs-midi-tempo");
