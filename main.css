@@ -2,7 +2,7 @@
 
 
 
-.mjx-chtml MathJax_CHTML {
+.mjx-chtml, .MathJax_CHTML {
 	width:100%;
 	overflow-x:auto;
 }
