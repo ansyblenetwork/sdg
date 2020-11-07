@@ -85,10 +85,22 @@ The first row consists of the perfect consonances, the next three consist of imp
 // NOTE: If you want just the sound without showing the music, use "*" instead of "paper" in the renderAbc call.
 	var test = "X:1\nK:C\nQ:1/4=60\nCG[CG]2|CE[CE]2|CA[CA]2|CD[CD]2|CB[CB]2|C_G[C_G]2|\n";
 	
-var visualObj = ABCJS.renderAbc("paper", test, { add_classes: true, responsive: "resize" })[0];
+var visualObj = ABCJS.renderAbc("paper", test, { add_classes: true, 
+			clickListener: self.clickListener, responsive: "resize" })[0];
 var midiBuffer = new ABCJS.synth.CreateSynth();
 var cursorControl = {};
 var synthControl = new ABCJS.synth.SynthController();
+
+
+function clickListener(abcElem) {
+	var lastClicked = abcElem.midiPitches;
+	if (!lastClicked) return;
+	ABCJS.synth.playEvent(lastClicked, abcElem.midiGraceNotePitches, synthControl.visualObj.millisecondsPerMeasure()).then(function (response) {
+		console.log("note played");
+	}).catch(function (error) {
+		console.log("error playing note", error);
+	});
+}
 
 synthControl.load("#controller", 
         cursorControl, 
