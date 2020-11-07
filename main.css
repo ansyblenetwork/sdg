@@ -13,10 +13,10 @@ input[type=number] {
 
 
 		.highlight {
-			fill: #0a9ecc;
+			fill: #008B8B;
 		}
 		.abcjs-cursor {
-			stroke: red;
+			/*stroke: red;*/
 		}
 
 .abcjs-inline-audio {
