@@ -2,11 +2,6 @@
 
 
 
-.mjx-chtml, .MathJax_CHTML {
-	width:100%;
-	overflow-x:auto;
-}
-
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -446,5 +441,12 @@ h2 a:hover {
   ::-webkit-scrollbar {
     height: 0px;
   }
+	  
+	  
+.mjx-chtml, .MathJax_CHTML {
+	width:100%;
+	overflow-x:auto;
+}
+
 
 }
