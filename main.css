@@ -304,7 +304,11 @@ button {
 
 
 button:hover:enabled {  
-  background-color: white;  #f5f5ff;  */
+  background-color: white;  
+}
+
+.abcjs-midi-progress-background:hover {	
+  background-color: #008b8b !important;  
 }
 
 h1 {     
