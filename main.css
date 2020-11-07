@@ -11,6 +11,14 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+
+		.highlight {
+			fill: #0a9ecc;
+		}
+		.abcjs-cursor {
+			stroke: red;
+		}
+
 .abcjs-inline-audio {
 	height: 26px;
 	padding: 0 5px;
