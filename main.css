@@ -5,8 +5,16 @@
 .mjx-chtml, .MathJax_CHTML {
 	overflow-y:hidden;
 	overflow-x:auto;
-  	scrollbar-width: thin;
+  	scrollbar-width: none;
 }  
+
+ .mjx-chtml::-webkit-scrollbar {
+    height: 0px;
+  }
+
+ .MathJax_CHTML::-webkit-scrollbar {
+    height: 0px;
+  }
 
 .sheetmusic {
 	overflow-x:auto !important;
