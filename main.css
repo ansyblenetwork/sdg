@@ -11,6 +11,13 @@
 	text-align:center;
 }
 
+.controller {
+	position:relative; 
+	width:calc(100% + 360px + 35px); 
+	left:calc(-360px - 35px); 
+	padding-left:calc(360px + 35px);
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
