@@ -71,18 +71,15 @@ In modern music, these wavelengths are only approximate due to [equal temperamen
 The first row consists of the perfect consonances, the next three consist of imperfect consonances, and the last two consist of dissonances. 
 
 <div style="display:flex; flex-direction:column; align-items:center">
-<div id="paper" class="sheetmusic"></div>
-<div id="controller" style="position:relative; width:calc(100% + 360px + 35px); left:calc(-180px - 17.5px); padding-left:calc(360px + 35px);"></div>
+	<div id="paper" class="sheetmusic"></div>
+	<div id="controller" style="position:relative; width:calc(100% + 360px + 35px); left:calc(-180px - 17.5px); padding-left:calc(360px + 35px);"></div>
 </div>	
 					
 <script>
-// First draw the music - this supplies an object that has a lot of information about how to create the synth.
 // NOTE: If you want just the sound without showing the music, use "*" instead of "paper" in the renderAbc call.
 	var test = "X:1\nK:C\nQ:1/4=60\nCG[CG]2|CE[CE]2|CA[CA]2|CD[CD]2|CB[CB]2|C_G[C_G]2|\n";
 	
 var visualObj = ABCJS.renderAbc("paper", test, { add_classes: true, clickListener: self.clickListener })[0];
-var midiBuffer = new ABCJS.synth.CreateSynth();
-var synthControl = new ABCJS.synth.SynthController();
 
 synthControl.load("#controller", cursorControl, 
         {
@@ -94,8 +91,9 @@ synthControl.load("#controller", cursorControl,
         }
 );
 
-
-    if (ABCJS.synth.supportsAudio()) {
+    if (ABCJS.synth.supportsAudio()) {    
+	var midiBuffer = new ABCJS.synth.CreateSynth();
+	var synthControl = new ABCJS.synth.SynthController();
         window.AudioContext = window.AudioContext || window.webkitAudioContext || navigator.mozAudioContext || navigator.msAudioContext;
         var audioContext = new window.AudioContext();
         audioContext.resume().then(function () {
