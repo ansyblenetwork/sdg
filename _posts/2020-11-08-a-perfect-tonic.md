@@ -30,7 +30,7 @@ X:1
 K:C
 L: 1/4
 Q:1/4=60
-C[D_B,][EA,][FG,]
+C[D_B,][EA,][GF,]
 w: tonic supertonic/subtonic mediant/submediant dominant/subdominant
 `);
 D('scale2').style.display = "none";
