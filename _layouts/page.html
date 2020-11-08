@@ -184,13 +184,18 @@ var mobile = false;
 if(D('specialPost')) D('specialPost').scrollIntoView({behavior: "auto", block: "center", inline: "nearest"}); 
 if (screen.width <= 550 || screen.height <= 550) {
 	mobile = true;	
-	if (D("controller")) {
-		D("controller").style.paddingLeft = "0px";
-		D("controller").style.left = "0px";
-		D("controller").style.width = "100%";
-		D("controller").style.position = "static";
+	
+	let controllers = document.querySelectorAll(".controller");
+	for (let i = 0; i < controllers.length; i++) {
+		controllers[i].style.paddingLeft = "0px";
+		controllers[i].style.left = "0px";
+		controllers[i].style.width = "100%";
+		controllers[i].style.position = "static";
 	}
-	D('main').onclick = function() { D('outersidebar').scrollTo(0, 0); };
+	D('main').onclick = function() { D('outersidebar').scrollTo({
+	  top: 1000,
+	  left: 1000,
+	  behavior: 'smooth'});
 }
 else {				
 	window.addEventListener("resize", resizeFunction);
@@ -200,10 +205,12 @@ else {
 		var w = D('accountPanel').offsetWidth + 40;
 		D("main").style.marginLeft = `${w}px`;
 		D("main").style.width = `calc(100% - ${w}px)`;
-		if (D("controller")) {
-			D("controller").style.paddingLeft = `${w + 35}px`;
-			D("controller").style.left = `-${w + 35}px`;
-			D("controller").style.width = `calc(100% + ${w + 35}px)`;
+		
+		let controllers = document.querySelectorAll(".controller");
+		for (let i = 0; i < controllers.length; i++) {
+			controllers[i].style.paddingLeft = `${w + 35}px`;
+			controllers[i].style.left = `-${w + 35}px`;
+			controllers[i].style.width = `calc(100% + ${w + 35}px)`;
 		}
 		setTimeout(function(){					
 			var w = D('accountPanel').offsetWidth + 40;
