@@ -89,19 +89,8 @@ var visualObj = ABCJS.renderAbc("paper", test, { add_classes: true,
 			clickListener: self.clickListener })[0];
 var midiBuffer = new ABCJS.synth.CreateSynth();
 var synthControl = new ABCJS.synth.SynthController();
-
 var cursorControl = new CursorControl();
 
-
-function clickListener(abcElem) {
-	var lastClicked = abcElem.midiPitches;
-	if (!lastClicked) return;
-	ABCJS.synth.playEvent(lastClicked, abcElem.midiGraceNotePitches, synthControl.visualObj.millisecondsPerMeasure()).then(function (response) {
-		console.log("note played");
-	}).catch(function (error) {
-		console.log("error playing note", error);
-	});
-}
 
 synthControl.load("#controller", 
         cursorControl, 
@@ -118,15 +107,8 @@ var startAudioButton = D("activate-audio");
 var stopAudioButton = D("stop-audio");
 var audioError = D("audio-error");
 
-
-
     startAudioButton.setAttribute("style", "display:none;");
     if (ABCJS.synth.supportsAudio()) {
-
-        // An audio context is needed - this can be passed in for two reasons:
-        // 1) So that you can share this audio context with other elements on your page.
-        // 2) So that you can create it during a user interaction so that the browser doesn't block the sound.
-        // Setting this is optional - if you don't set an audioContext, then abcjs will create one.
         window.AudioContext = window.AudioContext || window.webkitAudioContext || navigator.mozAudioContext || navigator.msAudioContext;
         var audioContext = new window.AudioContext();
         audioContext.resume().then(function () {
@@ -152,11 +134,8 @@ var audioError = D("audio-error");
 				tempos[i].value = 100;
 			}
 
-                }).catch(function (error) {
-                    console.warn("Audio problem:", error);
-                });
+                }).catch(function (error) {  console.warn("Audio problem:", error);  });
 
-                // console.log(response); // this contains the list of notes that were loaded.
                 // midiBuffer.prime actually builds the output buffer.
                 return midiBuffer.prime();
             }).then(function () {
@@ -172,19 +151,6 @@ var audioError = D("audio-error");
     } else audioError.setAttribute("style", "");
     
     
-   function colorRange(range, color) {
-            if (range && range.elements) {
-                range.elements.forEach(function (set) {
-                    set.forEach(function (item) {
-                        item.attr({fill: color});
-                    });
-                });
-            }
-        }
-       function animateCallback(lastRange, currentRange, context) {
-            this.colorRange(lastRange, "#000000");
-            this.colorRange(currentRange, "#3D9AFC");
-        }
     
 
 startAudioButton.addEventListener("click", function() {
