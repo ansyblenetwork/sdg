@@ -2,7 +2,7 @@
 title: "Just intonation: Ordering the intervals by consonance"
 ---
 
-Previously, we discussed why there are at least [twelve notes]({{ "" | relative_url }}{% post_url 2020-11-01-the-circle-of-fifths-why-there %}) in Western music, and why they [suffice]({{ "" | relative_url }}{% post_url 2020-11-02-temperament-compromising-consonances %}). In a nutshell, the selection of twelve notes prioritizes the ability to play perfect fifths, and the choice of temperament compromises this with the ability to play other consonant intervals.
+Previously, we discussed why there are at least [twelve notes]({{ "" | relative_url }}{% post_url 2020-11-01-the-circle-of %}) in Western music, and why they [suffice]({{ "" | relative_url }}{% post_url 2020-11-02-temperament-compromising-consonances %}). In a nutshell, the selection of twelve notes prioritizes the ability to play perfect fifths, and the choice of temperament compromises this with the ability to play other consonant intervals.
 
 In today's post we look for such consonances approximated by these 12 notes. It is clear that not all 12 intervals are consonant: This corresponds with the fact that slamming a piano with random notes does not sound good, and why despite all of the combinatorial possibilities, simultaneous notes in classical music almost always stem from canonical chords and triads.
 
@@ -22,7 +22,7 @@ We implement these approximations in our list of notes, keeping in mind this als
 
 $$\frac{2}{3}, \frac{8}{9}, \frac{2^4}{3^3}, \frac{4}{5}, \frac{2^7}{3^5}, \frac{2^9}{3^6}, \frac{2^{11}}{3^7}, \frac{5}{8}, \frac{3^3}{2^5}, \frac{9}{16}, \frac{3}{4}, 1.$$
 
-2) Recall the last element of our list of [small integer ratios]({{ "" | relative_url }}{% post_url 2020-11-01-the-circle-of-fifths-why-there %}), 3/5. This corresponds to a major sixth and has the approximation
+2) Recall the last element of our list of [small integer ratios]({{ "" | relative_url }}{% post_url 2020-11-01-the-circle-of %}), 3/5. This corresponds to a major sixth and has the approximation
 
 $$\frac{3}{5} \approx \frac{2^4}{3^3}.$$
 
