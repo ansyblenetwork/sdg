@@ -138,6 +138,18 @@
 			    stopAudioButton.setAttribute("style", "display:none;");
 			    if (midiBuffer) midiBuffer.stop();
 			}
+			
+			
+
+			function clickListener(abcElem) {
+				var lastClicked = abcElem.midiPitches;
+				if (!lastClicked) return;
+				ABCJS.synth.playEvent(lastClicked, abcElem.midiGraceNotePitches, synthControl.visualObj.millisecondsPerMeasure()).then(function (response) {
+					console.log("note played");
+				}).catch(function (error) {
+					console.log("error playing note", error);
+				});
+			}
 
 
 			function D(string) { return document.getElementById(string);}	
