@@ -6,6 +6,8 @@ I have an admission to make: It takes me too long - perhaps a second or two - to
 
 This brings me to today's question: What are the principles guiding the longform names of the intervals?
 
+$$$ Scale degree names
+
 <div id="scale"></div>
 <script>
 makeInteractive("scale", `
@@ -17,3 +19,23 @@ CDEFGAB
 w: tonic supertonic mediant subdominant dominant submediant leading~tone
 `);
 </script>
+
+It turns out this chart is an anachronism. The more revealing chart:
+
+
+<div id="scale2"></div>
+<script>
+makeInteractive("scale2", `
+X:1
+K:C
+L: 1/4
+Q:1/4=60
+C[DB][EA][FG]
+w: tonic supertonic/subtonic mediant/submediant dominant/subdominant
+`);
+</script>
+
+
+1. The _tonic_ is obviously very important and probably has etymologically origins common with the word "tone."
+2. _Mediant_ means "middle," and it lies halfway between the tonic and dominant.
+3. _Dominant_
