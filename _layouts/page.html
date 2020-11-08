@@ -19,6 +19,7 @@ function makeInteractive(controller, test) {
 	newDiv.id = controller + "sheet";
 	let paper = newDiv.id;
 	newDiv.classList.add("sheetmusic");
+	newDiv.onclick = function() { D(controller).firstElementChild.focus(); };
 	
 	D(controller).classList.add("controller");
 	D(controller).parentNode.insertBefore(newDiv, D(controller));
