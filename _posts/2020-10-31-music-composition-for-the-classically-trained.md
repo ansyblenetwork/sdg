@@ -10,7 +10,7 @@ title: "Music composition for the classically trained pianist"
 
 The objective of this blog is to document my progress as I learn about music theory with an eye toward composition. My experience with online resources is that they tend to be split between very elementary and very mature, neither of which is appropriate for someone like me: A classically trained amateur pianist with no theory education. 
 
-I hope this resource may be of use to other amateur musicians trained in performance but not theory. I will only be posting about material that comes as a surprise to me - material that presumably does not develop spontaneously from practicing and performing music (at least at an amateur level). For instance, I won't be "wasting" time reviewing performance notation. 
+I hope this resource may be of use to a specific demographic which I have a feeling is more common than its description would suggest: Amateur musicians trained in performance but not theory, who are interested in composition and improvisation. I will only be posting about material that comes as a surprise to me - material that presumably does not develop spontaneously from practicing and performing music (at least at an amateur level). For instance, I won't be "wasting" time reviewing performance notation. 
 
 <h3>About me</h3>
 
