@@ -235,7 +235,7 @@ function CursorControl() {
 			var note = ev.elements[i];
 			for (var j = 0; j < note.length; j++) {
 				note[j].classList.add("highlight");
-				note[j].scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"}); 
+				note[j].scrollIntoView({behavior: "auto", block: "nearest", inline: "nearest"}); 
 			}
 		}
 
