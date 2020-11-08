@@ -6,7 +6,7 @@ I have an admission to make: It takes me too long - perhaps a second or two - to
 
 This brings me to today's question: What are the principles guiding the longform names of the intervals?
 
-$$$ Scale degree names
+### Scale degree names
 
 <div id="scale"></div>
 <script>
@@ -18,10 +18,10 @@ Q:1/4=60
 CDEFGAB
 w: tonic supertonic mediant subdominant dominant submediant leading~tone
 `);
+D('scale').style.display = "none";
 </script>
 
 It turns out this chart is anachronistic. The more revealing chart:
-
 
 <div id="scale2"></div>
 <script>
@@ -33,6 +33,7 @@ Q:1/4=60
 C[DB,][EA,][FG,]
 w: tonic supertonic/subtonic mediant/submediant dominant/subdominant
 `);
+D('scale2').style.display = "none";
 </script>
 
 
