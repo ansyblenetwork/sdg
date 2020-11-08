@@ -67,6 +67,7 @@
 				function resizeFunction() { 
 					var w = D('accountPanel').offsetWidth + 40;
 					D("main").style.marginLeft = `${w}px`;
+					D("main").style.width = `calc(100% - ${w}px)`;
 					if (D("controller")) {
 						D("controller").style.paddingLeft = `${w + 35}px`;
 						D("controller").style.left = `-${w/2 + 17.5}px`;
@@ -75,6 +76,7 @@
 					setTimeout(function(){					
 						var w = D('accountPanel').offsetWidth + 40;
 						D("main").style.marginLeft = `${w}px`;
+						D("main").style.width = `calc(100% - ${w}px)`;
 					}, 150);			 
 				}  
 			}
