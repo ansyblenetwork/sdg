@@ -63,6 +63,7 @@
 			else {				
 				window.addEventListener("resize", resizeFunction);
 				D("accountPanel").onclick = resizeFunction;
+				resizeFunction();
 				function resizeFunction() { 
 					var w = D('accountPanel').offsetWidth + 40;
 					D("main").style.marginLeft = `${w}px`;
