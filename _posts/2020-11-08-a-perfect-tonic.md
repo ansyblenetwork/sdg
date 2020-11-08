@@ -14,6 +14,6 @@ K:C
 L: 1/4
 Q:1/4=60
 CDEFGAB
-w: tonic supertonic mediant subdominant dominant submediant leading-tone
+w: tonic supertonic mediant subdominant dominant submediant leading_tone
 `);
 </script>
