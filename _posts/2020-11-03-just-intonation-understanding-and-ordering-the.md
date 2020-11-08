@@ -89,8 +89,6 @@ var visualObj = ABCJS.renderAbc("paper", test, { add_classes: true,
 			clickListener: self.clickListener })[0];
 var midiBuffer = new ABCJS.synth.CreateSynth();
 var synthControl = new ABCJS.synth.SynthController();
-var cursorControl = new CursorControl();
-
 
 synthControl.load("#controller", 
         cursorControl, 
@@ -150,9 +148,6 @@ var audioError = D("audio-error");
         });
     } else audioError.setAttribute("style", "");
     
-    
-    
-
 startAudioButton.addEventListener("click", function() {
     startAudioButton.setAttribute("style", "display:none;");
     if (midiBuffer) midiBuffer.start();
