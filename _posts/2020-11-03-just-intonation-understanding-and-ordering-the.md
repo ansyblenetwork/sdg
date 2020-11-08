@@ -70,10 +70,9 @@ In modern music, these wavelengths are only approximate due to [equal temperamen
 
 The first row consists of the perfect consonances, the next three consist of imperfect consonances, and the last two consist of dissonances. 
 
-<div style="display:flex; flex-direction:column; align-items:center">
 	<div id="paper" class="sheetmusic"></div>
 	<div id="controller" style="position:relative; width:calc(100% + 360px + 35px); left:calc(-180px - 17.5px); padding-left:calc(360px + 35px);"></div>
-</div>	
+
 					
 <script>
 // NOTE: If you want just the sound without showing the music, use "*" instead of "paper" in the renderAbc call.
@@ -81,19 +80,19 @@ The first row consists of the perfect consonances, the next three consist of imp
 	
 var visualObj = ABCJS.renderAbc("paper", test, { add_classes: true, clickListener: self.clickListener })[0];
 
-synthControl.load("#controller", cursorControl, 
-        {
-            displayLoop: true, 
-            displayRestart: true, 
-            displayPlay: true, 
-            displayProgress: true, 
-            displayWarp: true
-        }
-);
+	var synthControl = new ABCJS.synth.SynthController();
+	synthControl.load("#controller", cursorControl, 
+		{
+		    displayLoop: true, 
+		    displayRestart: true, 
+		    displayPlay: true, 
+		    displayProgress: true, 
+		    displayWarp: true
+		}
+	);
 
     if (ABCJS.synth.supportsAudio()) {    
 	var midiBuffer = new ABCJS.synth.CreateSynth();
-	var synthControl = new ABCJS.synth.SynthController();
         window.AudioContext = window.AudioContext || window.webkitAudioContext || navigator.mozAudioContext || navigator.msAudioContext;
         var audioContext = new window.AudioContext();
         audioContext.resume().then(function () {
