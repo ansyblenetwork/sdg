@@ -19,7 +19,7 @@
 		<div class="rpanel" style="flex-grow: 1; position:relative; min-width:250px;" id="accountPanel">
 			<h2><a href="{{ "" | absolute_url }}">Soli Deo gloria</a></h2>
 			<div style="margin-bottom:15px" class="date-format" style="padding-bottom:15px">Music composition for the classically trained pianist</div>
-			<ul style="overflow:auto;">
+			<ul style="overflow:auto; margin-bottom:50px;">
 				{% for post in site.posts %}					
 					{% if page.title == post.title %}	
 						<li id="specialPost" style="background-color:#f4f4f4"><span class="date-format">{{ post.date | date: "%B %-d, %Y" }}</span><br>
@@ -29,7 +29,7 @@
 							{{ post.title }}</li></a>				
 					{% endif %}
 				{% endfor %}
-				<br>
+				<br><br>
 			</ul>
 			<div class="aboutpanel">
 				<a href="{{ site.posts.last.url | relative_url }}">About</a>
