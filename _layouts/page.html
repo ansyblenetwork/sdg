@@ -184,10 +184,12 @@ var mobile = false;
 if(D('specialPost')) D('specialPost').scrollIntoView({behavior: "auto", block: "center", inline: "nearest"}); 
 if (screen.width <= 550 || screen.height <= 550) {
 	mobile = true;	
-	D("controller").style.paddingLeft = "0px";
-	D("controller").style.left = "0px";
-	D("controller").style.width = "100%";
-	D("controller").style.position = "static";
+	if (D("controller")) {
+		D("controller").style.paddingLeft = "0px";
+		D("controller").style.left = "0px";
+		D("controller").style.width = "100%";
+		D("controller").style.position = "static";
+	}
 	D('main').onclick = function() { D('main').scrollTo(0, 0); };
 }
 else {				
