@@ -37,6 +37,6 @@ D('scale2').style.display = "none";
 </script>
 
 
-1. The _tonic_ is obviously very important and probably has etymologically origins common with the word "tone."
+1. The _tonic_ is obviously very important and probably has etymological origins common with the word "tone."
 2. _Mediant_ means "middle," and it lies halfway between the tonic and dominant.
 3. _Dominant_
