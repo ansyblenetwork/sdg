@@ -1,7 +1,9 @@
 /* Some basic CSS to make the Audio controls in abcjs presentable. */
 
 
-
+.abcjs-note {
+	scroll-margin:30px;
+}
 
 .sheetmusic {
 	overflow-x:auto !important;
