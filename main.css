@@ -1,6 +1,10 @@
 /* Some basic CSS to make the Audio controls in abcjs presentable. */
 
 
+    svg .abcjs-tempo {
+	display:none;
+    }
+
 .abcjs-note {
 	scroll-margin:40px;
 }
