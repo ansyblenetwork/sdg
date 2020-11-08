@@ -30,7 +30,7 @@ We implement this and its inversion:
 
 $$\frac{2}{3}, \frac{8}{9}, \frac{3}{5}, \frac{4}{5}, \frac{2^7}{3^5}, \frac{2^9}{3^6}, \frac{2^{11}}{3^7}, \frac{5}{8}, \frac{5}{6}, \frac{9}{16}, \frac{3}{4}, 1.$$
 
-3) The remaining intervals may be viewed as dissonant, since they do not come naturally from our list of small integer ratios. Still, we may mildly temper them with the approximations
+3) The remaining intervals may be viewed as dissonant, since they do not come naturally from our list of small integer ratios. Still, we may mildly temper three of them with the approximations
 
 $$\frac{8}{15} \approx \frac{2^7}{3^5},$$
 
@@ -68,9 +68,8 @@ In modern music, these wavelengths are only approximate due to [equal temperamen
 | 8/15 | major seventh (inversion of minor second) |
 | 32/45 | diminished fifth (inversion of itself) |
 
-The first row consists of the perfect consonances, the next three consist of imperfect consonances, and the last two consist of dissonances. 
+The first row consists of the perfect consonances, the next two consist of imperfect consonances, and the last two consist of dissonances. The category of the 8/9 ratio, which did not come from the small integer ratios, depends on which resource you consult. Wikipedia lists it as consonant with a "citation needed" caveat.
 <div id="controller1"></div>
-
 <script>	
 makeInteractive("controller1",`
 X:1
