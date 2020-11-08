@@ -2,7 +2,7 @@
 title: "Temperament: Compromising consonances"
 ---
 
-Recall the list of small integer ratios from our [discussion of consonance]({{ "" | relative_url }}{% post_url 2020-11-01-the-circle-of-fifths-why-there %}):
+Recall the list of small integer ratios from our [discussion of consonance]({{ "" | relative_url }}{% post_url 2020-11-01-the-circle-of %}):
 
 $$\frac{1}{2}; \frac{2}{3}, \frac{3}{4}; \frac{4}{5}; \frac{3}{5}.$$
 
@@ -16,7 +16,7 @@ However, it turns out that Western music does not introduce the wavelengths gene
 
 $$\frac{4}{5} \approx \frac{2^6}{3^4}.$$
 
-The note generation scheme outlined so far using the [circle of fifths]({{ "" | relative_url }}{% post_url 2020-11-01-the-circle-of-fifths-why-there %}) is known as the _Pythagorean tuning_, with the hope that all other consonant intervals may be approximated by such ratios of 2 and 3. Unfortunately, these approximations, including the one above for the major third, cause noticeable distortions.
+The note generation scheme outlined so far using the [circle of fifths]({{ "" | relative_url }}{% post_url 2020-11-01-the-circle-of %}) is known as the _Pythagorean tuning_, with the hope that all other consonant intervals may be approximated by such ratios of 2 and 3. Unfortunately, these approximations, including the one above for the major third, cause noticeable distortions.
 
 ### Meantone temperament
 
@@ -30,7 +30,7 @@ Unfortunately, it turns out that the approximation
 
 $$1 \approx \frac{2^{19}}{\tilde 3^{12}}$$
 
-closing the [circle of fifths]({{ "" | relative_url }}{% post_url 2020-11-01-the-circle-of-fifths-why-there %}) is worse compared to Pythagorean tuning, and causes out-of-tune intervals known as _wolf intervals_.
+closing the [circle of fifths]({{ "" | relative_url }}{% post_url 2020-11-01-the-circle-of %}) is worse compared to Pythagorean tuning, and causes out-of-tune intervals known as _wolf intervals_.
 
 ### Equal temperament
 
