@@ -2,9 +2,9 @@
 title: "A perfect tonic: Naming the intervals"
 ---
 
-I have an admission to make: It takes me too long - perhaps a second or two - to recall the names of notes written on the staff (I do a better job of it if I'm sitting at a piano). I discovered this when trying to copy sheet music into Musescore the other day. However, I'm not ashamed of this. There is essentially no meaning to the lettered names of the notes; they are merely a semanticless anthropogenic convention.
+I have an admission to make: It takes me too long - perhaps a second or two - to recall the names of notes written on the staff (I do a better job of it if I'm sitting at a piano). I discovered this when trying to copy sheet music into Musescore the other day. However, I'm not ashamed of this. There is essentially no meaning to the lettered names of the notes; they are merely a semantic-less anthropogenic convention.
 
-This brings me to today's question: What are the principles guiding the longform names of the intervals?
+This brings me to today's question: What are the principles guiding the _longform_ names of the intervals?
 
 ### Scale degree names
 
