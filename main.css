@@ -33,8 +33,6 @@ input[type=number] {
 	display: flex;
 	align-items: center;
 	box-sizing: border-box;
-	position:relative;
-	z-index:10;
 }
 
 .abcjs-inline-audio .abcjs-btn {
@@ -429,7 +427,7 @@ h2 a:hover {
     .sidebartab {
     scroll-snap-align: start;
      position: absolute;
-      width: calc(25vw);
+      width: 35px;
       height:100%;
       pointer-events:auto;
       left:75vw;
