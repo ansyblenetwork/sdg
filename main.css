@@ -236,8 +236,8 @@ input[type=number] {
 
 .aboutpanel {
   background-color:#f4f4f4;
-  padding:5px 8px 5px 8px;
-  border-radius:5px;
+  position:absolute; 
+  bottom:0px;
 }
 
 .sidebar a {
@@ -373,10 +373,6 @@ h2 a:hover {
     color: #888;
 }
 
-.aboutpanel {
-  position:absolute; 
-  bottom:0px;
-}
 
 @media only screen 
   and (max-device-width: 450px), (max-device-height: 450px) { 
