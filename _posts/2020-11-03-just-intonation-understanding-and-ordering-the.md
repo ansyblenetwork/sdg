@@ -69,7 +69,8 @@ In modern music, these wavelengths are only approximate due to [equal temperamen
 | 32/45 | diminished fifth (inversion of itself) |
 
 The first row consists of the perfect consonances, the next three consist of imperfect consonances, and the last two consist of dissonances. 
-<div id="controller1" class="controller"></div>
+<div id="controller1"></div>
+
 <script>	
 makeInteractive("controller1",`
 X:1
