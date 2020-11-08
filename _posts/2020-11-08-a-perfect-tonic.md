@@ -7,12 +7,13 @@ I have an admission to make: It takes me too long - perhaps a second or two - to
 This brings me to today's question: What are the principles guiding the longform names of the intervals?
 
 <div id="scale"></div>
-<Script>
+<script>
 makeInteractive("scale", `
 X:1
 K:C
 L: 1/4
 Q:1/4=60
-CDEF|GABC
+CDEF|GABC  
+w: tonic supertonic mediant subdominant dominant submediant leading-tone
 `);
 </script>
