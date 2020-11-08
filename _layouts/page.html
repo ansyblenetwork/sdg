@@ -131,6 +131,15 @@
 					}
 				};
 			}			
+
+			function stopFunction() {     
+			    console.log("stopped");
+			    startAudioButton.setAttribute("style", "");
+			    stopAudioButton.setAttribute("style", "display:none;");
+			    if (midiBuffer) midiBuffer.stop();
+			}
+
+
 			function D(string) { return document.getElementById(string);}	
 		</script>
 	</body>		
