@@ -20,7 +20,7 @@ w: tonic supertonic mediant subdominant dominant submediant leading~tone
 `);
 </script>
 
-It turns out this chart is an anachronism. The more revealing chart:
+It turns out this chart is anachronistic. The more revealing chart:
 
 
 <div id="scale2"></div>
