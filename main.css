@@ -233,7 +233,7 @@ input[type=number] {
 
 .aboutpanel {
   background-color:#f4f4f4;
-  padding:5px;
+  padding:5px 8px 5px 8px;
   border-radius:5px;
 }
 
