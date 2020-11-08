@@ -8,7 +8,9 @@ title: "Music composition for the classically trained pianist"
   <p>- Bernard Chazelle, <i>Discovering the Cosmology of Bach</i></p>
 </div>
 
-The objective of this blog is to track my progress as I learn about music theory with an eye toward composition. My experience with online resources is that they tend to be split between very elementary and very mature, neither of which is appropriate for someone like me: A classically trained amateur pianist with no theory education. I hope this may be of use for other amateur musicians trained in performance but not theory.
+The objective of this blog is to document my progress as I learn about music theory with an eye toward composition. My experience with online resources is that they tend to be split between very elementary and very mature, neither of which is appropriate for someone like me: A classically trained amateur pianist with no theory education. 
+
+I hope this resource may be of use for other amateur musicians trained in performance but not theory. I will be focusing on material that come as a surprise to a longtime amateur performer (not that I literally perform for anyone). For instance, I won't be "wasting" time reviewing performance notation. 
 
 <h3>About me</h3>
 
