@@ -33,6 +33,8 @@ input[type=number] {
 	display: flex;
 	align-items: center;
 	box-sizing: border-box;
+	position:relative;
+	z-index:10;
 }
 
 .abcjs-inline-audio .abcjs-btn {
