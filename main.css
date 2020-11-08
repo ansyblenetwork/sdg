@@ -4,6 +4,7 @@
 .sheetmusic {
 	overflow-x:auto !important;
 	width:100%;
+	text-align:center;
 }
 
 input::-webkit-outer-spin-button,
