@@ -78,9 +78,3 @@ Q:1/4=60
 CG[CG]2|CE[CE]2|CA[CA]2|CD[CD]2|CB[CB]2|C_G[C_G]2|
 `);	
 </script>
-
-<style>
-    svg .abcjs-tempo {
-	display:none;
-    }
-<style>
