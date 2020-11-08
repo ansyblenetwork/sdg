@@ -70,9 +70,10 @@ In modern music, these wavelengths are only approximate due to [equal temperamen
 
 The first row consists of the perfect consonances, the next three consist of imperfect consonances, and the last two consist of dissonances. 
 
+<div style="display:flex; flex-direction:column; align-items:center">
 <div id="paper" class="sheetmusic"></div>
 <div id="controller" style="position:relative; width:calc(100% + 360px + 35px); left:calc(-360px - 35px); padding-left:calc(360px + 35px);"></div>
-
+</div>
 					
 <script>
 // NOTE: If you want just the sound without showing the music, use "*" instead of "paper" in the renderAbc call.
