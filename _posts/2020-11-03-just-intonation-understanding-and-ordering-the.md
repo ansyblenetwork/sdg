@@ -70,13 +70,12 @@ In modern music, these wavelengths are only approximate due to [equal temperamen
 
 The first row consists of the perfect consonances, the next three consist of imperfect consonances, and the last two consist of dissonances. 
 
-<div id="paper" class="sheetmusic"></div>
-<div id="controller" class="controller"></div>
+<div id="sheet1" class="sheetmusic"></div>
+<div id="controller1" class="controller"></div>
 					
 <script>
-var test = "X:1\nK:C\nQ:1/4=60\nCG[CG]2|CE[CE]2|CA[CA]2|CD[CD]2|CB[CB]2|C_G[C_G]2|\n";	
-	
-makeInteractive("paper", "controller", test);
+var data1 = "X:1\nK:C\nQ:1/4=60\nCG[CG]2|CE[CE]2|CA[CA]2|CD[CD]2|CB[CB]2|C_G[C_G]2|\n";
+makeInteractive("paper1", "controller1", data1);
 </script>
 
 <style>
