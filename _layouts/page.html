@@ -14,13 +14,15 @@
 	
 <script>
 	
-function makeInteractive(controller, test) {
+function makeInteractive(controller, test) {	
 	let newDiv = document.createElement("div");
 	newDiv.id = controller + "sheet";
 	let paper = newDiv.id;
 	newDiv.classList.add("sheetmusic");
 	
+	D(controller).classList.add("controller");
 	D(controller).parentNode.insertBefore(newDiv, D(controller));
+	
 	var visualObj = ABCJS.renderAbc(paper, test, { add_classes: true, clickListener: self.clickListener })[0];
 	var synthControl = new ABCJS.synth.SynthController();
 
@@ -58,7 +60,7 @@ function makeInteractive(controller, test) {
 				}
 			}
 
-			var cursor = document.querySelector("#paper svg .abcjs-cursor");
+			var cursor = document.querySelector("#" + paper + " svg .abcjs-cursor");
 			if (cursor) {
 				cursor.setAttribute("x1", ev.left - 2);
 				cursor.setAttribute("x2", ev.left - 2);
