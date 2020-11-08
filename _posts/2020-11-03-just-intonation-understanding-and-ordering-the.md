@@ -70,8 +70,8 @@ In modern music, these wavelengths are only approximate due to [equal temperamen
 
 The first row consists of the perfect consonances, the next three consist of imperfect consonances, and the last two consist of dissonances. 
 
-	<div id="paper" class="sheetmusic"></div>
-	<div id="controller" style="position:relative; width:calc(100% + 360px + 35px); left:calc(-180px - 17.5px); padding-left:calc(360px + 35px);"></div>
+<div id="paper" class="sheetmusic"></div>
+<div id="controller" style="position:relative; width:calc(100% + 360px + 35px); left:calc(-180px - 17.5px); padding-left:calc(360px + 35px);"></div>
 
 					
 <script>
