@@ -1,160 +1,150 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		{% if page.title %}			
-			<title>{{ page.title }} | Soli Deo gloria</title>
-		{% else %}
-			<title>Soli Deo gloria</title>
-		{% endif %}
-		<link rel="stylesheet" type="text/css" href="{{ "main.css" | relative_url }}">
-		<script type="text/javascript" src="{{ "abc.js" | relative_url }}"></script>
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
-   		{% seo %}
-		
-		
-		<script>
-			var cursorControl = new CursorControl();
-			var mobile = false;
-			if(D('specialPost')) D('specialPost').scrollIntoView({behavior: "auto", block: "center", inline: "nearest"}); 
-			if (screen.width <= 550 || screen.height <= 550) {
-				mobile = true;	
-				D("controller").style.paddingLeft = "0px";
-				D("controller").style.left = "0px";
-				D("controller").style.width = "100%";
-				D("controller").style.position = "static";
-			}
-			else {				
-				window.addEventListener("resize", resizeFunction);
-				D("accountPanel").onclick = resizeFunction;
-				resizeFunction();
-				function resizeFunction() { 
-					var w = D('accountPanel').offsetWidth + 40;
-					D("main").style.marginLeft = `${w}px`;
-					D("main").style.width = `calc(100% - ${w}px)`;
-					if (D("controller")) {
-						D("controller").style.paddingLeft = `${w + 35}px`;
-						D("controller").style.left = `-${w/2 + 17.5}px`;
-						D("controller").style.width = `calc(100% + ${w + 35}px)`;
-					}
-					setTimeout(function(){					
-						var w = D('accountPanel').offsetWidth + 40;
-						D("main").style.marginLeft = `${w}px`;
-						D("main").style.width = `calc(100% - ${w}px)`;
-					}, 150);			 
-				}  
-			}
-			
-			function CursorControl() {
-				var self = this;
-
-				self.onStart = function() {
-					var svg = document.querySelector("#paper svg");
-					var cursor = document.createElementNS("http://www.w3.org/2000/svg", "line");
-					cursor.setAttribute("class", "abcjs-cursor");
-					cursor.setAttributeNS(null, 'x1', 0);
-					cursor.setAttributeNS(null, 'y1', 0);
-					cursor.setAttributeNS(null, 'x2', 0);
-					cursor.setAttributeNS(null, 'y2', 0);
-					svg.appendChild(cursor);
-
-				};
-				self.beatSubdivisions = 2;
-				self.onBeat = function(beatNumber, totalBeats, totalTime) {
-					if (!self.beatDiv) self.beatDiv = document.querySelector(".beat");
-				};
-				self.onEvent = function(ev) {
-					if (ev.measureStart && ev.left === null)
-						return; // this was the second part of a tie across a measure line. Just ignore it.
-
-					var lastSelection = document.querySelectorAll("#paper svg .highlight");
-					for (var k = 0; k < lastSelection.length; k++)
-						lastSelection[k].classList.remove("highlight");
-
-					for (var i = 0; i < ev.elements.length; i++ ) {
-						var note = ev.elements[i];
-						for (var j = 0; j < note.length; j++) {
-							note[j].classList.add("highlight");
-							note[j].scrollIntoView({behavior: "auto", block: "nearest", inline: "nearest"}); 
-							note[j].parentNode
-						}
-					}
-
-					var cursor = document.querySelector("#paper svg .abcjs-cursor");
-					if (cursor) {
-						cursor.setAttribute("x1", ev.left - 2);
-						cursor.setAttribute("x2", ev.left - 2);
-						cursor.setAttribute("y1", ev.top);
-						cursor.setAttribute("y2", ev.top + ev.height);
-					}
-				};
-				self.onFinished = function() {
-					var els = document.querySelectorAll("svg .highlight");
-					for (var i = 0; i < els.length; i++ ) {
-						els[i].classList.remove("highlight");
-					}
-				};
-			}			
-
-			function stopFunction() {     
-			    console.log("stopped");
-			    startAudioButton.setAttribute("style", "");
-			    stopAudioButton.setAttribute("style", "display:none;");
-			    if (midiBuffer) midiBuffer.stop();
-			}
-			
-			
-
-			function clickListener(abcElem) {
-				var lastClicked = abcElem.midiPitches;
-				if (!lastClicked) return;
-				ABCJS.synth.playEvent(lastClicked, abcElem.midiGraceNotePitches, synthControl.visualObj.millisecondsPerMeasure()).then(function (response) {
-					console.log("note played");
-				}).catch(function (error) {
-					console.log("error playing note", error);
-				});
-			}
-
-
-			function D(string) { return document.getElementById(string);}	
-		</script>
-	</head>
+<!DOCTYPE html><html>
 	
-	<body>	
-		<div class="outersidebar">
-		<div class="sidebar">
-		<div class="rpanel" style="flex-grow: 1; position:relative; min-width:250px;" id="accountPanel">
-			<h2><a href="{{ "" | absolute_url }}">Soli Deo gloria</a></h2>
-			<div style="margin-bottom:15px" class="date-format" style="padding-bottom:15px">Music composition for the classically trained pianist</div>
-			<ul style="overflow:auto;">
-				{% for post in site.posts %}					
-					{% if page.title == post.title %}	
-						<li id="specialPost" style="background-color:#f4f4f4"><span class="date-format">{{ post.date | date: "%B %-d, %Y" }}</span><br>
-							{{ post.title }}</li>
-					{% else %}				
-						<a href="{{ post.url | relative_url }}"><li><span class="date-format">{{ post.date | date: "%B %-d, %Y" }}</span><br>
-							{{ post.title }}</li></a>				
-					{% endif %}
-				{% endfor %}
-				<br><br>
-			</ul>
-			<div class="aboutpanel">				
-				<a href="{{ site.posts.last.url | relative_url }}"><button>About</button></a>
-			</div>
+<head>
+	{% if page.title %}			
+		<title>{{ page.title }} | Soli Deo gloria</title>
+	{% else %}
+		<title>Soli Deo gloria</title>
+	{% endif %}
+	<link rel="stylesheet" type="text/css" href="{{ "main.css" | relative_url }}">
+	<script type="text/javascript" src="{{ "abc.js" | relative_url }}"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	{% seo %}			
+</head>
+	
+<body>	
+	<div class="outersidebar">
+	<div class="sidebar">
+	<div class="rpanel" style="flex-grow: 1; position:relative; min-width:250px;" id="accountPanel">
+		<h2><a href="{{ "" | absolute_url }}">Soli Deo gloria</a></h2>
+		<div style="margin-bottom:15px" class="date-format" style="padding-bottom:15px">Music composition for the classically trained pianist</div>
+		<ul style="overflow:auto;">
+			{% for post in site.posts %}					
+				{% if page.title == post.title %}	
+					<li id="specialPost" style="background-color:#f4f4f4"><span class="date-format">{{ post.date | date: "%B %-d, %Y" }}</span><br>
+						{{ post.title }}</li>
+				{% else %}				
+					<a href="{{ post.url | relative_url }}"><li><span class="date-format">{{ post.date | date: "%B %-d, %Y" }}</span><br>
+						{{ post.title }}</li></a>				
+				{% endif %}
+			{% endfor %}
+			<br><br>
+		</ul>
+		<div class="aboutpanel">				
+			<a href="{{ site.posts.last.url | relative_url }}"><button>About</button></a>
 		</div>
-		<div class="sidebartab"></div>
+	</div>
+	<div class="sidebartab"></div>
+	</div>
+	</div>
+
+	<div id="main" class="main">		
+		{% if page.title %}		
+			<h1>{{ page.title }}</h1>
+			<div class="date-format" style="padding-bottom:15px">{{ page.date | date: "%B %-d, %Y" }}</div>
+		{% endif %}
+
+		<div class="contentHolder">
+		{{ content }}	
 		</div>
-		</div>
-		
-		<div id="main" class="main">		
-			{% if page.title %}		
-				<h1>{{ page.title }}</h1>
-				<div class="date-format" style="padding-bottom:15px">{{ page.date | date: "%B %-d, %Y" }}</div>
-			{% endif %}
-			
-			<div class="contentHolder">
-			{{ content }}	
-			</div>
-		</div>	
-	</body>		
+	</div>	
+</body>		
+	
+	
+<script>
+	var cursorControl = new CursorControl();
+	var mobile = false;
+	if(D('specialPost')) D('specialPost').scrollIntoView({behavior: "auto", block: "center", inline: "nearest"}); 
+	if (screen.width <= 550 || screen.height <= 550) {
+		mobile = true;	
+		D("controller").style.paddingLeft = "0px";
+		D("controller").style.left = "0px";
+		D("controller").style.width = "100%";
+		D("controller").style.position = "static";
+	}
+	else {				
+		window.addEventListener("resize", resizeFunction);
+		D("accountPanel").onclick = resizeFunction;
+		resizeFunction();
+		function resizeFunction() { 
+			var w = D('accountPanel').offsetWidth + 40;
+			D("main").style.marginLeft = `${w}px`;
+			D("main").style.width = `calc(100% - ${w}px)`;
+			if (D("controller")) {
+				D("controller").style.paddingLeft = `${w + 35}px`;
+				D("controller").style.left = `-${w/2 + 17.5}px`;
+				D("controller").style.width = `calc(100% + ${w + 35}px)`;
+			}
+			setTimeout(function(){					
+				var w = D('accountPanel').offsetWidth + 40;
+				D("main").style.marginLeft = `${w}px`;
+				D("main").style.width = `calc(100% - ${w}px)`;
+			}, 150);			 
+		}  
+	}
+
+	function CursorControl() {
+		var self = this;
+
+		self.onStart = function() {
+			var svg = document.querySelector("#paper svg");
+			var cursor = document.createElementNS("http://www.w3.org/2000/svg", "line");
+			cursor.setAttribute("class", "abcjs-cursor");
+			cursor.setAttributeNS(null, 'x1', 0);
+			cursor.setAttributeNS(null, 'y1', 0);
+			cursor.setAttributeNS(null, 'x2', 0);
+			cursor.setAttributeNS(null, 'y2', 0);
+			svg.appendChild(cursor);
+
+		};
+		self.beatSubdivisions = 2;
+		self.onBeat = function(beatNumber, totalBeats, totalTime) {
+			if (!self.beatDiv) self.beatDiv = document.querySelector(".beat");
+		};
+		self.onEvent = function(ev) {
+			if (ev.measureStart && ev.left === null)
+				return; // this was the second part of a tie across a measure line. Just ignore it.
+
+			var lastSelection = document.querySelectorAll("#paper svg .highlight");
+			for (var k = 0; k < lastSelection.length; k++)
+				lastSelection[k].classList.remove("highlight");
+
+			for (var i = 0; i < ev.elements.length; i++ ) {
+				var note = ev.elements[i];
+				for (var j = 0; j < note.length; j++) {
+					note[j].classList.add("highlight");
+					note[j].scrollIntoView({behavior: "auto", block: "nearest", inline: "nearest"}); 
+					note[j].parentNode
+				}
+			}
+
+			var cursor = document.querySelector("#paper svg .abcjs-cursor");
+			if (cursor) {
+				cursor.setAttribute("x1", ev.left - 2);
+				cursor.setAttribute("x2", ev.left - 2);
+				cursor.setAttribute("y1", ev.top);
+				cursor.setAttribute("y2", ev.top + ev.height);
+			}
+		};
+		self.onFinished = function() {
+			var els = document.querySelectorAll("svg .highlight");
+			for (var i = 0; i < els.length; i++ ) {
+				els[i].classList.remove("highlight");
+			}
+		};
+	}	
+	
+	function clickListener(abcElem) {
+		var lastClicked = abcElem.midiPitches;
+		if (!lastClicked) return;
+		ABCJS.synth.playEvent(lastClicked, abcElem.midiGraceNotePitches, synthControl.visualObj.millisecondsPerMeasure()).then(function (response) {
+			console.log("note played");
+		}).catch(function (error) {
+			console.log("error playing note", error);
+		});
+	}
+	
+	function D(string) { return document.getElementById(string);}	
+</script>
 </html>
