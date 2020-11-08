@@ -1,6 +1,13 @@
 /* Some basic CSS to make the Audio controls in abcjs presentable. */
 
 
+	
+.mjx-chtml, .MathJax_CHTML {
+	overflow-y:hidden;
+	overflow-x:auto;
+  	scrollbar-width: thin;
+}  
+
 .sheetmusic {
 	overflow-x:auto !important;
 	width:100%;
@@ -270,6 +277,7 @@ input[type=number] {
   top:0px;
   padding:20px;
   max-width:960px;
+  width: calc(100% - 360px);
 }
 
 .media {
@@ -445,12 +453,5 @@ h2 a:hover {
   ::-webkit-scrollbar {
     height: 0px;
   }
-	
-.mjx-chtml, .MathJax_CHTML {
-	overflow-y:hidden;
-	overflow-x:auto;
-}  
-	 
-
 
 }
