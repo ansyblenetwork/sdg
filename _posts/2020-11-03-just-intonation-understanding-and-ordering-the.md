@@ -73,20 +73,14 @@ The first row consists of the perfect consonances, the next three consist of imp
 <div style="display:flex; flex-direction:column; align-items:center">
 <div id="paper" class="sheetmusic"></div>
 <div id="controller" style="position:relative; width:calc(100% + 360px + 35px); left:calc(-180px - 17.5px); padding-left:calc(360px + 35px);"></div>
-<button id="activate-audio" style="display:none;">Play</button>
-<button id="stop-audio" style="display:none;">Stop</button>
-<div id='audio-error' style="display:none;">Audio is not supported in this browser.</div>
-</div>
-				
-					
+</div>	
 					
 <script>
 // First draw the music - this supplies an object that has a lot of information about how to create the synth.
 // NOTE: If you want just the sound without showing the music, use "*" instead of "paper" in the renderAbc call.
 	var test = "X:1\nK:C\nQ:1/4=60\nCG[CG]2|CE[CE]2|CA[CA]2|CD[CD]2|CB[CB]2|C_G[C_G]2|\n";
 	
-var visualObj = ABCJS.renderAbc("paper", test, { add_classes: true, 
-			clickListener: self.clickListener })[0];
+var visualObj = ABCJS.renderAbc("paper", test, { add_classes: true, clickListener: self.clickListener })[0];
 var midiBuffer = new ABCJS.synth.CreateSynth();
 var synthControl = new ABCJS.synth.SynthController();
 
@@ -101,11 +95,7 @@ synthControl.load("#controller",
         }
 );
 
-var startAudioButton = D("activate-audio");
-var stopAudioButton = D("stop-audio");
-var audioError = D("audio-error");
 
-    startAudioButton.setAttribute("style", "display:none;");
     if (ABCJS.synth.supportsAudio()) {
         window.AudioContext = window.AudioContext || window.webkitAudioContext || navigator.mozAudioContext || navigator.msAudioContext;
         var audioContext = new window.AudioContext();
@@ -139,26 +129,9 @@ var audioError = D("audio-error");
             }).then(function () {
                 // At this point, everything slow has happened. midiBuffer.start will return very quickly and will start playing very quickly without lag.
                 return Promise.resolve();
-            }).catch(function (error) {
-                if (error.status === "NotSupported") {
-                    stopAudioButton.setAttribute("style", "display:none;");
-                    audioError.setAttribute("style", "");
-                } else console.warn("synth error", error);
-            });
+            }).catch(function (error) { console.warn("synth error", error);  });
         });
-    } else audioError.setAttribute("style", "");
-    
-startAudioButton.addEventListener("click", function() {
-    startAudioButton.setAttribute("style", "display:none;");
-    if (midiBuffer) midiBuffer.start();
-});
-
-stopAudioButton.addEventListener("click", stopFunction);
-
-
-var cursorControl = new CursorControl();
-
-
+    }
 
 </script>
 
