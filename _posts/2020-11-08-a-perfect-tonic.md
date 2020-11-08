@@ -13,7 +13,7 @@ X:1
 K:C
 L: 1/4
 Q:1/4=60
-CDEF|GABC  
+CDEFGAB
 w: tonic supertonic mediant subdominant dominant submediant leading-tone
 `);
 </script>
