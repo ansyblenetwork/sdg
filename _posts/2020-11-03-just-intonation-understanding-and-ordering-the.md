@@ -75,57 +75,8 @@ The first row consists of the perfect consonances, the next three consist of imp
 					
 <script>
 var test = "X:1\nK:C\nQ:1/4=60\nCG[CG]2|CE[CE]2|CA[CA]2|CD[CD]2|CB[CB]2|C_G[C_G]2|\n";	
-var visualObj = ABCJS.renderAbc("paper", test, { add_classes: true, clickListener: self.clickListener })[0];
-var synthControl = new ABCJS.synth.SynthController();
-
-synthControl.load("#controller", cursorControl, 
-	{
-	    displayLoop: true, 
-	    displayRestart: true, 
-	    displayPlay: true, 
-	    displayProgress: true, 
-	    displayWarp: true
-	}
-);
-
-    if (ABCJS.synth.supportsAudio()) {    
-	var midiBuffer = new ABCJS.synth.CreateSynth();
-        window.AudioContext = window.AudioContext || window.webkitAudioContext || navigator.mozAudioContext || navigator.msAudioContext;
-        var audioContext = new window.AudioContext();
-        audioContext.resume().then(function () {
-            // In theory the AC shouldn't start suspended because it is being initialized in a click handler, but iOS seems to anyway.
-
-            // midiBuffer.init preloads and caches all the notes needed. There may be significant network traffic here.
-            return midiBuffer.init({
-                visualObj: visualObj,
-                audioContext: audioContext,
-                millisecondsPerMeasure: visualObj.millisecondsPerMeasure(),
-                options: {
-			soundFontUrl: '',
-                    onEnded: function() {console.log("hi");}
-                }
-            }).then(function (response) {
-	    
-                synthControl.setTune(visualObj, false, { options:{ qpm: 2*visualObj.getBpm()} }).then(function () {
-                    console.log("Audio successfully loaded.")
-		    
-			let tempos = document.querySelectorAll(".abcjs-midi-tempo");
-			for (let i = 0; i < tempos.length; i++) {
-				tempos[i].value = 99;
-				tempos[i].value = 100;
-			}
-
-                }).catch(function (error) {  console.warn("Audio problem:", error);  });
-
-                // midiBuffer.prime actually builds the output buffer.
-                return midiBuffer.prime();
-            }).then(function () {
-                // At this point, everything slow has happened. midiBuffer.start will return very quickly and will start playing very quickly without lag.
-                return Promise.resolve();
-            }).catch(function (error) { console.warn("synth error", error);  });
-        });
-    }
-
+	
+makeInteractive("paper", "controller", test);
 </script>
 
 <style>
