@@ -74,8 +74,8 @@ The first row consists of the perfect consonances, the next three consist of imp
 <div id="controller1" class="controller"></div>
 					
 <script>
-var data1 = "X:1\nK:C\nQ:1/4=60\nCG[CG]2|CE[CE]2|CA[CA]2|CD[CD]2|CB[CB]2|C_G[C_G]2|\n";
-makeInteractive("paper1", "controller1", data1);
+var data = "X:1\nK:C\nQ:1/4=60\nCG[CG]2|CE[CE]2|CA[CA]2|CD[CD]2|CB[CB]2|C_G[C_G]2|\n";
+makeInteractive("paper1", "controller1", data);
 </script>
 
 <style>
