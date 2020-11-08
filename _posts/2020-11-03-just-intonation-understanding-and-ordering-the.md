@@ -84,8 +84,7 @@ var visualObj = ABCJS.renderAbc("paper", test, { add_classes: true, clickListene
 var midiBuffer = new ABCJS.synth.CreateSynth();
 var synthControl = new ABCJS.synth.SynthController();
 
-synthControl.load("#controller", 
-        cursorControl, 
+synthControl.load("#controller", cursorControl, 
         {
             displayLoop: true, 
             displayRestart: true, 
