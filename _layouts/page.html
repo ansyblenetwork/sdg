@@ -11,73 +11,6 @@
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
 	{% seo %}
-	
-		
-<script>
-	var cursorControl = new CursorControl();
-
-	function CursorControl() {
-		var self = this;
-
-		self.onStart = function() {
-			var svg = document.querySelector("#paper svg");
-			var cursor = document.createElementNS("http://www.w3.org/2000/svg", "line");
-			cursor.setAttribute("class", "abcjs-cursor");
-			cursor.setAttributeNS(null, 'x1', 0);
-			cursor.setAttributeNS(null, 'y1', 0);
-			cursor.setAttributeNS(null, 'x2', 0);
-			cursor.setAttributeNS(null, 'y2', 0);
-			svg.appendChild(cursor);
-
-		};
-		self.beatSubdivisions = 2;
-		self.onBeat = function(beatNumber, totalBeats, totalTime) {
-			if (!self.beatDiv) self.beatDiv = document.querySelector(".beat");
-		};
-		self.onEvent = function(ev) {
-			if (ev.measureStart && ev.left === null)
-				return; // this was the second part of a tie across a measure line. Just ignore it.
-
-			var lastSelection = document.querySelectorAll("#paper svg .highlight");
-			for (var k = 0; k < lastSelection.length; k++)
-				lastSelection[k].classList.remove("highlight");
-
-			for (var i = 0; i < ev.elements.length; i++ ) {
-				var note = ev.elements[i];
-				for (var j = 0; j < note.length; j++) {
-					note[j].classList.add("highlight");
-					note[j].scrollIntoView({behavior: "auto", block: "nearest", inline: "nearest"}); 
-				}
-			}
-
-			var cursor = document.querySelector("#paper svg .abcjs-cursor");
-			if (cursor) {
-				cursor.setAttribute("x1", ev.left - 2);
-				cursor.setAttribute("x2", ev.left - 2);
-				cursor.setAttribute("y1", ev.top);
-				cursor.setAttribute("y2", ev.top + ev.height);
-			}
-		};
-		self.onFinished = function() {
-			var els = document.querySelectorAll("svg .highlight");
-			for (var i = 0; i < els.length; i++ ) {
-				els[i].classList.remove("highlight");
-			}
-		};
-	}	
-	
-	function clickListener(abcElem) {
-		var lastClicked = abcElem.midiPitches;
-		if (!lastClicked) return;
-		ABCJS.synth.playEvent(lastClicked, abcElem.midiGraceNotePitches, synthControl.visualObj.millisecondsPerMeasure()).then(function (response) {
-			console.log("note played");
-		}).catch(function (error) {
-			console.log("error playing note", error);
-		});
-	}
-	
-	function D(string) { return document.getElementById(string);}	
-</script>
 </head>
 	
 <body>	
@@ -119,6 +52,124 @@
 </body>	
 	
 <script>
+var cursorControl = new CursorControl();
+
+function makeInteractive(paper, controller, test) {
+	var visualObj = ABCJS.renderAbc(paper, test, { add_classes: true, clickListener: self.clickListener })[0];
+	var synthControl = new ABCJS.synth.SynthController();
+
+	synthControl.load("#" + controller, cursorControl, 
+		{
+		    displayLoop: true, 
+		    displayRestart: true, 
+		    displayPlay: true, 
+		    displayProgress: true, 
+		    displayWarp: true
+		}
+	);
+
+	if (ABCJS.synth.supportsAudio()) {    
+		var midiBuffer = new ABCJS.synth.CreateSynth();
+		window.AudioContext = window.AudioContext || window.webkitAudioContext || navigator.mozAudioContext || navigator.msAudioContext;
+		var audioContext = new window.AudioContext();
+		audioContext.resume().then(function () {
+		    // In theory the AC shouldn't start suspended because it is being initialized in a click handler, but iOS seems to anyway.
+
+		    // midiBuffer.init preloads and caches all the notes needed. There may be significant network traffic here.
+		    return midiBuffer.init({
+			visualObj: visualObj,
+			audioContext: audioContext,
+			millisecondsPerMeasure: visualObj.millisecondsPerMeasure(),
+			options: {
+				soundFontUrl: '',
+			    onEnded: function() {console.log("hi");}
+			}
+		    }).then(function (response) {
+
+			synthControl.setTune(visualObj, false, { options:{ qpm: 2*visualObj.getBpm()} }).then(function () {
+			    console.log("Audio successfully loaded.")
+
+				let tempos = document.querySelectorAll(".abcjs-midi-tempo");
+				for (let i = 0; i < tempos.length; i++) {
+					tempos[i].value = 99;
+					tempos[i].value = 100;
+				}
+
+			}).catch(function (error) {  console.warn("Audio problem:", error);  });
+
+			// midiBuffer.prime actually builds the output buffer.
+			return midiBuffer.prime();
+		    }).then(function () {
+			// At this point, everything slow has happened. midiBuffer.start will return very quickly and will start playing very quickly without lag.
+			return Promise.resolve();
+		    }).catch(function (error) { console.warn("synth error", error);  });
+		});
+	}
+}
+
+function CursorControl() {
+	var self = this;
+
+	self.onStart = function() {
+		var svg = document.querySelector("#paper svg");
+		var cursor = document.createElementNS("http://www.w3.org/2000/svg", "line");
+		cursor.setAttribute("class", "abcjs-cursor");
+		cursor.setAttributeNS(null, 'x1', 0);
+		cursor.setAttributeNS(null, 'y1', 0);
+		cursor.setAttributeNS(null, 'x2', 0);
+		cursor.setAttributeNS(null, 'y2', 0);
+		svg.appendChild(cursor);
+
+	};
+	self.beatSubdivisions = 2;
+	self.onBeat = function(beatNumber, totalBeats, totalTime) {
+		if (!self.beatDiv) self.beatDiv = document.querySelector(".beat");
+	};
+	self.onEvent = function(ev) {
+		if (ev.measureStart && ev.left === null)
+			return; // this was the second part of a tie across a measure line. Just ignore it.
+
+		var lastSelection = document.querySelectorAll("#paper svg .highlight");
+		for (var k = 0; k < lastSelection.length; k++)
+			lastSelection[k].classList.remove("highlight");
+
+		for (var i = 0; i < ev.elements.length; i++ ) {
+			var note = ev.elements[i];
+			for (var j = 0; j < note.length; j++) {
+				note[j].classList.add("highlight");
+				note[j].scrollIntoView({behavior: "auto", block: "nearest", inline: "nearest"}); 
+			}
+		}
+
+		var cursor = document.querySelector("#paper svg .abcjs-cursor");
+		if (cursor) {
+			cursor.setAttribute("x1", ev.left - 2);
+			cursor.setAttribute("x2", ev.left - 2);
+			cursor.setAttribute("y1", ev.top);
+			cursor.setAttribute("y2", ev.top + ev.height);
+		}
+	};
+	self.onFinished = function() {
+		var els = document.querySelectorAll("svg .highlight");
+		for (var i = 0; i < els.length; i++ ) {
+			els[i].classList.remove("highlight");
+		}
+	};
+}	
+
+function clickListener(abcElem) {
+	var lastClicked = abcElem.midiPitches;
+	if (!lastClicked) return;
+	ABCJS.synth.playEvent(lastClicked, abcElem.midiGraceNotePitches, synthControl.visualObj.millisecondsPerMeasure()).then(function (response) {
+		console.log("note played");
+	}).catch(function (error) {
+		console.log("error playing note", error);
+	});
+}
+
+function D(string) { return document.getElementById(string);}	
+	
+	
 var mobile = false;
 if(D('specialPost')) D('specialPost').scrollIntoView({behavior: "auto", block: "center", inline: "nearest"}); 
 if (screen.width <= 550 || screen.height <= 550) {
