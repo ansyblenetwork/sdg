@@ -2,7 +2,7 @@
 title: "Online music theory resources"
 ---
 
-I'm about to leave the brief numerological realm of music theory into more traditional music theory, so I was doing some research earlier. I found some decent-looking online resources that I thought to list here:
+I'm about to leave the brief numerological realm of music theory, and proceed into more traditional music theory, so I was doing some research earlier. I found some decent-looking online resources that I thought to list here:
 
 1. [Music Theory for the 21st-Century Classroom](http://musictheory.pugetsound.edu/mt21c/MusicTheory.html): This looks to be a very thorough online music resource. It is organized like a textbook, interspersed with diagrams and some clips.
 2. [Open Music Theory](https://viva.pressbooks.pub/openmusictheory/) Similarly, a very thorough online music resource. Also organized like a textbook, with diagrams and clips.
