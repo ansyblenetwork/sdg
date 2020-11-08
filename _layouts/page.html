@@ -142,7 +142,7 @@ function D(string) { return document.getElementById(string);}
 </head>
 	
 <body>	
-	<div class="outersidebar">
+	<div id="outersidebar" class="outersidebar">
 	<div class="sidebar">
 	<div class="rpanel" style="flex-grow: 1; position:relative; min-width:250px;" id="accountPanel">
 		<h2><a href="{{ "" | absolute_url }}">Soli Deo gloria</a></h2>
@@ -190,7 +190,7 @@ if (screen.width <= 550 || screen.height <= 550) {
 		D("controller").style.width = "100%";
 		D("controller").style.position = "static";
 	}
-	D('main').onclick = function() { D('main').scrollTo(0, 0); };
+	D('main').onclick = function() { D('outersidebar').scrollTo(0, 0); };
 }
 else {				
 	window.addEventListener("resize", resizeFunction);
