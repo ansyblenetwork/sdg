@@ -19,14 +19,15 @@ function makeInteractive(controller, test) {
 	newDiv.id = controller + "sheet";
 	let paper = newDiv.id;
 	newDiv.classList.add("sheetmusic");
-	newDiv.firstChild.width = "auto";
 	//newDiv.onclick = function() { console.log(D(controller).children[2]);
 	//			     D(controller).children[2].click(); };
 	
 	D(controller).classList.add("controller");
 	D(controller).parentNode.insertBefore(newDiv, D(controller));
 	
-	var visualObj = ABCJS.renderAbc(paper, test, { add_classes: true, clickListener: self.clickListener })[0];
+	var visualObj = ABCJS.renderAbc(paper, test, { add_classes: true, clickListener: self.clickListener })[0];	
+	newDiv.firstChild.width = "auto";
+	
 	var synthControl = new ABCJS.synth.SynthController();
 
 	function CursorControl() {
