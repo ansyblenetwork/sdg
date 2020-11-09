@@ -37,7 +37,7 @@ Note that the (very dissonant) diminished fifth crudely approximates the perfect
 | 3/4 | perfect fourth (inversion of perfect fifth) |
 | 1/2 | octave |
 
-Observe the narrow gaps between the third and the fourth, and the seventh and the octave, well known as the two half steps occurring in the major scale. This is due to our approximation of the diminished fifth by the perfect fourth. It is the wisdom of this approximation that prevents me from claiming a pure mathematical origin: On one hand, the diminished fifth is the most dissonant note, and its removal is welcome. On the other hand, a roughly half step error between the perfect fourth and diminished fifth is questionable. Western history seems to have settled in large part on the former.
+Observe the narrow gaps between the third and the fourth, and the seventh and the octave, well known as the two half steps occurring in the major scale. This is due to our approximation of the diminished fifth by the perfect fourth. It is the wisdom of this approximation that prevents me from claiming a pure mathematical origin: On one hand, the diminished fifth is the most dissonant note, and its removal is welcome. On the other hand, a roughly half step error between the perfect fourth and diminished fifth is questionable.
 
 ### Mathematical origins of the pentatonic scale
 
