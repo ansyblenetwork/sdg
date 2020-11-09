@@ -15,9 +15,10 @@
 <script>
 	
 function makeInteractive(controller, test) {	
+	let paper = controller + "sheet";
+	
 	let newDiv = document.createElement("div");
-	newDiv.id = controller + "sheet";
-	let paper = newDiv.id;
+	newDiv.id = paper;
 	newDiv.classList.add("sheetmusic");
 	//newDiv.onclick = function() { console.log(D(controller).children[2]);
 	//			     D(controller).children[2].click(); };
@@ -25,10 +26,19 @@ function makeInteractive(controller, test) {
 	D(controller).classList.add("controller");
 	D(controller).parentNode.insertBefore(newDiv, D(controller));
 	
-	var visualObj = ABCJS.renderAbc(paper, test, { add_classes: true, clickListener: self.clickListener })[0];	
+
+	var synthControl = new ABCJS.synth.SynthController();
+	
+	var visualObj = ABCJS.renderAbc(paper, test, { add_classes: true, 
+	clickListener: function(abcElem) {
+		var lastClicked = abcElem.midiPitches;
+		if (!lastClicked) return;
+		ABCJS.synth.playEvent(lastClicked, abcElem.midiGraceNotePitches, synthControl.visualObj.millisecondsPerMeasure()).then(function (response) {
+			console.log("note played");
+		}).catch(function (error) {console.log("error playing note", error);});
+	} })[0];
 	newDiv.firstChild.setAttribute("width", "auto");
 	
-	var synthControl = new ABCJS.synth.SynthController();
 
 	function CursorControl() {
 		var self = this;
@@ -42,15 +52,14 @@ function makeInteractive(controller, test) {
 			cursor.setAttributeNS(null, 'x2', 0);
 			cursor.setAttributeNS(null, 'y2', 0);
 			svg.appendChild(cursor);
-
 		};
+		
 		self.beatSubdivisions = 2;
 		self.onBeat = function(beatNumber, totalBeats, totalTime) {
 			if (!self.beatDiv) self.beatDiv = document.querySelector(".beat");
 		};
 		self.onEvent = function(ev) {
-			if (ev.measureStart && ev.left === null)
-				return; // this was the second part of a tie across a measure line. Just ignore it.
+			if (ev.measureStart && ev.left === null) return; // this was the second part of a tie across a measure line. Just ignore it.
 
 			var lastSelection = document.querySelectorAll("#" + paper + " svg .highlight");
 			for (var k = 0; k < lastSelection.length; k++)
@@ -79,10 +88,7 @@ function makeInteractive(controller, test) {
 			}
 		};
 	}	
-	
-	var cursorControl = new CursorControl();
-
-	synthControl.load("#" + controller, cursorControl, 
+	synthControl.load("#" + controller, new CursorControl(), 
 		{
 		    displayLoop: true, 
 		    displayRestart: true, 
@@ -91,14 +97,6 @@ function makeInteractive(controller, test) {
 		    displayWarp: true
 		}
 	);
-
-	function clickListener(abcElem) {
-		var lastClicked = abcElem.midiPitches;
-		if (!lastClicked) return;
-		ABCJS.synth.playEvent(lastClicked, abcElem.midiGraceNotePitches, synthControl.visualObj.millisecondsPerMeasure()).then(function (response) {
-			console.log("note played");
-		}).catch(function (error) {console.log("error playing note", error);});
-	}
 
 	if (ABCJS.synth.supportsAudio()) {    
 		var midiBuffer = new ABCJS.synth.CreateSynth();
