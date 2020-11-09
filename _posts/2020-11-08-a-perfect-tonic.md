@@ -42,4 +42,4 @@ D('scale2').style.display = "none";
 3. _Mediant_ means "middle," and it lies approximately halfway between the tonic and dominant. Likewise, _submediant_ lies halfway between tonic and subdominant.
 4. Supertonic and subtonic are whole steps above and below the tonic, respectively.
 
-In particular, note that the major scale has a leading tone, instead of a subtonic which appears in natural and melodic minor scales. Also note that these names are preserved between major and minor scales, so this is not about [interval consonance]({{ "" | relative_url }}{% post_url 2020-11-03-just-intonation-ordering %}), as I suspected on first glance.
+In particular, note that the major scale has a leading tone, instead of a subtonic which appears in natural and melodic minor scales. Also note that these names are preserved between major and minor scales, so other than the dominant and subdominant, this is not about [interval consonance]({{ "" | relative_url }}{% post_url 2020-11-03-just-intonation-ordering %}), as I initially suspected.
