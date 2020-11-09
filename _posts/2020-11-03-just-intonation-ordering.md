@@ -55,7 +55,7 @@ We list our final set of wavelengths, which are the wavelengths used in _just in
 | 5/6 | minor third (inversion of major sixth) |
 | 9/16 | minor seventh (inversion of major second) |
 | 3/4 | perfect fourth (inversion of perfect fifth) |
-| 1/1 | octave |
+| 1/2 | octave |
 
 In modern music, these wavelengths are only approximate due to [equal temperament]({{ "" | relative_url }}{% post_url 2020-11-02-temperament-compromising-consonances %}), but this analysis explains why and how we can order the intervals by consonance:
 
