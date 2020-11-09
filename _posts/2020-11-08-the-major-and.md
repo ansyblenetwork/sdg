@@ -41,7 +41,7 @@ Observe the narrow gaps between the third and the fourth, and the seventh and th
 
 ### Mathematical origins of the pentatonic scale
 
-The pentatonic scale is less well known to classical pianists (as far as I am aware). I only discovered it recently. In a nutshell, it is the scale consisting of the black keys on a piano:
+The pentatonic scale is less well known to classical pianists (as far as I am aware). I only discovered it recently. See [this video](https://www.youtube.com/watch?v=MGpUscFY9RA) by David Bennett for a nice overview of its use in popular and Asian music. In a nutshell, it is the scale consisting of the black keys on a piano:
 
 <div id="scale"></div>
 <script>
@@ -64,4 +64,4 @@ However, the mathematical origins seem to be motivated in a way similar to our d
 | 4/5 | major third (inversion of minor sixth) |
 | 1/2 | octave |
 
-Similar to the major scale, there are wide minor third gaps between the third and the fifth, and the sixth and the octave. 
+In analogy to the major scale, there are wide minor third gaps between the third and the fifth, and the sixth and the octave. 
