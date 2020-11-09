@@ -2,7 +2,7 @@
 title: "The major and pentatonic scales: A juncture of mathematics and music"
 ---
 
-To what extent does the major scale of Western music have mathematical origins? To what extent is it ingrained through habituation? My findings suggest that there are both objective and cultural elements keeping the major scale near the center of Western classical music. Evidence for this is reflected in the fact that Asian cultures often center instead on the pentatonic scale.
+To what extent does the major scale of Western music have mathematical origins? To what extent is it ingrained through habituation? My findings suggest that there are both objective and cultural elements keeping the major scale near the center of Western classical music. Evidence for this is reflected in the fact that Asian cultures often center instead around the pentatonic scale.
 
 ### Mathematical origins of the major scale
 
