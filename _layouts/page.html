@@ -92,6 +92,14 @@ function makeInteractive(controller, test) {
 		}
 	);
 
+	function clickListener(abcElem) {
+		var lastClicked = abcElem.midiPitches;
+		if (!lastClicked) return;
+		ABCJS.synth.playEvent(lastClicked, abcElem.midiGraceNotePitches, synthControl.visualObj.millisecondsPerMeasure()).then(function (response) {
+			console.log("note played");
+		}).catch(function (error) {console.log("error playing note", error);});
+	}
+
 	if (ABCJS.synth.supportsAudio()) {    
 		var midiBuffer = new ABCJS.synth.CreateSynth();
 		window.AudioContext = window.AudioContext || window.webkitAudioContext || navigator.mozAudioContext || navigator.msAudioContext;
@@ -131,13 +139,6 @@ function makeInteractive(controller, test) {
 	}
 }
 
-function clickListener(abcElem) {
-	var lastClicked = abcElem.midiPitches;
-	if (!lastClicked) return;
-	ABCJS.synth.playEvent(lastClicked, abcElem.midiGraceNotePitches, synthControl.visualObj.millisecondsPerMeasure()).then(function (response) {
-		console.log("note played");
-	}).catch(function (error) {console.log("error playing note", error);});
-}
 
 function D(string) { return document.getElementById(string);}	
 	
