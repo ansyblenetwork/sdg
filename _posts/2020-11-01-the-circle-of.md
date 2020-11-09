@@ -6,7 +6,7 @@ The short answer: Because
 
 $$3^{12} = 531441 \approx 524288 = 2^{19}.$$
 
-The wise(?) answer: Because musical semantics arises from carefully chosen _intervals_, not pitches.
+The wise(?) answer: Because musical semantics arises from carefully chosen _intervals_. The pitches follow.
 
 The long answer:
 
