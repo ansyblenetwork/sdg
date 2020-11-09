@@ -41,7 +41,6 @@ Observe the narrow gaps between the third and the fourth, and the seventh and th
 
 The pentatonic scale is less well known to classical pianists (as far as I am aware). I only discovered it recently. In a nutshell, it is the scale consisting of the black keys on a piano:
 
-
 <div id="scale"></div>
 <script>
 makeInteractive("scale", `
