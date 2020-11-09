@@ -54,7 +54,7 @@ Q:1/4=60
 `);
 </script>
 
-However, the mathematical origins seem to be motivated in a way similar to our discussion for the major scale. In the chart above, the major seventh is less egregious than the diminished fifth, but still a dissonant interval. Excising by approximating it by an octave, we obtain 
+However, the mathematical origins seem to be motivated in a way similar to our discussion for the major scale. In the chart above, the major seventh is less egregious than the diminished fifth, but still a dissonant interval. Since it can be crudely approximated by the octave, we excise it and the perfect fourth below it:
 
 | Wavelength | Name |
 | ------------- | ------------- |
