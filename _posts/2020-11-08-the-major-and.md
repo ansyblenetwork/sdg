@@ -43,6 +43,17 @@ Observe the narrow gaps between the third and the fourth, and the seventh and th
 
 The pentatonic scale is less well known to classical pianists (as far as I am aware). I only discovered it recently. In a nutshell, it is the scale consisting of the black keys on a piano:
 
+<div id="scale"></div>
+<script>
+makeInteractive("scale", `
+X:1
+K:C
+L: 1/4
+Q:1/4=60
+^F^G^A^C^D
+`);
+</script>
+
 However, the mathematical origins seem to be motivated in a way similar to our discussion for the major scale. In the chart above, the major seventh is less egregious than the diminished fifth, but still a dissonant interval. Excising by approximating it by an octave, we obtain 
 
 | Wavelength | Name |
