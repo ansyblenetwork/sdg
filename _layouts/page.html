@@ -34,7 +34,7 @@ function makeInteractive(controller, test) {
 			console.log("note played");
 		}).catch(function (error) {console.log("error playing note", error);});
 	} })[0];
-	newDiv.firstChild.setAttribute("width", "auto");
+	if (newDiv.firstChild.width < 740) newDiv.firstChild.setAttribute("width", "auto");
 	
 
 	function CursorControl() {
