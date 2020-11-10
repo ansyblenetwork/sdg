@@ -23,7 +23,7 @@ I will copy here the table of intervals from our discussion of the [consonant in
 | 3/4 | perfect fourth (inversion of perfect fifth) |
 | 1/2 | octave |
 
-First, I will insist that we preserve the unit wavelength note as the tonic of our scale. Many resources point out that the notes of the major scale are contiguous if we begin our generation at the perfect forth and cycle through to the major seventh, but this fails to answer the question of why the major scale seems to be the most consonant mode (I plan to discuss modes in a later post).
+First, I will insist that we preserve the unit wavelength note as the tonic of our scale. Many resources point out that the notes of the major scale are contiguous if we begin our generation at the perfect forth and cycle through to the major seventh, but this fails to explain why the major scale seems to be the most consonant mode (I plan to discuss modes in a later post).
 
 There are many disonances contained within these twelve notes. Given our tonic note, what is the most dissonant note? The most natural answer is the diminished fifth, which forms the most dissonant interval, also known as a _tritone_.
 
