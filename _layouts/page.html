@@ -20,8 +20,6 @@ function makeInteractive(controller, test) {
 	let newDiv = document.createElement("div");
 	newDiv.id = paper;
 	newDiv.classList.add("sheetmusic");
-	newDiv.onclick = function() { console.log(D(controller).children[2]);
-				     D(controller).children[2].click(); };
 	
 	D(controller).classList.add("controller");
 	D(controller).parentNode.insertBefore(newDiv, D(controller));
@@ -97,6 +95,9 @@ function makeInteractive(controller, test) {
 		    displayWarp: true
 		}
 	);
+	
+	newDiv.onclick = function() { console.log(D(controller).children[2]);
+				     D(controller).children[2].click(); };
 
 	if (ABCJS.synth.supportsAudio()) {    
 		var midiBuffer = new ABCJS.synth.CreateSynth();
