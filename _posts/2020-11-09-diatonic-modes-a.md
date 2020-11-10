@@ -18,9 +18,9 @@ One way to organize the multiple diatonic modes, which makes transparent their c
 | 7 | Aeolian (natural minor) |
 | 7 | Locrian |
 
-However, this view obscures why the major scale has risen to the top of many musical traditions. It also fails to explain why the major scale sounds "happy" while the minor scale sounds "sad." 
+However, the symmetry provided by this view obscures why the major scale has risen to the top of many musical traditions. It also fails to explain why the major scale sounds "happy" while the minor scale sounds "sad." 
 
-I proposed a possible answer to the former question in a previous post: Tonal memory of the tonic during the [generation of the diatonic notes]({{ "" | relative_url }}{% post_url 2020-11-08-the-major-minor %}) via perfect fifths.
+The former question seems to be more difficult to answer, and I will attempt to address it in a later post.
 
 ### By sharps and flats
 
