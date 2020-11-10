@@ -26,7 +26,7 @@ I proposed a possible answer to the former question in terms of tonal memory of 
 
 To answer the latter question, we can group the diatonic modes instead by starting note, and enumerate them by their relative sharps and flats:
 
-| Starting note | Name |
+| Accidentals relative to Ionian | Name |
 | ------------- | ------------- |
 | #4 | Lydian |
 | none | Ionian (major) |
