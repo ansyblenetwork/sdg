@@ -2,7 +2,7 @@
 title: "Diatonic modes: From major to minor"
 ---
 
-While I was researching the origins of the major scale, I found very many articles trying to answer the question of why the major scale sounds happy, while the minor scale sound sad. The most satisfactory answer seems to be via the spectrum of lightness and darkness assigned to the various modes of the major scale.
+While I was researching the origins of the major scale, I found very many articles trying to answer the question of why the major scale sounds happy, while the minor scale sound sad. The most satisfactory answer seems to be via the spectrum of lightness and darkness assigned to the various modes of the diatonic scale.
 
 ### By frequency pattern
 
