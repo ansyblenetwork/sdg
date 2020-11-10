@@ -20,7 +20,7 @@ One way to organize the multiple diatonic modes, which makes transparent their c
 
 However, this view obscures why the major scale has risen to the top of many musical traditions. It also fails to explain why the major scale sounds "happy" while the minor scale sounds "sad." 
 
-I proposed a possible answer to the former question in a previous post: Tonal memory of the tonic during the [generation of the diatonic notes]({{ "" | relative_url }}{% post_url 2020-11-08-the-major-and %}) via perfect fifths.
+I proposed a possible answer to the former question in a previous post: Tonal memory of the tonic during the [generation of the diatonic notes]({{ "" | relative_url }}{% post_url 2020-11-08-the-major-minor %}) via perfect fifths.
 
 ### By sharps and flats
 
