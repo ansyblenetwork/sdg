@@ -24,6 +24,9 @@ function makeInteractive(controller, test) {
 	D(controller).classList.add("controller");
 	D(controller).parentNode.insertBefore(newDiv, D(controller));
 	
+	console.log(D(controller));
+	console.log(D(controller).children[2]);
+	
 
 	var synthControl = new ABCJS.synth.SynthController();
 	
