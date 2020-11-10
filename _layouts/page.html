@@ -35,7 +35,7 @@ function makeInteractive(controller, test) {
 		}).catch(function (error) {console.log("error playing note", error);});
 	} })[0];
 	
-	  var  mysvg = D(paper);
+	  var  mysvg = D(paper).firstChild;
 	  // Get the bounds of the SVG content
 	  var  bbox = mysvg.getBBox();
 	  // Update the width and height using the size of the contents
