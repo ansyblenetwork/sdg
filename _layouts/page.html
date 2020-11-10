@@ -117,8 +117,9 @@ function makeInteractive(controller, test) {
 			synthControl.setTune(visualObj, false, { options:{ qpm: 2*visualObj.getBpm()} }).then(function () {
 				console.log("Audio successfully loaded.")
 	
-				newDiv.onclick = function() { console.log(D(controller).children[2]);
-							     D(controller).children[2].click(); };
+				let tempController = D(controller);
+				newDiv.onclick = function() { console.log(tempController.children[2]);
+							      tempController.children[2].click(); };
 
 				let tempos = document.querySelectorAll(".abcjs-midi-tempo");
 				for (let i = 0; i < tempos.length; i++) {
