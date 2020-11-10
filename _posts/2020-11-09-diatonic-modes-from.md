@@ -100,6 +100,6 @@ T:Lydian
 K:C
 L: 1/4
 Q:1/2=60
-C_D_EF_G_A_BC
+C_D_EF_G_A_BC'
 `);
 </script>
