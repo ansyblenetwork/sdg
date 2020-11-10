@@ -6,7 +6,7 @@ To what extent does the major scale of classical Western music, and the pentaton
 
 ### The major scale: Tritone removal
 
-I will copy here the table of intervals from our discussion of the [consonant intervals]({{ "" | relative_url }}{% post_url 2020-11-03-just-intonation-ordering %}):
+I will copy here the table of intervals from our discussion of the [consonant intervals]({{ "" | relative_url }}{% post_url 2020-11-03-just-intonation-and %}):
 
 | Wavelength | Name |
 | ------------- | ------------- |
