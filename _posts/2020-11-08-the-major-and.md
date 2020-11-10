@@ -4,7 +4,7 @@ title: "The major and pentatonic scales: An objective construction"
 
 To what extent does the major scale of classical Western music, and the pentatonic scale of Eastern music, have mathematical origins? To what extent are they merely ingrained through habituation? I did a lot of research trying to find a definitive answer to these questions. I found a lot of partial answers, but which always seemed to fall short. Below is what I have decided is the most objective construction, pieced together from various sources.
 
-### Mathematical origins of the major scale
+### Tritone removal
 
 I will copy here the table of intervals from our discussion of the [consonant intervals]({{ "" | relative_url }}{% post_url 2020-11-03-just-intonation-ordering %}):
 
@@ -23,7 +23,7 @@ I will copy here the table of intervals from our discussion of the [consonant in
 | 3/4 | perfect fourth (inversion of perfect fifth) |
 | 1/2 | octave |
 
-First, I will insist that we preserve the unit wavelength note as the tonic of our scale. Many resources point out that the notes of the major scale are contiguous if we begin our generation at the perfect forth and cycle through to the major seventh, but this fails to explain why the major scale seems to be the most consonant mode (I plan to discuss modes in a later post).
+First, I will insist that we preserve the unit wavelength note as the tonic of our scale. Many resources point out that the notes of the major scale are contiguous if we begin our generation at the perfect forth and cycle through to the major seventh, but this fails to explain why the major scale seems to be the [most consonant mode]({{ "" | relative_url }}{% post_url 2020-11-09-diatonic-modes-from %}).
 
 There are many disonances contained within these twelve notes. Given our tonic note, what is the most dissonant note? The most natural answer is the diminished fifth, which forms the most dissonant interval, also known as a _tritone_.
 
@@ -47,7 +47,7 @@ We have finished removing all tritones, and are left with the following chart, w
 | 3/4 | perfect fourth (inversion of perfect fifth) |
 | 1/2 | octave |
 
-### Mathematical origins of the pentatonic scale
+### Half step removal
 
 The pentatonic scale is less well known to classical pianists (as far as I am aware). I only discovered it recently. See [this video](https://www.youtube.com/watch?v=MGpUscFY9RA) by David Bennett for a nice overview of its use in popular and Asian music. In a nutshell, it is the scale consisting of the black keys on a piano:
 
