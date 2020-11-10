@@ -2,7 +2,7 @@
 title: "Diatonic modes: From major to minor"
 ---
 
-While I was researching the origins of the major scale, I found very many articles trying to answer the question of why the major scale sounds happy, while the minor scale sound sad. The most satisfactory answer seems to be via the spectrum of lightness and darkness assigned to the various modes of the diatonic scale.
+While I was researching the origins of the major scale, I found very many articles trying to answer the question of why the major scale sounds happy, while the minor scale sound sad. The most satisfactory answer seems to be via the spectrum of brightness and darkness assigned to the various modes of the diatonic scale.
 
 ### By frequency pattern
 
@@ -36,7 +36,7 @@ To answer the latter question, we can group the diatonic modes instead by starti
 | b3, b7, b6, b2 | Phrygian |
 | b3, b7, b6, b2, b5 | Locrian |
 
-It is easy to believe, and [studies have shown](https://www.researchgate.net/publication/259731533_Emotional_Connotations_of_Diatonic_Modes), that the number of flats correlates with the sadness of the scale. Perhaps you can judge for yourself:
+It is easy to believe, and [studies have shown](https://www.researchgate.net/publication/259731533_Emotional_Connotations_of_Diatonic_Modes), that the number of flats correlates with the brightness or happiness of the scale. Perhaps you can judge for yourself:
 
 <div id="scale1"></div>
 <div id="scale2"></div>
