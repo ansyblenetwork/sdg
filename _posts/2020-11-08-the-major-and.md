@@ -4,7 +4,7 @@ title: "The major and pentatonic scales: An objective construction"
 
 To what extent does the major scale of classical Western music, and the pentatonic scale of Eastern music, have mathematical origins? To what extent are they merely ingrained through habituation? I did a lot of research trying to find a definitive answer to these questions. I found a lot of partial answers, but which always seemed to fall short. Below is what I have decided is the most objective construction, pieced together from various sources.
 
-### Tritone removal
+### The major scale: Tritone removal
 
 I will copy here the table of intervals from our discussion of the [consonant intervals]({{ "" | relative_url }}{% post_url 2020-11-03-just-intonation-ordering %}):
 
@@ -47,7 +47,7 @@ We have finished removing all tritones, and are left with the following chart, w
 | 3/4 | perfect fourth (inversion of perfect fifth) |
 | 1/2 | octave |
 
-### Half step removal
+### The pentatonic scale: Half step removal
 
 The pentatonic scale is less well known to classical pianists (as far as I am aware). I only discovered it recently. See [this video](https://www.youtube.com/watch?v=MGpUscFY9RA) by David Bennett for a nice overview of its use in popular and Asian music. In a nutshell, it is the scale consisting of the black keys on a piano:
 
