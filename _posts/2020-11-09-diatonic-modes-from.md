@@ -48,7 +48,7 @@ It is easy to believe, and [studies have shown](https://www.researchgate.net/pub
 <script>
 makeInteractive("scale1", `
 X:1
-T:Lydian
+R:Lydian
 K:C
 L: 1/4
 Q:1/2=60
@@ -56,7 +56,7 @@ CDE^FGABC'
 `);
 makeInteractive("scale2", `
 X:1
-T:Ionian (major)
+R:Ionian (major)
 K:C
 L: 1/4
 Q:1/2=60
@@ -64,7 +64,7 @@ CDEFGABC'
 `);
 makeInteractive("scale3", `
 X:1
-T:Mixolydian
+R:Mixolydian
 K:C
 L: 1/4
 Q:1/2=60
@@ -72,7 +72,7 @@ CDEFGA_BC'
 `);
 makeInteractive("scale4", `
 X:1
-T:Dorian
+R:Dorian
 K:C
 L: 1/4
 Q:1/2=60
@@ -80,7 +80,7 @@ CD_EFGA_BC'
 `);
 makeInteractive("scale5", `
 X:1
-T:Aeolian (natural minor)
+R:Aeolian (natural minor)
 K:C
 L: 1/4
 Q:1/2=60
@@ -88,7 +88,7 @@ CD_EFG_A_BC'
 `);
 makeInteractive("scale6", `
 X:1
-T:Phrygian
+R:Phrygian
 K:C
 L: 1/4
 Q:1/2=60
@@ -96,7 +96,7 @@ C_D_EFG_A_BC'
 `);
 makeInteractive("scale7", `
 X:1
-T:Locrian
+R:Locrian
 K:C
 L: 1/4
 Q:1/2=60
