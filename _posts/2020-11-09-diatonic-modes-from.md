@@ -36,4 +36,70 @@ To answer the latter question, we can group the diatonic modes instead by starti
 | b3, b7, b6, b2 | Phrygian |
 | b3, b7, b6, b2, b5 | Locrian |
 
-It is easy to believe, and [studies have shown](https://www.researchgate.net/publication/259731533_Emotional_Connotations_of_Diatonic_Modes), that the number of flats correlates with the sadness of the scale.
+It is easy to believe, and [studies have shown](https://www.researchgate.net/publication/259731533_Emotional_Connotations_of_Diatonic_Modes), that the number of flats correlates with the sadness of the scale. Perhaps you can judge for yourself:
+
+<div id="scale1"></div>
+<div id="scale2"></div>
+<div id="scale3"></div>
+<div id="scale4"></div>
+<div id="scale5"></div>
+<div id="scale6"></div>
+<div id="scale7"></div>
+<script>
+makeInteractive("scale1", `
+X:1
+T:Lydian
+K:C
+L: 1/4
+Q:1/2=60
+CDE^FGABC
+`);
+makeInteractive("scale2", `
+X:1
+T:Lydian
+K:C
+L: 1/4
+Q:1/2=60
+CDEFGABC
+`);
+makeInteractive("scale3", `
+X:1
+T:Lydian
+K:C
+L: 1/4
+Q:1/2=60
+CDEFGA_BC
+`);
+makeInteractive("scale4", `
+X:1
+T:Lydian
+K:C
+L: 1/4
+Q:1/2=60
+CD_EFGA_BC
+`);
+makeInteractive("scale5", `
+X:1
+T:Lydian
+K:C
+L: 1/4
+Q:1/2=60
+CD_EFG_A_BC
+`);
+makeInteractive("scale6", `
+X:1
+T:Lydian
+K:C
+L: 1/4
+Q:1/2=60
+C_D_EFG_A_BC
+`);
+makeInteractive("scale7", `
+X:1
+T:Lydian
+K:C
+L: 1/4
+Q:1/2=60
+C_D_EF_G_A_BC
+`);
+</script>
