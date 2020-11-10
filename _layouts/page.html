@@ -34,8 +34,14 @@ function makeInteractive(controller, test) {
 			console.log("note played");
 		}).catch(function (error) {console.log("error playing note", error);});
 	} })[0];
-//	if (newDiv.firstChild.width < 740) newDiv.firstChild.setAttribute("width", "auto");
 	
+	  var  mysvg = D(paper);
+	  // Get the bounds of the SVG content
+	  var  bbox = mysvg.getBBox();
+	  // Update the width and height using the size of the contents
+	  mysvg.setAttribute("width", bbox.x + bbox.width + bbox.x);
+	  mysvg.setAttribute("height", bbox.y + bbox.height + bbox.y);
+//	if (newDiv.firstChild.width < 740) newDiv.firstChild.setAttribute("width", "auto");
 
 	function CursorControl() {
 		var self = this;
