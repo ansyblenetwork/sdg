@@ -1,0 +1,39 @@
+---
+title: "Diatonic modes: From major to minor"
+---
+
+While I was researching the origins of the major scale, I found very many articles trying to answer the question of why the major scale sounds happy, while the minor scale sound sad. The most satisfactory answer seems to be via the spectrum of lightness and darkness assigned to the various modes of the major scale.
+
+### By frequency pattern
+
+One way to organize the multiple diatonic modes, which makes transparent their close relationship, is to group the modes which use the same notes, and enumerate them by their starting note:
+
+| Starting note | Name |
+| ------------- | ------------- |
+| 1 | Ionian (major) |
+| 2 | Dorian  |
+| 3 | Phrygian |
+| 4 | Lydian |
+| 5 | Mixolydian |
+| 7 | Aeolian (natural minor) |
+| 7 | Locrian |
+
+However, this view obscures why the major scale has risen to the top of many musical traditions. It also fails to explain why the major scale sounds "happy" while the minor scale sounds "sad." 
+
+I proposed a possible answer to the former question in terms of tonal memory of the tonic during the [generation of the diatonic notes]({{ "" | relative_url }}{% post_url 2020-11-08-the-major-and %}) via perfect fifths.
+
+### By sharps and flats
+
+To answer the latter question, we can group the diatonic modes instead by starting note, and enumerate them by their relative sharps and flats:
+
+| Starting note | Name |
+| ------------- | ------------- |
+| #4 | Lydian |
+| none | Ionian (major) |
+| b7 | Mixolydian |
+| b3, b7 | Dorian  |
+| b3, b7, b6 | Aeolian (natural minor) |
+| b3, b7, b6, b2 | Phrygian |
+| b3, b7, b6, b2, b5 | Locrian |
+
+It is easy to believe, and [studies have shown](https://www.researchgate.net/publication/259731533_Emotional_Connotations_of_Diatonic_Modes), that the number of flats correlates with the sadness of the scale.
