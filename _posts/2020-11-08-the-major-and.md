@@ -2,7 +2,7 @@
 title: "The major and pentatonic scales: An objective construction"
 ---
 
-To what extent does the major scale of classical Western music, and the pentatonic scale of Eastern music, have mathematical origins? To what extent are they merely ingrained through habituation? I did a lot of research trying to find a definitive answer to these questions. I found a lot of partial answers, but which always seemed to fall short. Below is what I've decided is the most objective presentation which I have pieced together from various sources.
+To what extent does the major scale of classical Western music, and the pentatonic scale of Eastern music, have mathematical origins? To what extent are they merely ingrained through habituation? I did a lot of research trying to find a definitive answer to these questions. I found a lot of partial answers, but which always seemed to fall short. Below is what I've decided is the most objective construction which I have pieced together from various sources.
 
 ### Mathematical origins of the major scale
 
@@ -33,7 +33,9 @@ Having removed the minor second, the minor sixth should be removed: It forms a t
 
 We proceed similarly to remove the minor seventh, which forms a tritone with the major third and a minor second with the major sixth.
 
-Finally, we remove the minor third, which forms a tritone with the major sixth and a minor second with the major third. We are left with the following chart, which consists precisely of the notes of the major scale, _with the tonic preserved_:
+Finally, we remove the minor third, which forms a tritone with the major sixth and a minor second with the major third. 
+
+We have finished removing all tritones, and are left with the following chart, which consists precisely of the notes of the major scale, _with the tonic preserved_:
 
 | Wavelength | Name |
 | ------------- | ------------- |
