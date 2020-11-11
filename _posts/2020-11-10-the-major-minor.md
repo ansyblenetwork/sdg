@@ -48,13 +48,14 @@ If we chose instead to remove the major third and keep the minor seventh, we end
 
 However, the major second gap at the end and beginning of the major and minor scales respectively, is odd and should be repaired. The re-insertion of the major seventh, also known as the _leading tone_, completes the major scale. This is particularly appropriate as the seventh tone resolves to the tonic very strongly. On the other hand, the minor scale should not begin with a half step, as this would want to resolve back downward; the major second is a better bet.
 
-In conclusion, there seem to be three principles that the major and minor scales satisfy:
+In conclusion, there seem to be four principles that the major and minor scales satisfy:
 
-1. Use as few tritones and half-steps as possible, without introducing major second gaps.
-2. Perfect fourths and fifths are not to be tampered with.
-3. Leading tones occur at the end of the scale, not the beginning.
+1. No major second gaps.
+2. Remove tritones and half-steps, as long as (1) is satisfied.
+3. Perfect fourths and fifths are not to be tampered with.
+4. Leading tones occur at the end of the scale, not the beginning.
 
-All of the [diatonic modes]({{ "" | relative_url }}{% post_url 2020-11-09-diatonic-modes-a %}) satisfy (1), but only the major and minor scales satisfy both (2) and (3).
+All of the [diatonic modes]({{ "" | relative_url }}{% post_url 2020-11-09-diatonic-modes-a %}) satisfy (1) and (2), but only the major and minor scales satisfy (3) and (4).
 
 
 ### The pentatonic scale: Half step removal
@@ -82,4 +83,4 @@ The mathematical origins are simpler than those of the diatonic scale. If we con
 | 4/5 | major third (inversion of minor sixth) |
 | 1/2 | octave |
 
-We see that the pentatonic scale satisfies the principles above (including (3) by default, as there are no half steps), except that it chooses to live with the awkward major second gaps.
+We see that the pentatonic scale satisfies the principles above (including (3) by default, as there are no half steps), except (1).
