@@ -27,11 +27,11 @@ First, I will insist that we preserve the unit wavelength note as the tonic of o
 
 There are many disonances contained within the twelve notes. In particular, the diminished fifth forms the most dissonant interval with the tonic, also known as a _tritone_. The tritone is so dissonant that we should consider removing all the tritone intervals that appear within our notes. In the following chart, we pair the 12 notes by tritone formation:
 
-| Note&nbsp;&nbsp; | Tritone pair |
+| Note | Tritone pair |
 | ------------- | ------------- |
 | tonic | diminished fifth |
 | perfect fifth | minor second |
-| perfect fourth | major seventh |
+| perfect fourth&nbsp;&nbsp;&nbsp;&nbsp; | major seventh |
 | major third | minor seventh |
 | major sixth | minor third |
 | major second | minor sixth |
