@@ -40,7 +40,7 @@ In fact, the tritone is so dissonant that we should consider removing all the tr
 
 For the moment, pretend that the major scale lacks the major seventh, and that the minor scale lacks the majors second. Then the construction of each scale would use the following reasoning:
 
-Within the chart, the tonic, perfect fourth, and perfect fifth are our primary consonances and non-negotiable; we must keep them, and summarily dispose of the diminished fifth, minor second, and major second. 
+Within the chart, the tonic, perfect fourth, and perfect fifth are our primary consonances and non-negotiable; we must keep them, and summarily dispose of the diminished fifth, minor second, and major seventh. 
 
 Then we have a degree of freedom. If we remove the minor seventh, this means we keep the major third. This makes it tempting to keep the major sixth as we have just removed a (dissonant) half step neighbor, and to remove the minor third, as we have just fixed a half-step neighbor. We accordingly remove the minor third and keep the major sixth. In turn, it is natural to remove finally the minor sixth. We obtain the pre-major scale.
 
