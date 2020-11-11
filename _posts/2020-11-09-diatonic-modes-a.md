@@ -18,7 +18,7 @@ One way to organize the multiple diatonic modes which makes transparent their cl
 | 7 | Aeolian (natural minor) |
 | 7 | Locrian |
 
-However, the symmetry provided by this view obscures why the major scale has risen to the top of many musical traditions. It also fails to explain why the major scale sounds "happy" while the minor scale sounds "sad." 
+However, the symmetry provided by this view obscures why the major and minor scales have risen to the top of many musical traditions. It also fails to explain why the major scale sounds "happy" while the minor scale sounds "sad." 
 
 The former question seems to be more difficult to answer, and I will attempt to address it in a later post.
 
