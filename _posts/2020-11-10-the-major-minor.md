@@ -46,13 +46,13 @@ Then we have a degree of freedom. If we remove the minor seventh, this means we 
 
 If we chose instead to remove the major third and keep the minor seventh, we end with the pre-minor scale.
 
-However, the major second gap at the end and beginning of the major and minor scales respectively, is odd and should be repaired. The re-insertion of the major seventh, also known as the _leading tone_, completes the major scale. This is particularly appropriate as the seventh tone resolves to the tonic very strongly. On the other hand, the minor scale should not begin with a half step, as this would want to resolve back downward; the major second is a better bet.
+However, the major second gap at the end and beginning of the major and minor scales respectively, is awkward and should be repaired. The re-insertion of the major seventh, also known as the _leading tone_, completes the major scale. This is particularly appropriate as the seventh tone resolves to the tonic very strongly, ending the scale. On the other hand, the minor scale should not begin with a half step, as this would want to resolve back downward; the major second is a better bet.
 
 In conclusion, there seem to be four principles that the major and minor scales satisfy:
 
 1. No major second gaps.
 2. Remove tritones and half-steps, as long as (1) is satisfied.
-3. Perfect fourths and fifths are not to be tampered with.
+3. The perfect fourth and fifth are not to be tampered with.
 4. Leading tones occur at the end of the scale, not the beginning.
 
 All of the [diatonic modes]({{ "" | relative_url }}{% post_url 2020-11-09-diatonic-modes-a %}) satisfy (1) and (2), but only the major and minor scales satisfy (3) and (4).
