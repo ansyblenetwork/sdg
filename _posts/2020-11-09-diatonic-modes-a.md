@@ -6,7 +6,7 @@ While I was researching the origins of the major scale, I found very many articl
 
 ### By frequency pattern
 
-One way to organize the multiple diatonic modes, which makes transparent their close relationship, is to group the modes which use the same notes, and enumerate them by their starting note:
+One way to organize the multiple diatonic modes which makes transparent their close relationship, is to group the modes which use the same notes, and enumerate them by their starting note:
 
 | Starting note | Name |
 | ------------- | ------------- |
