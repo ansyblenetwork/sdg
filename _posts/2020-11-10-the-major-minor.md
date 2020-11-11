@@ -46,7 +46,7 @@ Then we have a degree of freedom. If we remove the minor seventh, this means we 
 
 If we chose instead to remove the major third and keep the minor seventh, we end with the pre-minor scale.
 
-However, the major second at the end and beginning of the major and minor scales respectively, is odd and should be repaired. The re-insertion of the major seventh, also known as the _leading tone_, completes the major scale. This is particularly appropriate as the seventh tone resolves to the tonic very strongly. On the other hand, the minor scale should not begin with a half step, as this would want to resolve back downward; the major second is a better bet.
+However, the major second gap at the end and beginning of the major and minor scales respectively, is odd and should be repaired. The re-insertion of the major seventh, also known as the _leading tone_, completes the major scale. This is particularly appropriate as the seventh tone resolves to the tonic very strongly. On the other hand, the minor scale should not begin with a half step, as this would want to resolve back downward; the major second is a better bet.
 
 In conclusion, there seem to be three principles that the major and minor scales satisfy:
 
