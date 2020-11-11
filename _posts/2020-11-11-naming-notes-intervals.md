@@ -1,11 +1,10 @@
 ---
-title: "A perfect tonic: Naming the notes"
+title: "Naming notes, intervals, chords, and triads"
 ---
 
+I essentially didn't study music theory growing up; I crammed for ABRSM grade 5 theory in a few weeks, which if I recall, was a prerequisite to take the grade 8 performance exam.
 
-I have an admission to make: It takes me too long - perhaps a second or two - to recall the names of notes written on the staff (I do a better job of it if I'm sitting at a piano). I discovered this when trying to copy sheet music into Musescore the other day. However, I'm not ashamed of this. There is essentially no meaning to the lettered names of the notes; they are merely a semantic-less anthropogenic convention.
-
-This brings me to today's question: What are the principles guiding the _longform_ names of the intervals?
+This post is a crash course on musical terminology.
 
 ### Scale degree names
 
@@ -43,4 +42,4 @@ D('scale2').style.display = "none";
 3. _Mediant_ means "middle," and it lies approximately halfway between the tonic and dominant. Likewise, _submediant_ lies halfway between tonic and subdominant.
 4. Supertonic and subtonic are whole steps above and below the tonic, respectively.
 
-In particular, note that the major scale has a leading tone, instead of a subtonic which appears in natural and melodic minor scales. Also note that these names are preserved between major and minor scales, so other than the dominant and subdominant, this is not about [interval consonance]({{ "" | relative_url }}{% post_url 2020-11-03-just-intonation-ordering %}), as I initially suspected.
+In particular, recall that the major scale has a [leading tone]({{ "" | relative_url }}{% post_url 2020-11-10-an-objective-construction %}). Also note that these names are preserved between modes, so that other than the dominant and subdominant, this is not about intervals, but scales.
