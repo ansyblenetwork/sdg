@@ -73,14 +73,12 @@ Q:1/4=60
 `);
 </script>
 
-The mathematical origins are simpler than those of the diatonic scale. If we continued removing the most dissonant notes from the major scale, we would first remove the major seventh, as it forms a minor second with our tonic. Then, we would remove the perfect fourth, as it forms a minor second with our perfect fifth (which we certainly are not going to remove):
+The mathematical description of the pentatonic scale is simple: It is the unique largest scale with no tritones or half steps. It can be constructed from the pre-major scale by removing the last remaining half step, the major third:
 
 | Wavelength | Name |
 | ------------- | ------------- |
 | 2/3 | perfect fifth (inversion of perfect fourth) |
 | 8/9 | major second (inversion of minor seventh)  |
 | 3/5 | major sixth (inversion of minor third) |
-| 4/5 | major third (inversion of minor sixth) |
+| 3/4 | perfect fourth (inversion of perfect fifth) |
 | 1/2 | octave |
-
-We see that the pentatonic scale satisfies the principles above (including (3) by default, as there are no half steps), except (1).
