@@ -42,7 +42,7 @@ For the moment, pretend that the major scale lacks the major seventh, and that t
 
 Within the chart, the tonic, perfect fourth, and perfect fifth are our primary consonances and non-negotiable; we must keep them, and summarily dispose of the diminished fifth, minor second, and major seventh. 
 
-Then we have a degree of freedom. If we remove the minor seventh, this means we keep the major third. This makes it tempting to keep the major sixth as we have just removed a (dissonant) half step neighbor, and to remove the minor third, as we have just fixed a half-step neighbor. We accordingly remove the minor third and keep the major sixth. In turn, it is natural to remove finally the minor sixth. We obtain the pre-major scale.
+Then we have a degree of freedom. If we remove the minor seventh, this means we keep the major third. In turn, it becomes tempting to keep the major sixth as we have just removed a (dissonant) half step neighbor, and to remove the minor third, as we have just fixed a half-step neighbor. If we proceed as such, it in turn is natural to remove finally the minor sixth. We obtain the pre-major scale.
 
 If we chose instead to remove the major third and keep the minor seventh, we end with the pre-minor scale.
 
