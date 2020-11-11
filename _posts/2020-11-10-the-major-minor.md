@@ -73,12 +73,12 @@ Q:1/4=60
 `);
 </script>
 
-The mathematical description of the pentatonic scale is simple: It is the unique largest scale with no tritones or half steps. It can be constructed from the pre-major scale by removing the last remaining half step, the major third:
+The mathematical description of the pentatonic scale is simple: It is the unique largest scale with no tritones or half steps. It can be constructed from the pre-major scale by removing the last remaining half step, the perfect fourth:
 
 | Wavelength | Name |
 | ------------- | ------------- |
 | 2/3 | perfect fifth (inversion of perfect fourth) |
 | 8/9 | major second (inversion of minor seventh)  |
 | 3/5 | major sixth (inversion of minor third) |
-| 3/4 | perfect fourth (inversion of perfect fifth) |
+| 4/5 | major third (inversion of minor sixth) |
 | 1/2 | octave |
