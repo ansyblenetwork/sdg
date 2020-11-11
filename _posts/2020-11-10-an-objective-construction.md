@@ -1,5 +1,5 @@
 ---
-title: "The major, minor, and pentatonic scales: An objective construction"
+title: "An objective construction of the major, minor, and pentatonic scales"
 ---
 
 To what extent do the major and minor scales of classical Western music, and the pentatonic scale of Eastern music, have mathematical origins? To what extent are they merely ingrained through habituation? I did a lot of research trying to find a definitive answer to these questions. I found a lot of partial answers, but which always seemed to fall short. Below is what I have decided is the most objective construction, pieced together from various sources.
