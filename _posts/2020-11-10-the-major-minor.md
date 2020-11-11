@@ -25,11 +25,9 @@ I will copy here the table of intervals from our discussion of the [consonant in
 
 First, I will insist that we preserve the unit wavelength note as the tonic of our scale. Many resources mention that the notes of the major scale are contiguous if we begin our generation at the perfect forth and cycle through to the major seventh, essentially reassigning the tonic note. However, this fails to explain why the major and minor scales are the [most commonly used modes]({{ "" | relative_url }}{% post_url 2020-11-09-diatonic-modes-a %}). Given the strikingly different moods a scale can evoke simply by shifting the tonic note, we should seek a contruction that preserves the tonic throughout.
 
-There are many disonances contained within these twelve notes. Given our tonic note, what is the most dissonant note? The most natural answer is the diminished fifth, which forms the most dissonant interval, also known as a _tritone_.
+There are many disonances contained within the twelve notes. In particular, the diminished fifth forms the most dissonant interval with the tonic, also known as a _tritone_. The tritone is so dissonant that we should consider removing all the tritone intervals that appear within our notes. In the following chart, we pair the 12 notes by tritone formation:
 
-In fact, the tritone is so dissonant that we should consider removing all the tritone intervals that appear within our notes. In the following chart, we pair the 12 notes by tritone formation:
-
-| Note | Tritone pair |
+| Note&nbsp;&nbsp; | Tritone pair |
 | ------------- | ------------- |
 | tonic | diminished fifth |
 | perfect fifth | minor second |
