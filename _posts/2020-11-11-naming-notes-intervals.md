@@ -2,7 +2,7 @@
 title: "Naming notes, intervals, chords, and triads"
 ---
 
-I essentially didn't study music theory growing up; I crammed for ABRSM grade 5 theory in a few weeks, which if I recall, was a prerequisite to take the grade 8 performance exam.
+I essentially didn't study music theory growing up; I crammed for ABRSM grade 5 theory over a few weeks, which if I recall, was a prerequisite to take the grade 8 performance exam.
 
 This post is a crash course on musical terminology.
 
@@ -42,4 +42,4 @@ D('scale2').style.display = "none";
 3. _Mediant_ means "middle," and it lies approximately halfway between the tonic and dominant. Likewise, _submediant_ lies halfway between tonic and subdominant.
 4. Supertonic and subtonic are whole steps above and below the tonic, respectively.
 
-In particular, recall that the major scale has a [leading tone]({{ "" | relative_url }}{% post_url 2020-11-10-an-objective-construction %}). Also note that these names are preserved between modes, so that other than the dominant and subdominant, this is not about intervals, but scales.
+In particular, recall that the major scale has a [leading tone]({{ "" | relative_url }}{% post_url 2020-11-10-an-objective-construction %}) instead of a subtonic. Also note that these names are preserved between modes, so that other than the dominant and subdominant, this is not about intervals, but scales.
