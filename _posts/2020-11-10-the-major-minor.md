@@ -51,8 +51,8 @@ However, the major second gap at the end and beginning of the major and minor sc
 In conclusion, there seem to be three principles that the major and minor scales satisfy:
 
 1. Use as few tritones and half-steps as possible, without introducing major second gaps.
-2. Leading tones occur at the end of the scale, not the beginning.
-3. Perfect fourths and fifths should not be tampered with.
+2. Perfect fourths and fifths should not be tampered with.
+3. Leading tones occur at the end of the scale, not the beginning.
 
 All of the [diatonic modes]({{ "" | relative_url }}{% post_url 2020-11-09-diatonic-modes-a %}) satisfy (1), but only the major and minor scales satisfy both (2) and (3).
 
@@ -81,3 +81,5 @@ The mathematical origins are simpler than those of the diatonic scale. If we con
 | 3/5 | major sixth (inversion of minor third) |
 | 4/5 | major third (inversion of minor sixth) |
 | 1/2 | octave |
+
+We see that the pentatonic scale satisfies the principles above (including (3) by default, as there are no half steps), except that it chooses to live with the awkward major second gaps.
