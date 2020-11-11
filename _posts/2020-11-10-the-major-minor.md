@@ -51,7 +51,7 @@ However, the major second gap at the end and beginning of the major and minor sc
 In conclusion, there seem to be three principles that the major and minor scales satisfy:
 
 1. Use as few tritones and half-steps as possible, without introducing major second gaps.
-2. Perfect fourths and fifths should not be tampered with.
+2. Perfect fourths and fifths are not to be tampered with.
 3. Leading tones occur at the end of the scale, not the beginning.
 
 All of the [diatonic modes]({{ "" | relative_url }}{% post_url 2020-11-09-diatonic-modes-a %}) satisfy (1), but only the major and minor scales satisfy both (2) and (3).
