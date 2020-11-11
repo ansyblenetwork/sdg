@@ -54,7 +54,7 @@ In conclusion, there seem to be three principles that the major and minor scales
 2. Leading tones occur at the end of the scale, not the beginning.
 3. Perfect fourths and fifths should not be tampered with.
 
-All the [diatonic modes]({{ "" | relative_url }}{% post_url 2020-11-09-diatonic-modes-a %}) satisfy (1), but only the major and minor scales satisfy both (2) and (3).
+All of the [diatonic modes]({{ "" | relative_url }}{% post_url 2020-11-09-diatonic-modes-a %}) satisfy (1), but only the major and minor scales satisfy both (2) and (3).
 
 
 ### The pentatonic scale: Half step removal
