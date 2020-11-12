@@ -82,7 +82,7 @@ X:1
 K:C
 L: 1/4
 Q:1/4=60
-  [CEG}|[C_EG]|[CE_G]|
+  [CEG}|[CE,G]|[CEG,]|
 w: root~position first~inversion second~inversion
 `);
 </script>
