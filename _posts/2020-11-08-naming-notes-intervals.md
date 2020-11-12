@@ -70,7 +70,20 @@ K:C
 L: 1/4
 Q:1/4=60
   [CEG}|[CE^G]|[C_EG]|[C_E_G]|
-w: major~ augmented~ minor~ diminished~
+w: major augmented minor diminished~
+`);
+</script>
+
+Triads may be inverted:
+<div id="scale4"></div>
+<script>
+makeInteractive("scale4", `
+X:1
+K:C
+L: 1/4
+Q:1/4=60
+  [CEG}|[C_EG]|[CE_G]|
+w: root~position first~inversion second~inversion
 `);
 </script>
 
