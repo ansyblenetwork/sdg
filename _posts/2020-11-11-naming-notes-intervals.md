@@ -97,5 +97,5 @@ A seventh chord adds a seventh to a triad. There are five:
 4. Half-diminished: Adds a minor seventh to a diminished triad.
 5. Diminished: Adds a diminished seventh to a diminished triad.
 
-Seventh chords may be inverted with the natural naming scheme (up to a third inversion).
+Seventh chords may also be inverted with the natural naming scheme (up to a third inversion).
 
