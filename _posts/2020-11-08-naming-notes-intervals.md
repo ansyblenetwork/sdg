@@ -70,7 +70,7 @@ K:C
 L: 1/4
 Q:1/4=60
   [CEG}[CE^G][C_EG][C_E_G]
-w: major augmented minor diminished
+w: major&nbsp; augmented&nbsp; minor&nbsp; diminished&nbsp;
 `);
 </script>
 
