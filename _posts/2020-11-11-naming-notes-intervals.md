@@ -53,9 +53,9 @@ Earlier, we discovered and named the [12 intervals]({{ "" | relative_url }}{% po
 3. Next, if they are from the minor scale, they are minor.
 4. Lastly, any perfect interval may have the augmented or diminished modifier, which means the interval is a half step larger or smaller, respectively. Major intervals may also receive the augmented modifier, while minor intervals may receive the diminished modifier.
 
-### Chords and triads
+### Triads
 
-As I understand it, "chord" is the more general term. A triad must refer to a collection of three notes. There are four triads:
+There are four triads:
 
 1. Major: A major third and perfect fifth.
 2. Augmented: Raises the perfect fifth of a major triad by a half step.
@@ -74,7 +74,7 @@ w: major augmented minor diminished~
 `);
 </script>
 
-Triads may be inverted:
+Triads may be inverted, enumerated by the bass (lowest) note:
 <div id="scale4"></div>
 <script>
 makeInteractive("scale4", `
@@ -87,4 +87,15 @@ w: root~position first~inversion second~inversion
 `);
 </script>
 
+### Seventh chords
+
+A seventh chord adds a seventh to a triad. There are five:
+
+1. Major: Adds a major seventh to a major triad.
+2. Dominant: Adds a minor seventh to a major triad.
+3. Minor: Adds a minor seventh to a minor triad.
+4. Half-diminished: Adds a minor seventh to a diminished triad.
+5. Diminished: Adds a diminished seventh to a diminished triad.
+
+Seventh chords may be inverted with the natural naming scheme (up to a third inversion).
 
