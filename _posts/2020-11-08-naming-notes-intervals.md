@@ -51,7 +51,7 @@ Earlier, we discovered and named the [12 intervals]({{ "" | relative_url }}{% po
 1. The fourth and fifth alone receive the "perfect" modifier, as they are the primary consonances.
 2. Other intervals are major if they come from the major scale.
 3. Next, if they are from the minor scale, they are minor.
-4. Lastly, any interval may have the augmented or diminished modifier, which means the interval is a half step larger or smaller, respectively.
+4. Lastly, any perfect interval may have the augmented or diminished modifier, which means the interval is a half step larger or smaller, respectively. Major intervals may also receive the augmented modifier, while minor intervals may receive the diminished modifier.
 
 ### Chords and triads
 
