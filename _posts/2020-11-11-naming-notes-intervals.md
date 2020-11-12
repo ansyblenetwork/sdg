@@ -30,7 +30,7 @@ X:1
 K:C
 L: 1/4
 Q:1/4=60
-C[D_B,][EA,][GF,]
+C|[D_B,]|[EA,]|[GF,]|
 w: tonic supertonic/subtonic mediant/submediant dominant/subdominant
 `);
 D('scale2').style.display = "none";
@@ -48,19 +48,21 @@ In particular, observe that the major scale has a [leading tone]({{ "" | relativ
 
 Earlier, we discovered and named the [12 intervals]({{ "" | relative_url }}{% post_url 2020-11-03-just-intonation-and %}). Here we formalize the system:
 
-1. The fourth and fifth alone receive the "perfect" modifier, as they are the primary consonances.
-2. Other intervals are major if they come from the major scale.
-3. Next, if they are from the minor scale, they are minor.
-4. Lastly, any perfect interval may have the augmented or diminished modifier, which means the interval is a half step larger or smaller, respectively. Major intervals may also receive the augmented modifier, while minor intervals may receive the diminished modifier.
+Intervals are one of the rare musical objects that are named based on notation, rather than intrinsic pitch. The number assigned to the interval is determined by the interval on the staff. Then,
+
+1. Intervals are major if they appear in the major scale.
+1. However, the fourth and fifth alone receive the "perfect" modifier, as they are the primary consonances.
+3. If none of the above, the interval is minor if they appear in the minor scale.
+4. If still none of the above: Any perfect interval may have the augmented or diminished modifier, which means the interval is a half step larger or smaller, respectively. Major intervals may also receive the augmented modifier, while minor intervals may receive the diminished modifier.
 
 ### Triads
 
 There are four triads:
 
 1. Major: A major third and perfect fifth.
-2. Augmented: Raises the perfect fifth of a major triad by a half step.
+2. Augmented: Major but with augmented fifth.
 3. Minor: A minor third and perfect fifth.
-4. Diminished: Lowers the perfect fifth of a minor triad by a half step.
+4. Diminished: Minor but with diminished fifth.
 
 <div id="scale3"></div>
 <script>
@@ -86,6 +88,8 @@ Q:1/4=60
 w: root~position first~inversion second~inversion
 `);
 </script>
+
+The root note determines the key (C, in all of the examples above); the bass note determines the inversion.
 
 ### Seventh chords
 
