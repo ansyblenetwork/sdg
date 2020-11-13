@@ -57,7 +57,11 @@ Intervals are one of the rare musical objects that are named based on notation, 
 
 ### Triads
 
-There are four triads:
+A triad consists of two stacked thirds (three notes). There are three variables: Key, quality, and inversion. 
+
+The key is given by the root note, which in turn is given by the bottom note when the triad is explicitly stacked.
+
+There are four qualities:
 
 1. Major: A major third and perfect fifth.
 2. Augmented: Major but with augmented fifth.
@@ -89,7 +93,7 @@ w: root~position first~inversion second~inversion
 `);
 </script>
 
-The root note determines the key (C, in all of the examples above); the bass note determines the inversion.
+In summary, the root note determines the key (C, in all of the examples above); the bass note determines the inversion.
 
 ### Seventh chords
 
