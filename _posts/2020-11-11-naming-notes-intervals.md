@@ -63,11 +63,6 @@ The key is given by the root note, which in turn is given by the bottom note whe
 
 There are four qualities:
 
-1. Major: A major third and perfect fifth.
-2. Augmented: Major but with augmented fifth.
-3. Minor: A minor third and perfect fifth.
-4. Diminished: Minor but with diminished fifth.
-
 <div id="scale3"></div>
 <script>
 makeInteractive("scale3", `
@@ -79,6 +74,11 @@ Q:1/4=60
 w: major augmented minor diminished~
 `);
 </script>
+
+1. Major: A major third and perfect fifth.
+2. Augmented: Major but with augmented fifth.
+3. Minor: A minor third and perfect fifth.
+4. Diminished: Minor but with diminished fifth.
 
 Triads may be inverted, enumerated by the bass (lowest) note:
 <div id="scale4"></div>
