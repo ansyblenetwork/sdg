@@ -38,3 +38,13 @@ Q:1/4=60
 "Dm"[DFA]|"D7"[D^FAc]| "D7/F#"[d^FAc]| "Dsus7"[DGAc]|
 `);
 </script>
+
+### Roman numerals
+
+Roman numerals are more common in classical theory (I recall using them in my long-ago theory experience)
+
+1. Key/root: The numeral represents the degree of the scale in the key of the staff; this is the root.
+2. Quality: Uppercase represents a major or perfect triad. Lowercase represents a minor triad. + for augmented, o for diminished.
+3. Inversion: Indicated by a pair of numbers indicating the interval formed with the base note; for instance, 5/3. 
+
+It turns out there is a lot more to say about this, which we postpone for a separate post.
