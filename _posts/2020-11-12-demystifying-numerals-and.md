@@ -35,6 +35,6 @@ X:1
 L:1/4
 K:C
 Q:1/4=60
-"Dm"[DFA]|"D7"[D^FAc]| "D7/F#"[d^FAc]| "Dsus7"[DGAc]| "D7/C"[D^FAC]|
+"Dm"[DFA]|"D7"[D^FAc]| "D7/F#"[d^FAc]| "Dsus7"[DGAc]|
 `);
 </script>
