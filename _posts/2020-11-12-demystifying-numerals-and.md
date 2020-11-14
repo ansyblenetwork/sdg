@@ -38,5 +38,4 @@ K:C
 w:root~position first~inversion second~inversion third~inversion
 w:7~(7/5/3) 6/5~(6/5/3) 4/3~(6/4/3) 4/2~(6/4/2)
 `);
-D('scale2').style.display = "none";
 </script>
