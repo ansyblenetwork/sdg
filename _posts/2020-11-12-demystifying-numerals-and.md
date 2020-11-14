@@ -18,3 +18,25 @@ On the other hand, the absense of a theoretical connotation is sometimes useful 
 
 Note that there are notational variations in the literature, particularly among lead sheet symbols.
 
+### Lead sheet notation
+
+Lead sheets are commons for jazz and popular music. The notation appears above a staff which carries the melody. The symbols represent accompanying chords, which the performer is to play at his or her own discretion, referred to as "voicing," guided by the following instructions:
+
+1. Key/root: The main letter of the symbol. Straightforward.
+2. Quality: Major unless indicated otherwise: Lowercase m for minor, + for augmented, o for diminished.
+3. Inversion: The lowest note is indicated after a slash. Cm/Eb is a first inversion C minor triad. The lowest note needn't be part of the triad.
+4. Sevenths: A superscripted 7. Defaults to dominant seventh. Otherwise, the quality will be indicated.
+5. Sustained: A modifer common in jazz and popular music which replaces the middle third of a triad by a fourth.
+
+<div id="score"><div>
+<script>
+makeInteractive("score", `
+X:1
+L:1/4
+K:C
+"D7"[D^FAc]| "D7/F#"[d^FAc]| "D7/A"[d^fAc]| "D7/C"[D^FAC]|
+w:root~position first~inversion second~inversion third~inversion
+w:7~(7/5/3) 6/5~(6/5/3) 4/3~(6/4/3) 4/2~(6/4/2)
+`);
+D('scale2').style.display = "none";
+</script>
