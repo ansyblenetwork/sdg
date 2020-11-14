@@ -41,7 +41,7 @@ Q:1/4=60
 
 ### Roman numerals
 
-Roman numerals are more common in classical theory (I recall using them in my long-ago theory experience)
+Roman numerals are more common in classical theory (I recall using them in my long-ago theory experience).
 
 1. Key/root: The numeral represents the degree of the scale in the key of the staff; this is the root.
 2. Quality: Uppercase represents a major or perfect triad. Lowercase represents a minor triad. + for augmented, o for diminished.
