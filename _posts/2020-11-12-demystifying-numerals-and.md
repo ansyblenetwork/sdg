@@ -35,7 +35,6 @@ X:1
 L:1/4
 K:C
 Q:1/4=60
-"D7"[D^FAc]| "D7/F#"[d^FAc]| "D7/A"[d^fAc]| "D7/C"[D^FAC]|
-w:root~position first~inversion second~inversion third~inversion
+"Dm"[DFA]|"D7"[D^FAc]| "D7/F#"[d^FAc]| "Dsus7"[DGAc]| "D7/C"[D^FAC]|
 `);
 </script>
