@@ -28,7 +28,7 @@ Lead sheets are commons for jazz and popular music. The notation appears above a
 4. Sevenths: A superscripted 7. Defaults to dominant seventh. Otherwise, the quality will be indicated.
 5. Sustained: A modifer common in jazz and popular music which replaces the middle third of a triad by a fourth.
 
-<div id="score"><div>
+<div id="score"></div>
 <script>
 makeInteractive("score", `
 X:1
