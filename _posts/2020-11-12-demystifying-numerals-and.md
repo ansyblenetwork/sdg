@@ -45,6 +45,6 @@ Roman numerals are more common in classical theory (I recall using them in my lo
 
 1. Key/root: The numeral represents the degree of the scale in the key of the staff; this is the root.
 2. Quality: Uppercase represents a major or perfect triad. Lowercase represents a minor triad. Further modifiers: + for augmented, o for diminished.
-3. Inversion: Indicated by a pair of numbers indicating the interval formed with the base note; for instance, 5/3. 
+3. Inversion: Indicated by a pair of numbers indicating the interval formed with the base note; for instance, 5/3 represents root position.
 
-It turns out there is a lot more to say about this, which we postpone for a separate post.
+It turns out there is a lot more to say about this, which we postpone for a separate post as we begin to discuss harmony.
