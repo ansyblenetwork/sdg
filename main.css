@@ -388,6 +388,32 @@ h2 a:hover {
 }
 
 
+ul {
+  scrollbar-width: thin;
+}
+
+/* width */
+ul::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+ul::-webkit-scrollbar-track {
+  background: white; /* #f1f1f1 */
+}
+ 
+/* Handle */
+ul::-webkit-scrollbar-thumb {
+  background: #dfdfdf; /*#d4d4d4;*/ /*#aaa; */
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+ul::-webkit-scrollbar-thumb:hover {
+  background: #d4d4d4;
+}
+
+
 @media only screen 
   and (max-device-width: 450px), (max-device-height: 450px) { 
 
@@ -467,3 +493,5 @@ h2 a:hover {
 
 
 }
+
+
