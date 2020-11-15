@@ -155,8 +155,11 @@ function D(string) { return document.getElementById(string);}
 	<div id="outersidebar" class="outersidebar">
 	<div class="sidebar">
 	<div class="rpanel" style="flex-grow: 1; position:relative; min-width:250px;" id="accountPanel" tabIndex="-1" onfocus="D('postlist').focus();">		
-		<div style="display:flex; align-items:center; margin-bottom:15px"><a href="{{ "" | absolute_url }}"><img src="{{ "sdg-transparent.png" | relative_url }}" alt="Soli Deo gloria" style="flex-shrink:0; max-height:50px; padding-right:10px"></a><span style="font-style:italic; font-weight:bold">Music composition for the classically trained pianist
-		<div style="margin-top:10px"><button><a href="{{ site.posts.last.url | relative_url }}">About</a></button></div></span></div>
+		<div style="display:flex; align-items:center; margin-bottom:15px">
+			<a href="{{ "" | absolute_url }}"><img src="{{ "sdg-transparent.png" | relative_url }}" alt="Soli Deo gloria" style="flex-shrink:0; max-height:50px; padding-right:10px"></a>
+			<span style="font-style:italic; font-weight:bold;"><a href="{{ "" | absolute_url }}">Music composition for the classically trained pianist</a>
+				<div style="margin-top:10px; font-size:0.8em;"><a href="{{ site.posts.last.url | relative_url }}">About</a></div>
+			</span></div>
 						
 		<ul id="postlist" style="overflow:auto;">
 			{% for post in site.posts %}					
