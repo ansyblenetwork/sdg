@@ -155,7 +155,7 @@ function D(string) { return document.getElementById(string);}
 	<div id="outersidebar" class="outersidebar">
 	<div class="sidebar">
 	<div class="rpanel" style="flex-grow: 1; position:relative; min-width:250px;" id="accountPanel">		
-		<div style="margin-bottom:15px" class="date-format" style="padding-bottom:15px"><a href="{{ "" | absolute_url }}"><img src="{{ "sdg-transparent.png" | relative_url }}" alt="Soli Deo gloria" style="max-height:50px"></a>Music composition for the classically trained pianist</div>
+		<div style="display:flex; margin-bottom:15px"><a href="{{ "" | absolute_url }}"><img src="{{ "sdg-transparent.png" | relative_url }}" alt="Soli Deo gloria" style="max-height:50px; padding-right:10px"><h2>Music composition for the classically trained pianist</h2></a></div>
 		<ul style="overflow:auto;">
 			{% for post in site.posts %}					
 				{% if page.title == post.title %}	
