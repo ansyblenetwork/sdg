@@ -1,6 +1,8 @@
 /* Some basic CSS to make the Audio controls in abcjs presentable. */
 
-
+div:focus {
+	outline:none;	
+}
     svg .abcjs-tempo {
 	display:none;
     }
