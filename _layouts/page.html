@@ -2,9 +2,9 @@
 	
 <head>
 	{% if page.title %}			
-		<title>{{ page.title }} | Soli Deo gloria</title>
+		<title>{{ page.title }} | Sdg</title>
 	{% else %}
-		<title>Soli Deo gloria</title>
+		<title>Sdg</title>
 	{% endif %}
 	<link rel="stylesheet" type="text/css" href="{{ "main.css" | relative_url }}">
 	<link rel="icon" href="{{ "sdg-transparent.png" | relative_url }}">
@@ -155,7 +155,7 @@ function D(string) { return document.getElementById(string);}
 	<div id="outersidebar" class="outersidebar">
 	<div class="sidebar">
 	<div class="rpanel" style="flex-grow: 1; position:relative; min-width:250px;" id="accountPanel">
-		<h2><a href="{{ "" | absolute_url }}">Soli Deo gloria</a></h2>
+		<a href="{{ "" | absolute_url }}"><img src="{{ "sdg-transparent.png" | relative_url }}" alt="Soli Deo gloria"></a>
 		<div style="margin-bottom:15px" class="date-format" style="padding-bottom:15px">Music composition for the classically trained pianist</div>
 		<ul style="overflow:auto;">
 			{% for post in site.posts %}					
