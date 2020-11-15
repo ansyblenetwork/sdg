@@ -1,5 +1,5 @@
 name: Soli Deo gloria
-baseurl: solideogloria
+baseurl: sdg
 
 permalink: /:year/:month/:day/:title
 plugins:
