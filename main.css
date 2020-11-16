@@ -1,5 +1,9 @@
 /* Some basic CSS to make the Audio controls in abcjs presentable. */
-
+.titlepanel {
+	display:flex; 
+	align-items:center; 
+	margin-bottom:15px;
+}
 div:focus {
 	outline:none;	
 }
@@ -271,11 +275,13 @@ input[type=number] {
 }
 
 .rpanel {  
+	flex-grow: 1; 
+	position:relative; 
+	min-width:250px;
   overflow:auto;   
   resize:both;
   
   width:320px;
-  min-width:275px;
   max-width:calc(100vw - 460px);
   display: flex;
   flex-direction: column;
@@ -428,7 +434,7 @@ ul::-webkit-scrollbar-thumb:hover {
     overflow:auto;
     padding:10px;
   }
-    
+	  
    .outersidebar{
      
     scroll-snap-type: x mandatory;
@@ -460,7 +466,6 @@ ul::-webkit-scrollbar-thumb:hover {
     max-width:initial;
     box-shadow: #d4d4d4 0px 0px 7px; 
     background-color: white;
-    padding:15px;
     pointer-events:auto;
   }
     
@@ -491,7 +496,10 @@ ul::-webkit-scrollbar-thumb:hover {
   	scrollbar-width: none;
 }  
 
-
+.titlepanel {
+	margin:10px;
+}
+	  
 }
 
 
