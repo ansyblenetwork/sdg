@@ -14,7 +14,7 @@ First, the basics: Numerals and lead sheet notation both refer to chords and tri
 <p>In other words, the purpose of lead sheet symbols is to get performers’ fingers to the right notes at the right time.</p>
 </div>
 
-On the other hand, the absense of a theoretical connotation is sometimes useful when none is intended.
+On the other hand, the absence of a theoretical connotation is sometimes useful when none is intended.
 
 Note that there are notational variations in the literature, particularly among lead sheet symbols.
 
