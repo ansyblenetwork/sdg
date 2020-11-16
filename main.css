@@ -432,7 +432,6 @@ ul::-webkit-scrollbar-thumb:hover {
     width: 100vw;
     height: 100%;
     overflow:auto;
-    padding:10px;
   }
 	  
    .outersidebar{
@@ -483,6 +482,7 @@ ul::-webkit-scrollbar-thumb:hover {
   }
     
   .contentHolder {
+     margin:0px;
      min-height:125vh;
   }
 
