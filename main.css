@@ -2,8 +2,9 @@
 .titlepanel {
 	display:flex; 
 	align-items:center; 
-	margin-bottom:15px;
+	margin:10px 10px 15px 10px;
 }
+
 div:focus {
 	outline:none;	
 }
@@ -246,7 +247,6 @@ input[type=number] {
   background-color: white;
   box-shadow: #d4d4d4 0px 0px 7px;
   height: 100%;
-  padding: 15px;
   outline: none;
   
   display: flex;
@@ -496,9 +496,6 @@ ul::-webkit-scrollbar-thumb:hover {
   	scrollbar-width: none;
 }  
 
-.titlepanel {
-	margin:10px;
-}
 	  
 }
 
