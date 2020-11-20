@@ -51,13 +51,13 @@ Intervals are one of the rare musical objects that are named based on notation, 
 1. Intervals are _major_ if they appear in the major scale.
 1. However, the fourth and fifth alone receive the _perfect_ modifier, as they are the primary consonances.
 3. If none of the above, the interval is _minor_ if they appear in the minor scale.
-4. If still none of the above: Any perfect interval may have the _augmented_ or _diminished_ modifier, which means the interval is a half step larger or smaller, respectively. Major intervals may also receive the augmented modifier, while minor intervals may receive the diminished modifier.
+4. If still none of the above: Any perfect interval may instead have the _augmented_ or _diminished_ modifier, if the interval is a half step larger or smaller, respectively. Major intervals may also receive instead the augmented modifier, while minor intervals may receive the diminished modifier.
 
 ### Triads
 
 A triad consists of two stacked thirds (three notes). There are three variables: Key, quality, and inversion. 
 
-The key is given by the root note, which in turn is given by the bottom note when the triad is explicitly stacked.
+The key is given by the root note, which in turn is given by the bottom note when the triad is explicitly stacked in thirds.
 
 There are four qualities:
 
