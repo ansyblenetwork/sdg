@@ -15,7 +15,7 @@ One way to organize the multiple diatonic modes which makes transparent their cl
 | 3 | Phrygian |
 | 4 | Lydian |
 | 5 | Mixolydian |
-| 7 | Aeolian (natural minor) |
+| 6 | Aeolian (natural minor) |
 | 7 | Locrian |
 
 However, the symmetry provided by this view obscures why the major and minor scales have risen to the top of many musical traditions. It also fails to explain why the major scale sounds "happy" while the minor scale sounds "sad." 
