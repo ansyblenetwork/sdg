@@ -2,8 +2,6 @@
 title: "Naming notes, intervals, chords, and triads"
 ---
 
-I essentially didn't study music theory growing up; I crammed for ABRSM grade 5 theory over a few weeks, which if I recall, was a prerequisite to take the grade 8 performance exam.
-
 This post is a crash course on musical terminology.
 
 ### Scale degree names
