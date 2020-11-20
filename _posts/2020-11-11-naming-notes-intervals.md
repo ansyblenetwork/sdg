@@ -57,7 +57,7 @@ Intervals are one of the rare musical objects that are named based on notation, 
 
 A triad consists of two stacked thirds (three notes). There are three variables: Key, quality, and inversion. 
 
-The key is given by the root note, which in turn is given by the bottom note when the triad is explicitly stacked in thirds.
+The key is given by the root note, which in turn is given by the bottom note when the triad is explicitly stacked in thirds (as opposed to in one of its inverted forms, below).
 
 There are four qualities:
 
