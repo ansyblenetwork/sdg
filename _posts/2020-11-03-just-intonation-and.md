@@ -4,7 +4,7 @@ title: "Just intonation and ordering the intervals by consonance"
 
 Previously, we discussed why there are at least [twelve notes]({{ "" | relative_url }}{% post_url 2020-11-01-the-circle-of %}) in Western music, and why they [suffice]({{ "" | relative_url }}{% post_url 2020-11-02-temperament-compromising-consonances %}). In a nutshell, the selection of twelve notes prioritizes the ability to play perfect fifths, and the choice of temperament compromises this with the ability to play other consonant intervals.
 
-In today's post we look for such consonances approximated by these 12 notes. It is clear that not all 12 intervals are consonant: This corresponds with the fact that slamming a piano with random notes does not sound good, and why despite all of the combinatorial possibilities, simultaneous notes in classical music almost always stem from canonical chords and triads.
+Today, we look for such consonances approximated by these 12 notes. Not all 12 intervals will be consonant: This corresponds with the fact that slamming a piano with random notes does not sound good, and why despite enormous combinatorial possibilities, simultaneous notes in classical music almost always stem from canonical chords and triads.
 
 ### Justifying the intervals
 
@@ -12,7 +12,7 @@ Recall that we have 12 notes corresponding to the following wavelengths, derived
 
 $$\frac{2}{3}, \frac{2^3}{3^2}, \frac{2^4}{3^3}, \frac{2^6}{3^4}, \frac{2^7}{3^5}, \frac{2^9}{3^6}, \frac{2^{11}}{3^7}, \frac{2^{12}}{3^8}, \frac{2^{14}}{3^9}, \frac{2^{15}}{3^{10}}, \frac{2^{17}}{3^{11}}, \frac{2^{19}}{3^{12}}.$$
 
-Here, by choosing the numerators to be appropriate powers of 2, we have used the octave equivalents with wavelength between 1/2 and 1, lying within an octave above the root note. We perform successive approximations which justify the intervals (pun intended...?):
+Here, by choosing the numerators to be appropriate powers of 2, we have used the octave equivalents with wavelength between 1/2 and 1, lying within an octave above the root note. We perform successive approximations which justify the intervals:
 
 1) Recall the approximations for the major third and closing the circle of fifths, respectively:
 
@@ -22,7 +22,7 @@ We implement these approximations in our list of notes, keeping in mind this als
 
 $$\frac{2}{3}, \frac{8}{9}, \frac{2^4}{3^3}, \frac{4}{5}, \frac{2^7}{3^5}, \frac{2^9}{3^6}, \frac{2^{11}}{3^7}, \frac{5}{8}, \frac{3^3}{2^5}, \frac{9}{16}, \frac{3}{4}, 1.$$
 
-2) Recall the last element of our list of [small integer ratios]({{ "" | relative_url }}{% post_url 2020-11-01-the-circle-of %}), 3/5. This corresponds to a major sixth and has the approximation
+2) Recall the last member of our list of [small integer ratios]({{ "" | relative_url }}{% post_url 2020-11-01-the-circle-of %}), 3/5. This corresponds to a major sixth and has the approximation
 
 $$\frac{3}{5} \approx \frac{2^4}{3^3}.$$
 
@@ -68,7 +68,7 @@ In modern music, these wavelengths are only approximate due to [equal temperamen
 | 8/15 | major seventh (inversion of minor second) |
 | 32/45 | diminished fifth (inversion of itself) |
 
-The first row consists of the perfect consonances, the next two consist of imperfect consonances, and the last two consist of dissonances. The category of the 8/9 ratio, which did not come from the small integer ratios, depends on which resource you consult. Wikipedia lists it as consonant with a "citation needed" caveat.
+The first row consists of the perfect consonances, the next two consist of imperfect consonances, and the last two consist of dissonances. The 8/9 ratio and its inversion, which did not come from the small integer ratios, depends on which resource you consult. Wikipedia lists it as consonant with a "citation needed" caveat.
 <div id="controller1"></div>
 <script>	
 makeInteractive("controller1",`
