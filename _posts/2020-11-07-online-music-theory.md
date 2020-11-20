@@ -2,7 +2,7 @@
 title: "Online music theory resources"
 ---
 
-I'm about to leave the brief numerological realm of music theory, and proceed into more traditional music theory, so I was doing some research earlier. I found some decent-looking online resources that I thought to list here.
+I am about to leave the brief numerological realm of music theory, and proceed into more traditional music theory. I found some decent-looking online resources that I thought to list here.
 
 The following are complete, textbook-like resources:
 
