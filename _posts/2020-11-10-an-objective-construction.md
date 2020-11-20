@@ -2,7 +2,7 @@
 title: "An objective construction of the major, minor, and pentatonic scales"
 ---
 
-To what extent do the major and minor scales of classical Western music, and the pentatonic scale of Eastern music, have mathematical origins? To what extent are they merely ingrained through habituation? I did a lot of research trying to find a definitive answer to these questions. I found a lot of partial answers, but which always seemed to fall short. Below is what I have decided is the most objective construction, pieced together from various sources.
+To what extent do the major and minor scales of classical Western music, and the pentatonic scale of Eastern music, have mathematical origins? To what extent are they merely ingrained through habituation? It isn't so easy to find a definitive answer to these questions. I encountered a lot of partial answers, but which always seemed to fall short. Below is what I have decided is the most objective construction, pieced together from various sources.
 
 ### Tritone removal
 
@@ -23,7 +23,7 @@ I will copy here the table of intervals from our discussion of the [consonant in
 | 3/4 | perfect fourth (inversion of perfect fifth) |
 | 1/2 | octave |
 
-First, I will insist that we preserve the unit wavelength note as the tonic of our scale. Many resources mention that the notes of the major scale are contiguous if we begin our generation at the perfect forth and cycle through to the major seventh, essentially reassigning the tonic note. However, this fails to explain why the major and minor scales are the [most commonly used modes]({{ "" | relative_url }}{% post_url 2020-11-09-diatonic-modes-a %}). Given the strikingly different moods a scale can evoke simply by shifting the tonic note, we should seek a contruction that preserves the tonic throughout.
+First, I will insist that we preserve the unit wavelength note as the tonic of our scale. Many resources observe that the notes of the major scale are contiguous if we begin our generation at the perfect forth and cycle through to the major seventh, essentially reassigning the tonic note. However, this fails to explain why the major and minor scales are the [most commonly used modes]({{ "" | relative_url }}{% post_url 2020-11-09-diatonic-modes-a %}). Given the strikingly different moods a scale can evoke simply by shifting the tonic note, we should seek a contruction that preserves the tonic throughout.
 
 There are many disonances contained within the twelve notes. In particular, the diminished fifth forms the most dissonant interval with the tonic, also known as a _tritone_. The tritone is so dissonant that we should consider removing all the tritone intervals that appear within our notes. In the following chart, we pair the 12 notes by tritone formation:
 
@@ -36,11 +36,11 @@ There are many disonances contained within the twelve notes. In particular, the 
 | major sixth | minor third |
 | major second | minor sixth |
 
-For the moment, pretend that the major scale lacks the major seventh, and that the minor scale lacks the major second. Then the construction of each scale would use the following reasoning:
+But which of each pair do we remove? For the moment, pretend that the major scale lacks the major seventh, and that the minor scale lacks the major second. Then the construction of each scale would use the following reasoning:
 
 Within the chart, the tonic, perfect fourth, and perfect fifth are our primary consonances and non-negotiable; we must keep them, and summarily dispose of the diminished fifth, minor second, and major seventh. 
 
-Then we have a degree of freedom. If we remove the minor seventh, this means we keep the major third. In turn, it becomes tempting to keep the major sixth as we have just removed a (dissonant) half step neighbor, and to remove the minor third, as we have just inked a half step neighbor. If we proceed as such, it in turn is natural to remove finally the minor sixth. We obtain the pre-major scale.
+Then we have a degree of freedom. If we remove the minor seventh, this means we keep the major third. In turn, it becomes convenient to keep the major sixth as we have just removed one of its (dissonant) half step neighbors, and to remove its tritone pair, the minor third, as we have just inked one of its half step neighbors. If we proceed as such, it in turn is natural to remove finally the minor sixth. We obtain the pre-major scale.
 
 If we chose instead to remove the major third and keep the minor seventh, we end with the pre-minor scale.
 
