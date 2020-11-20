@@ -35,10 +35,10 @@ The question of why such octave-separated pitches sound similar is an empirical 
 
 ### The circle of fifths
 
-The next most consonant wavelength ratio of 2/3 corresponds to a perfect fifth. Perfect fifths are desirable as they are not equivalent to existing notes, and yet are very consonant. They are the most natural, deliberate way to select new musical notes. As a result, we extend another perfect fifth up from our note of wavelength 2/3, resulting in a new note of wavelength 4/9. Repeating this process and lowering by octave equivalences as necessary, we find ourselves having all notes with wavelengths of length
+The next most consonant wavelength ratio of 2/3 corresponds to a perfect fifth. Perfect fifths are desirable as they present two inequivalent notes, and yet are very consonant. They are the most natural, deliberate way to select new musical notes. As a result, we extend another perfect fifth up from our note of wavelength 2/3, resulting in a new note of wavelength 4/9. Repeating this process and lowering by octave equivalences as necessary, we find ourselves having all notes with wavelengths of length
 
 $$\frac{2^n}{3^m}.$$
 
 We should restrict this process to wavelengths that are not too short or too long (too high pitched or low pitched, respectively). This corresponds to keeping the ratio $$n/m$$ bounded. However, without further restriction, we still have infinitely many notes, by choosing $$m$$ arbitrarily large but $$n$$ appropriately larger (we obtain arbitrarily many distinct wavelengths close to 1). 
 
-We thus return to the short answer at the beginning of today's discussion: Every time we see $$3^{12}$$, we exchange it with $$2^{19}$$, which in turn is octave equivalent to 1. This ensures that we have exactly 12 notes corresponding, up to octave equivalence, to each $$3^{m}$$ with $$m$$ ranging from 0 to 11 - precisely the 12 notes of Western music.
+We thus return to the short answer at the beginning of today's discussion: Every time we see $$3^{12}$$, we exchange it with $$2^{19}$$, which in turn is octave equivalent to 1. This ensures that we have exactly 12 notes corresponding, up to octave equivalence, to each $$3^{m}$$ with $$m$$ ranging from 0 to 11 - the 12 notes of Western music.
