@@ -127,8 +127,8 @@ function makeInteractive(controller, test) {
 				let tempos = document.querySelectorAll(".abcjs-midi-tempo");
 				for (let i = 0; i < tempos.length; i++) {
 					console.log("Trying to set the tempos beforehand");
-					tempos[i].value = 100;
-					tempos[i].dispatchEvent(new Event('change'));
+					//tempos[i].value = 100;
+					//tempos[i].dispatchEvent(new Event('change'));
 				}
 			}).catch(function (error) {  console.warn("Audio problem:", error);  });
 
