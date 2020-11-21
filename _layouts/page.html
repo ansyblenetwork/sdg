@@ -15,7 +15,7 @@
 	
 <script>
 	
-function makeInteractive(controller, test) {	
+function makeInteractive(controller, test) {
 	let paper = controller + "sheet";
 	
 	let newDiv = document.createElement("div");
@@ -92,8 +92,7 @@ function makeInteractive(controller, test) {
 			}
 		};
 	}	
-	synthControl.load("#" + controller, new CursorControl(), 
-		{
+	synthControl.load("#" + controller, new CursorControl(), {
 		    displayLoop: false, 
 		    displayRestart: false, 
 		    displayPlay: true, 
@@ -116,10 +115,9 @@ function makeInteractive(controller, test) {
 			millisecondsPerMeasure: visualObj.millisecondsPerMeasure(),
 			options: {
 				soundFontUrl: '',
-			    onEnded: function() {console.log("hi");}
+				onEnded: function() {console.log("hi");}
 			}
 		    }).then(function (response) {
-
 			synthControl.setTune(visualObj, false, { options:{ qpm: 2*visualObj.getBpm()} }).then(function () {
 				console.log("Audio successfully loaded.")
 	
@@ -128,10 +126,10 @@ function makeInteractive(controller, test) {
 
 				let tempos = document.querySelectorAll(".abcjs-midi-tempo");
 				for (let i = 0; i < tempos.length; i++) {
+					console.log("Trying to set the tempos beforehand");
 					tempos[i].value = 99;
 					tempos[i].value = 100;
 				}
-
 			}).catch(function (error) {  console.warn("Audio problem:", error);  });
 
 			// midiBuffer.prime actually builds the output buffer.
@@ -145,10 +143,8 @@ function makeInteractive(controller, test) {
 }
 
 
-function D(string) { return document.getElementById(string);}	
-	
-</script>
-	
+function D(string) { return document.getElementById(string); }		
+</script>	
 </head>
 	
 <body>	
@@ -190,13 +186,12 @@ function D(string) { return document.getElementById(string);}
 		</div>
 	</div>	
 </body>	
-	
+
 <script>
 var mobile = false;
 if(D('specialPost')) D('specialPost').scrollIntoView({behavior: "auto", block: "center", inline: "nearest"}); 
 if (screen.width <= 550 || screen.height <= 550) {
-	mobile = true;	
-	
+	mobile = true;		
 	let controllers = document.querySelectorAll(".controller");
 	for (let i = 0; i < controllers.length; i++) {
 		controllers[i].style.paddingLeft = "0px";
