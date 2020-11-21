@@ -14768,7 +14768,7 @@ function attachListeners(self) {
   if (hasProgress) self.parent.querySelector(".abcjs-midi-progress-background").addEventListener("click", function (ev) {
     acResumerMiddleWare(self.options.progressHandler, ev, playBtn, self.options.afterResume);
   });
-  if (hasWarp) self.parent.querySelector(".abcjs-midi-tempo").addEventListener("blur", function (ev) {
+  if (hasWarp) self.parent.querySelector(".abcjs-midi-tempo").addEventListener("change", function (ev) {
     acResumerMiddleWare(self.options.warpHandler, ev, playBtn, self.options.afterResume);
   });
 }
