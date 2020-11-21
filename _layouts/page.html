@@ -118,7 +118,7 @@ function makeInteractive(controller, test) {
 				onEnded: function() {console.log("hi");}
 			}
 		    }).then(function (response) {
-			synthControl.setTune(visualObj, false, { options:{ qpm: 3*visualObj.getBpm()} }).then(function () {
+			synthControl.setTune(visualObj, false, { options:{} }).then(function () {
 				console.log("Audio successfully loaded.")
 	
 				let tempController = D(controller);
@@ -127,7 +127,7 @@ function makeInteractive(controller, test) {
 				let tempos = document.querySelectorAll(".abcjs-midi-tempo");
 				for (let i = 0; i < tempos.length; i++) {
 					console.log("Trying to set the tempos beforehand");
-					tempos[i].parentNode.nextSibling.firstElementChild.innerHTML = 3*visualObj.getBpm();
+					tempos[i].parentNode.nextSibling.firstElementChild.innerHTML = 240000/visualObj.millisecondsPerMeasure();
 					//tempos[i].value = 100;
 					//tempos[i].dispatchEvent(new Event('change'));
 				}
