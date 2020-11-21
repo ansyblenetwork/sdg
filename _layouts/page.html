@@ -127,6 +127,7 @@ function makeInteractive(controller, test) {
 				let tempos = document.querySelectorAll(".abcjs-midi-tempo");
 				for (let i = 0; i < tempos.length; i++) {
 					console.log("Trying to set the tempos beforehand");
+					tempos[i].parentNode.nextSibling.firstElementChild.innerHTML = "60";
 					//tempos[i].value = 100;
 					//tempos[i].dispatchEvent(new Event('change'));
 				}
