@@ -137,7 +137,7 @@ input[type=number] {
 	position: absolute;
 	display: inline-block;
 	border-radius: 6px;
-	top: -2px;
+	top: -3px;
 	left: 0;
 	box-sizing: border-box;
 }
@@ -341,7 +341,7 @@ button:hover:enabled {
 }
 
 .abcjs-midi-progress-background:hover {	
-  background-color: #20abab !important;  
+  background-color: #ccc !important;  
 }
 
 h1 {     
