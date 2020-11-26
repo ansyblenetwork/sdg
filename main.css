@@ -118,7 +118,7 @@ input[type=number] {
 }
 
 .abcjs-inline-audio .abcjs-midi-progress-background {
-	background-color: #424242;
+	background-color: #f4f4f4;
 	height: 10px;
 	border-radius: 5px;
 	border: 2px solid #cccccc;
