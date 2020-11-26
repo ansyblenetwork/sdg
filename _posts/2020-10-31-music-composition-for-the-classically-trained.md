@@ -8,7 +8,7 @@ title: "Music composition for the classically trained pianist"
   <p>- Bernard Chazelle, <i>Discovering the Cosmology of Bach</i></p>
 </div>
 
-The objective of this site is to document my progress as I learn about music theory with an eye toward composition. I hope this resource may be of use to a specific demographic which I suspect is more common than its long description would suggest: Longtime amateur musicians trained in performance but not theory, who are interested in composition and improvisation. I will only be posting about material that comes as a surprise to me - knowledge that presumably does not develop spontaneously from an amateur level of practice and performance. For instance, I won't be reviewing performance notation. 
+The objective of this site is to document my progress as I learn about music theory with an eye toward composition. I hope this resource may be of use to a specific demographic which I suspect is more common than its long description would suggest: Longtime amateur musicians trained in performance but not theory, interested in composition and improvisation. I will be posting about content that comes as a surprise to me - knowledge that presumably does not develop spontaneously from an amateur level of practice and performance. For instance, I won't be reviewing performance notation. 
 
 <h3>About me</h3>
 
