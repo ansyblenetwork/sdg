@@ -64,9 +64,9 @@ L:1/4
 K:C
 Q:1/2=60
 V:1
-C|E|G|b
+C|E|G|B
 V:2 clef=bass
-C,|B,,|A,,|G,,
+C,|D,|E,|F,
 `);
 </script>
 
