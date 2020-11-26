@@ -35,6 +35,21 @@ Q:1/2=60
 V:1
 C|D|E|F
 V:2 clef=bass
-C,|B,|A,|G,
+C,|B,,|A,,|G,,
+`);
+</script>
+
+Oblique motion:
+<div id="score2"></div>
+<script>
+makeInteractive("score2", `
+X:1
+L:1/4
+K:C
+Q:1/2=60
+V:1
+C|C|C|C
+V:2 clef=bass
+C,|B,,|A,,|G,,
 `);
 </script>
