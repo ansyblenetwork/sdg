@@ -17,6 +17,9 @@ X:1
 L:1/4
 K:C
 Q:1/2=60
+V:1
+c|d|e|f
+V:2
 c|d|e|f
 `);
 </script>
