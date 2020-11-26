@@ -18,8 +18,8 @@ L:1/4
 K:C
 Q:1/2=60
 V:1
-c|d|e|f
-V:2
-c|d|e|f
+C|D|E|F
+V:2 class:bass
+C|D|E|F
 `);
 </script>
