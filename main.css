@@ -166,7 +166,7 @@ input[type=number] {
 .abcjs-inline-audio .abcjs-midi-tempo {
 	border-radius: 2px;
 	border: none;
-	margin: 0 2px 0 4px;
+	margin: 0 0 0 0;
 	width: 30px;
 	padding-left: 2px;
 	box-sizing: border-box;
