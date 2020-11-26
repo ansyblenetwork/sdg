@@ -40,9 +40,9 @@ C,|B,,|A,,|G,,
 </script>
 
 Oblique motion:
-<div id="score2"></div>
+<div id="score3"></div>
 <script>
-makeInteractive("score2", `
+makeInteractive("score3", `
 X:1
 L:1/4
 K:C
@@ -53,3 +53,20 @@ V:2 clef=bass
 C,|B,,|A,,|G,,
 `);
 </script>
+
+
+Similar motion:
+<div id="score4"></div>
+<script>
+makeInteractive("score4", `
+X:1
+L:1/4
+K:C
+Q:1/2=60
+V:1
+C|E|G|b
+V:2 clef=bass
+C,|B,,|A,,|G,,
+`);
+</script>
+
