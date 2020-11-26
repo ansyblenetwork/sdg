@@ -20,6 +20,21 @@ Q:1/2=60
 V:1
 C|D|E|F
 V:2 clef=bass
+C,|D,|E,|F,
+`);
+</script>
+
+Contrary motion:
+<div id="score2"></div>
+<script>
+makeInteractive("score2", `
+X:1
+L:1/4
+K:C
+Q:1/2=60
+V:1
 C|D|E|F
+V:2 clef=bass
+C,|B,|A,|G,
 `);
 </script>
