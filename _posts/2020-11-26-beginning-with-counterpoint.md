@@ -19,7 +19,7 @@ K:C
 Q:1/2=60
 V:1
 C|D|E|F
-V:2 class:bass
+V:2 clef=bass
 C|D|E|F
 `);
 </script>
