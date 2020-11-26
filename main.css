@@ -52,7 +52,8 @@ input[type=number] {
 .abcjs-inline-audio {
 	height: 26px;
 	padding: 0 5px;
-	border-radius: 3px;
+	border-radius: 3px;	
+	margin: 0 2px 0 4px;
 	display: flex;
 	align-items: center;
 	box-sizing: border-box;
