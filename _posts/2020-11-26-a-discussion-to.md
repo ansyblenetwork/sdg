@@ -11,18 +11,10 @@ I started researching generically about counterpoint, and realized that a softer
 <textarea id="abc"></textarea>
 <div id="warnings"></div>
 <div id="paper"></div>
-<div id="audio"></div>
 
 <script>
 
-new ABCJS.Editor("abc", { canvas_id: "paper",
- synth: {
-  el: "#audio",
-  options: { displayLoop: true, displayRestart: true, displayPlay: true, displayProgress: true, displayWarp: true }
- },
- generate_warnings: true,
- warnings_id:"warnings"
-});
+makeInteractive("paper", "", abc);
 
 </script>
 
