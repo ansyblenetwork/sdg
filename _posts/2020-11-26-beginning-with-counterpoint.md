@@ -2,9 +2,9 @@
 title: "Beginning with counterpoint"
 ---
 
-I was fully intending to make this post about cadences, as an entry into harmony. But then I started reading about cadences, and got bored, perhaps due to past familiarity but also due to a lack of motive. Further, my current favorite resource, [Integrated Music Theory](https://intmus.github.io/inttheory20-21/05-counterpoint-embell-shapes/1-introcounterpoint.html), discusses counterpoint briefly before proceeding to harmony. I realized then that this is the sensible thing to do: From the perspective of sound and consonance, counterpoint is more pure and honest, than harmony. It is only my impressions about the order of music curriculum that suggests that harmony should be taught first.
+I was fully intending to make this post about cadences, as an entry into harmony. But then I started reading about cadences, and lost interest, perhaps due to past familiarity but also due to a lack of motive. Further, my current favorite resource, [Integrated Music Theory](https://intmus.github.io/inttheory20-21/05-counterpoint-embell-shapes/1-introcounterpoint.html), discusses counterpoint briefly before proceeding to harmony. I realized then that this is a sensible thing to do: From the perspective of understanding sound and consonance, counterpoint is more direct, pure, and honest, than harmony. It is only my perception about the appropriate order of music curriculum that suggests that harmony should be taught first.
 
-The content here is standard in music curriculum, established by Fux. Still, I'm not familiar with it, so I reproduce it here.
+The content here is standard in music theory, established by Fux. Still, I'm not familiar with it, so I reproduce it here.
 
 
 ### Contrapunctal motion
@@ -76,7 +76,12 @@ C,|D,|E,|F,
 
 ### First species counterpoint
 
-Counterpoint is taught in incremental steps, known as species. First species counterpoint drops all nontrivial rhythm, and establishes a set of rules for permissible melodic intervals, harmonic intervals, and movement as enumerated above. A _cantus firmus_, or fixed melody, is provided in the bass.
+Counterpoint is taught in incremental steps, known as species. First species counterpoint drops all nontrivial rhythm, and establishes a set of rules for permissible melodic intervals, harmonic intervals, and movement as enumerated above. A _cantus firmus_, or fixed melody, is provided in the bass, and the exercise is to write a counterpoint voice.
+
+General principles:
+
+1. Independence and integrity: The voices should be distinct, as the whole point is to have dual voices. For instance, octaves are discouraged.
+2. Climax and resolution: There should be a unqiue climax and clear resolution.
 
 Melodic intervals: 
 
