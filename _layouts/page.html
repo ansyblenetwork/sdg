@@ -30,99 +30,86 @@ function makeInteractive(controller, test, abc) {
 	var synthControl = new ABCJS.synth.SynthController();
 	
 	if (!test) {
-
-		new ABCJS.Editor("abc", { canvas_id: paper,
-		 synth: {
-		  el: "#" + controller,
-			cursorControl: new CursorControl(),
-		  options: { 
-		    displayLoop: false, 
-		    displayRestart: false, 
-		    displayPlay: true, 
-		    displayProgress: true, 
-		    displayWarp: true
-		  }
-		 },
-		 generate_warnings: true,
-		 warnings_id:"warnings"
-		});
-		
-		
-		
-	}
-	else {
-	
-	var visualObj = ABCJS.renderAbc(paper, test, { add_classes: true, 
-	clickListener: function(abcElem) {
-		var lastClicked = abcElem.midiPitches;
-		if (!lastClicked) return;
-		ABCJS.synth.playEvent(lastClicked, abcElem.midiGraceNotePitches, synthControl.visualObj.millisecondsPerMeasure()).then(function (response) {
-			console.log("note played");
-		}).catch(function (error) {console.log("error playing note", error);});
-	} })[0];
-	
-
-	
-	synthControl.load("#" + controller, new CursorControl(), {
-		    displayLoop: false, 
-		    displayRestart: false, 
-		    displayPlay: true, 
-		    displayProgress: true, 
-		    displayWarp: true
-		}
-	);
-
-	if (ABCJS.synth.supportsAudio()) {    
-		var midiBuffer = new ABCJS.synth.CreateSynth();
-		window.AudioContext = window.AudioContext || window.webkitAudioContext || navigator.mozAudioContext || navigator.msAudioContext;
-		var audioContext = new window.AudioContext();
-		audioContext.resume().then(function () {
-		    // In theory the AC shouldn't start suspended because it is being initialized in a click handler, but iOS seems to anyway.
-
-		    // midiBuffer.init preloads and caches all the notes needed. There may be significant network traffic here.
-		    return midiBuffer.init({
-			visualObj: visualObj,
-			audioContext: audioContext,
-			millisecondsPerMeasure: visualObj.millisecondsPerMeasure(),
-			options: {
-				soundFontUrl: '',
-				onEnded: function() {console.log("hi");}
-			}
-		    }).then(function (response) {
-			synthControl.setTune(visualObj, false, { options:{} }).then(function () {
-				console.log("Audio successfully loaded.")
-	
-				//let tempController = D(controller);
-				//newDiv.onclick = function() { tempController.children[0].children[0].focus(); };
-
-				let tempos = document.querySelectorAll(".abcjs-midi-tempo");
-				for (let i = 0; i < tempos.length; i++) {
-					console.log("Trying to set the tempos beforehand");
-					tempos[i].parentNode.nextSibling.firstElementChild.innerHTML = 240000/visualObj.millisecondsPerMeasure();
-					//tempos[i].value = 100;
-					//tempos[i].dispatchEvent(new Event('change'));
+		new ABCJS.Editor("abc", { 
+			canvas_id: paper,
+			synth: {
+				el: "#" + controller,
+				cursorControl: new CursorControl(),
+				options: { 
+					displayLoop: false, 
+					displayRestart: false, 
+					displayPlay: true, 
+					displayProgress: true, 
+					displayWarp: true
 				}
-			}).catch(function (error) {  console.warn("Audio problem:", error);  });
-
-			// midiBuffer.prime actually builds the output buffer.
-			return midiBuffer.prime();
-		    }).then(function () {
-			// At this point, everything slow has happened. midiBuffer.start will return very quickly and will start playing very quickly without lag.
-			return Promise.resolve();
-		    }).catch(function (error) { console.warn("synth error", error);  });
+			},
+			generate_warnings: true,
+			warnings_id:"warnings",
+			onchange: function() {				
+				var  mysvg = D(paper).firstChild;
+				var  bbox = mysvg.getBBox();
+				mysvg.setAttribute("width", bbox.x + bbox.width + bbox.x);
+				mysvg.setAttribute("height", bbox.y + bbox.height + bbox.y);
+			}
 		});
+	}	
+	else {	
+		var visualObj = ABCJS.renderAbc(paper, test, { 
+			add_classes: true, 
+			clickListener: function(abcElem) {
+				var lastClicked = abcElem.midiPitches;
+				if (!lastClicked) return;
+				ABCJS.synth.playEvent(lastClicked, abcElem.midiGraceNotePitches, synthControl.visualObj.millisecondsPerMeasure()).then(function (response) { console.log("note played");
+				}).catch(function (error) {console.log("error playing note", error);});
+			} 
+		})[0];
+
+		synthControl.load("#" + controller, new CursorControl(), {
+			displayLoop: false, 
+			displayRestart: false, 
+			displayPlay: true, 
+			displayProgress: true, 
+			displayWarp: true
+		});
+
+		if (ABCJS.synth.supportsAudio()) {    
+			var midiBuffer = new ABCJS.synth.CreateSynth();
+			window.AudioContext = window.AudioContext || window.webkitAudioContext || navigator.mozAudioContext || navigator.msAudioContext;
+			var audioContext = new window.AudioContext();
+			audioContext.resume().then(function () {
+			    // midiBuffer.init preloads and caches all the notes needed. There may be significant network traffic here.
+				return midiBuffer.init({
+					visualObj: visualObj,
+					audioContext: audioContext,
+					millisecondsPerMeasure: visualObj.millisecondsPerMeasure(),
+					options: {
+						soundFontUrl: '',
+						onEnded: function() {console.log("hi");}
+					}
+				}).then(function (response) {
+					synthControl.setTune(visualObj, false, { options:{} }).then(function () {
+						console.log("Audio successfully loaded.");
+						let tempos = document.querySelectorAll(".abcjs-midi-tempo");
+						for (let i = 0; i < tempos.length; i++) {
+							tempos[i].parentNode.nextSibling.firstElementChild.innerHTML = 240000/visualObj.millisecondsPerMeasure();
+						}
+					}).catch(function (error) {  console.warn("Audio problem:", error);  });
+
+					// midiBuffer.prime actually builds the output buffer.
+					return midiBuffer.prime();		    
+				}).then(function () {
+					// At this point, everything slow has happened. midiBuffer.start will return very quickly and will start playing very quickly without lag.
+					return Promise.resolve();
+				}).catch(function (error) { console.warn("synth error", error);  });
+			});
+		}
 	}
-	}
-	
-	
-	  var  mysvg = D(paper).firstChild;
-	  // Get the bounds of the SVG content
-	  var  bbox = mysvg.getBBox();
-	  // Update the width and height using the size of the contents
-	  mysvg.setAttribute("width", bbox.x + bbox.width + bbox.x);
-	  mysvg.setAttribute("height", bbox.y + bbox.height + bbox.y);
-//	if (newDiv.firstChild.width < 740) newDiv.firstChild.setAttribute("width", "auto");
-	
+	var  mysvg = D(paper).firstChild;
+	// Get the bounds of the SVG content
+	var  bbox = mysvg.getBBox();
+	// Update the width and height using the size of the contents
+	mysvg.setAttribute("width", bbox.x + bbox.width + bbox.x);
+	mysvg.setAttribute("height", bbox.y + bbox.height + bbox.y);
 	
 	function CursorControl() {
 		var self = this;
