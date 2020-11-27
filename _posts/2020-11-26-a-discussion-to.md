@@ -17,7 +17,6 @@ I started researching generically about counterpoint, and realized that a softer
      canvas_id: "paper", 
      warnings_id:"warnings" 
  });
-}
 </script>
 
 
