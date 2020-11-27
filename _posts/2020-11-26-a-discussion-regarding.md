@@ -2,16 +2,16 @@
 title: "A discussion regarding counterpoint"
 ---
 
-I was fully intending to make this post about cadences, as an entry into harmony. But then I started reading about cadences, and lost interest, perhaps due to past familiarity but also due to a lack of motive. Further, my current favorite resource, [Integrated Music Theory](https://intmus.github.io/inttheory20-21/05-counterpoint-embell-shapes/1-introcounterpoint.html), discusses counterpoint briefly before proceeding to harmony. I realized then that this might be a sensible thing to do: From the perspective of understanding sound and consonance, counterpoint is more fundamental and honest than harmony.
+I was fully intending to make this post about cadences, as an entry into harmony. But then I started reading about cadences, and lost interest, perhaps due to past familiarity but also due to a lack of motive. Further, my current favorite resource, [Integrated Music Theory](https://intmus.github.io/inttheory20-21/05-counterpoint-embell-shapes/1-introcounterpoint.html), discusses counterpoint briefly before proceeding to harmony. I realized then that this might be a sensible thing to do: From the perspective of understanding sound and consonance, counterpoint is more fundamental and honest.
 
 So next I started reading several resources including Integrated Music Theory covering species counterpoint, the classical pedagogical approach recorded by Fux. But this became very dry as well.
 
-I started researching generically about counterpoint, and I realize that a softer discussion about counterpoint and its value was warranted.
+I started researching generically about counterpoint, and realized that a softer discussion about counterpoint and its value was warranted.
 
 
 ### A brief introduction
 
-We introduce the following terminology:
+We introduce the following terminology.
 
 Parallel motion:
 
@@ -101,13 +101,13 @@ Motion:
 2. No parallel octaves or fifths.
 3. No similar motion into a perfect interval.
 
-Evidently, this gets fairly dry fairly quickly. Accordingly, there have been some interesting coding projects which [automate the generation](https://luckytoilet.wordpress.com/2011/08/10/algorithmic-counterpoint-how-i-wrote-a-computer-program-to-generate-music-at-mathcamp-2011/) of species counterpoint.
+Evidently, this gets dry fairly quickly. Accordingly, there have been some interesting coding projects which [automate the generation](https://luckytoilet.wordpress.com/2011/08/10/algorithmic-counterpoint-how-i-wrote-a-computer-program-to-generate-music-at-mathcamp-2011/) of species counterpoint.
 
 Rather than adding a too-short example here, I'll dedicate a later post to constructing an example with the rest of the story.
 
 ### Discussion
 
-It is surprisingly difficult to find good resources about counterpoint other than species counterpoint. Here are some natural questions that came to mind, along with the fruits of my research attempting to find answers.
+It is surprisingly difficult to find good counterpoint resources outside of species counterpoint. Here are some questions that came to mind, along with the fruits of my research.
 
 #### Did Bach study or use species counterpoint?
 
@@ -121,8 +121,8 @@ Keep in mind that Bach lived from 1685 to 1750, so he was about 40 years old in 
 
 #### What are examples of actual pieces written with species counterpoint?
 
-Again, I was unable to find answers on the internet answering this question, which suggests that species counterpoint is merely a pedagogical tool. I will return here if I discover an example or definitive answer.
+Again, I was unable to find answers on the internet, which suggests that species counterpoint is entirely a pedagogical tool. I will return here if I discover an example or definitive answer.
 
 #### What is the value of learning species counterpoint, then?
 
-It is not entirely clear to me at the moment. It seems strange to me that counterpoint pedagogy should be dominated by such an outdated style. Why not write a pedagogical tool in the style of Bach? Again, I am unqualified to answer at the moment.
+It is not clear to me at the moment. It seems strange that counterpoint pedagogy should be dominated by such an outdated style. Why not write a pedagogical tool in the style of Bach? Again, I am unqualified to answer.
