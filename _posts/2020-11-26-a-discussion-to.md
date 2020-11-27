@@ -14,9 +14,9 @@ L:1/4
 K:C
 Q:1/2=60
 V:1
-C|D|E|F
+CDEF
 V:2 clef=bass
-C,|D,|E,|F,
+C,D,E,F,
 </textarea>
 <div id="warnings"></div>
 <div id="paper"></div>
@@ -40,9 +40,9 @@ L:1/4
 K:C
 Q:1/2=60
 V:1
-C|D|E|F
+CDEF
 V:2 clef=bass
-C,|D,|E,|F,
+C,D,E,F,
 `);
 </script>
 
@@ -55,9 +55,9 @@ L:1/4
 K:C
 Q:1/2=60
 V:1
-C|D|E|F
+CDEF
 V:2 clef=bass
-C,|B,,|A,,|G,,
+C,B,,A,,G,,
 `);
 </script>
 
@@ -70,9 +70,9 @@ L:1/4
 K:C
 Q:1/2=60
 V:1
-C|C|C|C
+CCCC
 V:2 clef=bass
-C,|B,,|A,,|G,,
+C,B,,A,,G,,
 `);
 </script>
 
@@ -86,9 +86,9 @@ L:1/4
 K:C
 Q:1/2=60
 V:1
-C|E|G|B
+CEGB
 V:2 clef=bass
-C,|D,|E,|F,
+C,D,E,F,
 `);
 </script>
 
