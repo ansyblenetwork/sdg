@@ -26,7 +26,7 @@ function makeInteractive(controller, test, abc) {
 	D(controller).parentNode.insertBefore(newDiv, D(controller));
 
 	let tempController = D(controller);
-	newDiv.onclick = function() { tempController.children[0].children[0].focus(); };
+	if (test) newDiv.onclick = function() { tempController.children[0].children[0].focus(); };
 	var synthControl = new ABCJS.synth.SynthController();
 	
 	if (!test) {
