@@ -105,13 +105,14 @@ function makeInteractive(controller, test, abc) {
 				}).catch(function (error) { console.warn("synth error", error);  });
 			});
 		}
+		
+		var  mysvg = D(paper).firstChild;
+		// Get the bounds of the SVG content
+		var  bbox = mysvg.getBBox();
+		// Update the width and height using the size of the contents
+		mysvg.setAttribute("width", bbox.x + bbox.width + bbox.x);
+		mysvg.setAttribute("height", bbox.y + bbox.height + bbox.y);
 	}
-	var  mysvg = D(paper).firstChild;
-	// Get the bounds of the SVG content
-	var  bbox = mysvg.getBBox();
-	// Update the width and height using the size of the contents
-	mysvg.setAttribute("width", bbox.x + bbox.width + bbox.x);
-	mysvg.setAttribute("height", bbox.y + bbox.height + bbox.y);
 	
 	function CursorControl() {
 		var self = this;
