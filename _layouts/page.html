@@ -15,7 +15,7 @@
 	
 <script>
 	
-function makeInteractive(controller, test) {
+function makeInteractive(controller, test, abc) {
 	let paper = controller + "sheet";
 	
 	let newDiv = document.createElement("div");
@@ -27,6 +27,7 @@ function makeInteractive(controller, test) {
 
 	var synthControl = new ABCJS.synth.SynthController();
 	
+	if (test) {
 	var visualObj = ABCJS.renderAbc(paper, test, { add_classes: true, 
 	clickListener: function(abcElem) {
 		var lastClicked = abcElem.midiPitches;
@@ -35,6 +36,20 @@ function makeInteractive(controller, test) {
 			console.log("note played");
 		}).catch(function (error) {console.log("error playing note", error);});
 	} })[0];
+	}
+	else {
+
+		new ABCJS.Editor("abc", { canvas_id: paper,
+		 synth: {
+		  el: "#" + abc,
+			cursorControl: CursorControl(),
+		  options: { displayLoop: true, displayRestart: true, displayPlay: true, displayProgress: true, displayWarp: true }
+		 },
+		 generate_warnings: true,
+		 warnings_id:"warnings"
+		});
+		
+	}
 	
 	  var  mysvg = D(paper).firstChild;
 	  // Get the bounds of the SVG content
