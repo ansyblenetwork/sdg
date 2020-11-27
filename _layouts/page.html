@@ -33,7 +33,13 @@ function makeInteractive(controller, test, abc) {
 		 synth: {
 		  el: "#" + controller,
 			cursorControl: CursorControl(),
-		  options: { displayLoop: true, displayRestart: true, displayPlay: true, displayProgress: true, displayWarp: true }
+		  options: { 
+		    displayLoop: false, 
+		    displayRestart: false, 
+		    displayPlay: true, 
+		    displayProgress: true, 
+		    displayWarp: true
+		  }
 		 },
 		 generate_warnings: true,
 		 warnings_id:"warnings"
