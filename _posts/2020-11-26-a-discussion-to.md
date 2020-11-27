@@ -8,6 +8,18 @@ So next I started reading several resources including Integrated Music Theory co
 
 I started researching generically about counterpoint, and realized that a softer discussion about counterpoint and its value was warranted.
 
+<textarea id="abc"></textarea>
+<div id="warnings"></div>
+<div id="paper"></div>
+
+<script>
+ abc_editor = new abcjs.Editor("abc", { 
+     canvas_id: "paper", 
+     warnings_id:"warnings" 
+ });
+}
+</script>
+
 
 ### A brief introduction
 
