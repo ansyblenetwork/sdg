@@ -32,7 +32,7 @@ function makeInteractive(controller, test, abc) {
 		new ABCJS.Editor("abc", { canvas_id: paper,
 		 synth: {
 		  el: "#" + controller,
-			cursorControl: CursorControl(),
+			cursorControl: new CursorControl(),
 		  options: { 
 		    displayLoop: false, 
 		    displayRestart: false, 
