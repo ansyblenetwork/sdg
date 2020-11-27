@@ -45,6 +45,10 @@ function makeInteractive(controller, test, abc) {
 		 warnings_id:"warnings"
 		});
 		
+		
+				let tempController = D(controller);
+				newDiv.onclick = function() { tempController.children[0].children[0].focus(); };
+		
 	}
 	else {
 	
