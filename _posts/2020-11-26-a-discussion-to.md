@@ -13,11 +13,11 @@ I started researching generically about counterpoint, and realized that a softer
 Q:1/2=60
 M:4/4
 L:1/4
-K:B
+K:C
 V:1
-CDEF|
+CDEF|GABc
 V:2 clef=bass
-C,D,E,F,|
+C,D,E,F,|G,A,B,C
 </textarea>
 <div id="warnings"></div>
 
