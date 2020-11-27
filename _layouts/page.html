@@ -25,6 +25,8 @@ function makeInteractive(controller, test, abc) {
 	D(controller).classList.add("controller");
 	D(controller).parentNode.insertBefore(newDiv, D(controller));
 
+	let tempController = D(controller);
+	newDiv.onclick = function() { tempController.children[0].children[0].focus(); };
 	var synthControl = new ABCJS.synth.SynthController();
 	
 	if (!test) {
@@ -46,8 +48,6 @@ function makeInteractive(controller, test, abc) {
 		});
 		
 		
-				let tempController = D(controller);
-				newDiv.onclick = function() { tempController.children[0].children[0].focus(); };
 		
 	}
 	else {
@@ -92,8 +92,8 @@ function makeInteractive(controller, test, abc) {
 			synthControl.setTune(visualObj, false, { options:{} }).then(function () {
 				console.log("Audio successfully loaded.")
 	
-				let tempController = D(controller);
-				newDiv.onclick = function() { tempController.children[0].children[0].focus(); };
+				//let tempController = D(controller);
+				//newDiv.onclick = function() { tempController.children[0].children[0].focus(); };
 
 				let tempos = document.querySelectorAll(".abcjs-midi-tempo");
 				for (let i = 0; i < tempos.length; i++) {
