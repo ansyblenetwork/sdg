@@ -103,6 +103,8 @@ Motion:
 
 Evidently, this gets fairly dry fairly quickly. Accordingly, there have been some interesting coding projects which [automate the generation](https://luckytoilet.wordpress.com/2011/08/10/algorithmic-counterpoint-how-i-wrote-a-computer-program-to-generate-music-at-mathcamp-2011/) of species counterpoint.
 
+Rather than adding a too-short example here, I'll dedicate a later post to constructing an example with the rest of the story.
+
 ### Discussion
 
 It is surprisingly difficult to find good resources about counterpoint other than species counterpoint. Here are some natural questions that came to mind, along with the fruits of my research attempting to find answers.
