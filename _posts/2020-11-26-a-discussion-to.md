@@ -13,9 +13,7 @@ I started researching generically about counterpoint, and realized that a softer
 <div id="paper"></div>
 
 <script>
-
 makeInteractive("paper", "", abc);
-
 </script>
 
 
