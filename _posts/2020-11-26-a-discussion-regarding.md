@@ -125,4 +125,4 @@ Again, I was unable to find answers on the internet answering this question, whi
 
 #### What is the value of learning species counterpoint, then?
 
-It is not entirely clear to me at the moment. It seems strange to me that counterpoint pedagogy should be dominated by such an outdated style. Why not write a pedagogical tool in the style of Bach? I am unqualified to answer at the moment.
+It is not entirely clear to me at the moment. It seems strange to me that counterpoint pedagogy should be dominated by such an outdated style. Why not write a pedagogical tool in the style of Bach? Again, I am unqualified to answer at the moment.
