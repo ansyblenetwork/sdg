@@ -9,7 +9,7 @@ So next I started reading several resources including Integrated Music Theory co
 I started researching generically about counterpoint, and realized that a softer discussion about counterpoint and its value was warranted.
 
 <div id="paper"></div>
-<textarea id="abc" style="width:100%">
+<textarea id="abc" style="width:100%; height:125px">
 Q:1/2=60
 M:4/4
 L:1/4
