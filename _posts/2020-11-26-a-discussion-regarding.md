@@ -117,12 +117,12 @@ Bach's name hardly appears in the Wikipedia page for counterpoint. In the Wikipe
  <p>The Latin edition of Fux's Gradus ad Parnassum from the year 1725 is the only surviving book of J.S. Bach's personal library of theoretical works. As Mizler was a student of J.S. Bach, musicologist Christoph Wolff has suggested that Bach may have played some part in persuading Mizler to translate the treatise.</p>
 </div>
 
-Keep in mind that Bach lived from 1685 to 1750, so he was about 40 years old by 1725 when Fux's work was published, by which point Bach's career and style were already well established. One can ask the empirical question however, of whether Bach's music follows the rules of species counterpoint. I am not qualified to answer at this time, and was unable to find a reputable online resource answering this question. However, it seems that the answer is no.
+Keep in mind that Bach lived from 1685 to 1750, so he was about 40 years old in 1725 when Fux's work was published, by which point Bach's career and style were already well established. One can ask the empirical question however, of whether Bach's music follows the rules of species counterpoint. I am not qualified to answer at this time, and was unable to find a reputable online resource answering this question. However, it seems that the answer is no.
 
 #### What are examples of actual pieces written with species counterpoint?
 
-Again, I was unable to find answers on the internet answering this question, which suggests that species counterpoint is merely a pedagogical tool. I will return here if I discover an example or answer.
+Again, I was unable to find answers on the internet answering this question, which suggests that species counterpoint is merely a pedagogical tool. I will return here if I discover an example or definitive answer.
 
 #### What is the value of learning species counterpoint, then?
 
-This is a good question, and actually, it is not entirely clear to me at the moment; it seems strange to me that counterpoint pedagogy should be dominated by such an outdated style. Why not write a pedagogical tool in the style of Bach? I am unqualified to answer at the moment.
+It is not entirely clear to me at the moment. It seems strange to me that counterpoint pedagogy should be dominated by such an outdated style. Why not write a pedagogical tool in the style of Bach? I am unqualified to answer at the moment.
