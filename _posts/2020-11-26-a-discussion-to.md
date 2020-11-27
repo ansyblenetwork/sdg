@@ -8,23 +8,6 @@ So next I started reading several resources including Integrated Music Theory co
 
 I started researching generically about counterpoint, and realized that a softer discussion about counterpoint and its value was warranted.
 
-<div id="paper"></div>
-<textarea id="abc" style="width:100%; height:125px">
-Q:1/2=60
-M:4/4
-L:1/4
-K:C
-V:1
-CDEF|GABc
-V:2 clef=bass
-C,D,E,F,|G,A,B,C
-</textarea>
-<div id="warnings"></div>
-
-<script>
-makeInteractive("paper", "", abc);
-</script>
-
 
 ### A brief introduction
 
