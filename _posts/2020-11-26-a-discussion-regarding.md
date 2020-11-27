@@ -1,13 +1,15 @@
 ---
-title: "Beginning with counterpoint"
+title: "A discussion regarding counterpoint"
 ---
 
 I was fully intending to make this post about cadences, as an entry into harmony. But then I started reading about cadences, and lost interest, perhaps due to past familiarity but also due to a lack of motive. Further, my current favorite resource, [Integrated Music Theory](https://intmus.github.io/inttheory20-21/05-counterpoint-embell-shapes/1-introcounterpoint.html), discusses counterpoint briefly before proceeding to harmony. I realized then that this is a sensible thing to do: From the perspective of understanding sound and consonance, counterpoint is more direct, pure, and honest, than harmony. It is only my perception about the appropriate order of music curriculum that suggests that harmony should be taught first.
 
-The content here is standard in music theory, established by Fux. Still, I'm not familiar with it, so I reproduce it here.
+So next I started reading several resources including Integrated Music Theory covering species counterpoint, the classical pedagogical approach recorded by Fux. But this became very dry as well.
+
+I started googling about counterpoint, and I realize that a softer discussion about counterpoint and its value was warranted.
 
 
-### Contrapunctal motion
+### A brief introduction
 
 We introduce the following terminology:
 
@@ -73,10 +75,7 @@ C,|D,|E,|F,
 `);
 </script>
 
-
-### First species counterpoint
-
-Counterpoint is taught in incremental steps, known as species. First species counterpoint drops all nontrivial rhythm, and establishes a set of rules for permissible melodic intervals, harmonic intervals, and movement as enumerated above. A _cantus firmus_, or fixed melody, is provided in the bass, and the exercise is to write a counterpoint voice.
+Counterpoint is taught in incremental steps, known as species. For instance, first species counterpoint drops all nontrivial rhythm, and establishes a set of rules for permissible melodic intervals, harmonic intervals, and movement as enumerated above. A _cantus firmus_, or fixed melody, is provided in the bass, and the exercise is to write a counterpoint voice.
 
 General principles:
 
@@ -101,3 +100,13 @@ Motion:
 1. Contrary motion is always acceptable.
 2. No parallel octaves or fifths.
 3. No similar motion into a perfect interval.
+
+Evidently, this gets fairly dry fairly quickly. Accordingly, there have been some interesting coding projects which [automate the generation](https://luckytoilet.wordpress.com/2011/08/10/algorithmic-counterpoint-how-i-wrote-a-computer-program-to-generate-music-at-mathcamp-2011/) of species counterpoint.
+
+### The discussion
+
+The internet has thorough and reliable information about a lot of topics, but it is surprisingly difficult to find good resources about counterpoint. Here are some natural questions that came to mind, along with the fruits of my research attempting to find answers.
+
+#### Did Bach use species counterpoint?
+
+Bach's name hardly appears in the Wikipedia page for counterpoint. 
