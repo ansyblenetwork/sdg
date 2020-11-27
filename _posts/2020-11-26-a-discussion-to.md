@@ -9,14 +9,14 @@ So next I started reading several resources including Integrated Music Theory co
 I started researching generically about counterpoint, and realized that a softer discussion about counterpoint and its value was warranted.
 
 <textarea id="abc" style="width:100%">
-X:1
-L:1/4
-K:C
 Q:1/2=60
+M:4/4
+L:1/4
+K:B
 V:1
-CDEF
+CDEF|
 V:2 clef=bass
-C,D,E,F,
+C,D,E,F,|
 </textarea>
 <div id="warnings"></div>
 <div id="paper"></div>
