@@ -13,7 +13,7 @@ I started researching generically about counterpoint, and realized that a softer
 <div id="paper"></div>
 
 <script>
- abc_editor = new abcjs.Editor("abc", { 
+ abc_editor = new ABCJS.Editor("abc", { 
      canvas_id: "paper", 
      warnings_id:"warnings" 
  });
