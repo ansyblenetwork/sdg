@@ -2,11 +2,11 @@
 title: "A discussion regarding counterpoint"
 ---
 
-I was fully intending to make this post about cadences, as an entry into harmony. But then I started reading about cadences, and lost interest, perhaps due to past familiarity but also due to a lack of motive. Further, my current favorite resource, [Integrated Music Theory](https://intmus.github.io/inttheory20-21/05-counterpoint-embell-shapes/1-introcounterpoint.html), discusses counterpoint briefly before proceeding to harmony. I realized then that this is a sensible thing to do: From the perspective of understanding sound and consonance, counterpoint is more direct, pure, and honest, than harmony. It is only my perception about the appropriate order of music curriculum that suggests that harmony should be taught first.
+I was fully intending to make this post about cadences, as an entry into harmony. But then I started reading about cadences, and lost interest, perhaps due to past familiarity but also due to a lack of motive. Further, my current favorite resource, [Integrated Music Theory](https://intmus.github.io/inttheory20-21/05-counterpoint-embell-shapes/1-introcounterpoint.html), discusses counterpoint briefly before proceeding to harmony. I realized then that this might be a sensible thing to do: From the perspective of understanding sound and consonance, counterpoint is more fundamental and honest than harmony.
 
 So next I started reading several resources including Integrated Music Theory covering species counterpoint, the classical pedagogical approach recorded by Fux. But this became very dry as well.
 
-I started googling about counterpoint, and I realize that a softer discussion about counterpoint and its value was warranted.
+I started researching generically about counterpoint, and I realize that a softer discussion about counterpoint and its value was warranted.
 
 
 ### A brief introduction
@@ -75,7 +75,7 @@ C,|D,|E,|F,
 `);
 </script>
 
-Counterpoint is taught in incremental steps, known as species. For instance, first species counterpoint drops all nontrivial rhythm, and establishes a set of rules for permissible melodic intervals, harmonic intervals, and movement as enumerated above. A _cantus firmus_, or fixed melody, is provided in the bass, and the exercise is to write a counterpoint voice.
+Counterpoint is often taught in incremental steps, known as species. For instance, first species counterpoint drops all nontrivial rhythm, and establishes a set of rules for permissible melodic intervals, harmonic intervals, and movement as enumerated above. A _cantus firmus_, or fixed melody, is provided in the bass, and the exercise is to write a counterpoint voice.
 
 General principles:
 
@@ -103,9 +103,9 @@ Motion:
 
 Evidently, this gets fairly dry fairly quickly. Accordingly, there have been some interesting coding projects which [automate the generation](https://luckytoilet.wordpress.com/2011/08/10/algorithmic-counterpoint-how-i-wrote-a-computer-program-to-generate-music-at-mathcamp-2011/) of species counterpoint.
 
-### The discussion
+### Discussion
 
-The internet has thorough and reliable information about a lot of topics, but it is surprisingly difficult to find good resources about counterpoint. Here are some natural questions that came to mind, along with the fruits of my research attempting to find answers.
+It is surprisingly difficult to find good resources about counterpoint other than species counterpoint. Here are some natural questions that came to mind, along with the fruits of my research attempting to find answers.
 
 #### Did Bach study or use species counterpoint?
 
@@ -116,3 +116,11 @@ Bach's name hardly appears in the Wikipedia page for counterpoint. In the Wikipe
 </div>
 
 Keep in mind that Bach lived from 1685 to 1750, so he was about 40 years old by 1725 when Fux's work was published, by which point Bach's career and style were already well established. One can ask the empirical question however, of whether Bach's music follows the rules of species counterpoint. I am not qualified to answer at this time, and was unable to find a reputable online resource answering this question. However, it seems that the answer is no.
+
+#### What are examples of actual pieces written with species counterpoint?
+
+Again, I was unable to find answers on the internet answering this question, which suggests that species counterpoint is merely a pedagogical tool. I will return here if I discover an example or answer.
+
+#### What is the value of learning species counterpoint, then?
+
+This is a good question, and actually, it is not entirely clear to me at the moment; it seems strange to me that counterpoint pedagogy should be dominated by such an outdated style. Why not write a pedagogical tool in the style of Bach? I am unqualified to answer at the moment.
