@@ -44,12 +44,13 @@ function makeInteractive(controller, test, abc) {
 				}
 			},
 			abcjsParams: { 
-			add_classes: true, 
-			clickListener: function(abcElem) {
-				var lastClicked = abcElem.midiPitches;
-				if (!lastClicked) return;
-				ABCJS.synth.playEvent(lastClicked, abcElem.midiGraceNotePitches, synthControl.visualObj.millisecondsPerMeasure()).then(function (response) { console.log("note played");
-				}).catch(function (error) {console.log("error playing note", error);});
+				add_classes: true, 
+				clickListener: function(abcElem) {
+					var lastClicked = abcElem.midiPitches;
+					if (!lastClicked) return;
+					ABCJS.synth.playEvent(lastClicked, abcElem.midiGraceNotePitches, synthControl.visualObj.millisecondsPerMeasure()).then(function (response) { console.log("note played");
+					}).catch(function (error) {console.log("error playing note", error);});
+				}
 			},
 			generate_warnings: true,
 			warnings_id:"warnings",
