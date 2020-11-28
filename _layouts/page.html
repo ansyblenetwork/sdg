@@ -110,6 +110,14 @@ function makeInteractive(controller, test, abc) {
 						for (let i = 0; i < tempos.length; i++) {
 							tempos[i].parentNode.nextSibling.firstElementChild.innerHTML = 240000/visualObj.millisecondsPerMeasure();
 						}
+						
+						let bars = document.querySelectorAll(".abcjs-midi-progress-background");
+						for (let i = 0; i < bars.length; i++) {
+							bars[i].onclick = function() {
+								bars[i].previousSibling.focus();
+							}
+						}
+						
 					}).catch(function (error) {  console.warn("Audio problem:", error);  });
 
 					// midiBuffer.prime actually builds the output buffer.
@@ -253,6 +261,14 @@ function toggle() {
 	else {
 		D('editorPanel').style.display = "";
 		D('editorPanel').focus();	
+		
+		let bars = document.querySelectorAll(".abcjs-midi-progress-background");
+		for (let i = 0; i < bars.length; i++) {
+			bars[i].onclick = function() {
+				bars[i].previousSibling.focus();
+			}
+		}
+		
 		console.log("width: " + D('editorPanel').offsetWidth);
 		setCSS('--fixWidth', (document.body.offsetWidth - D('editorPanel').offsetWidth) + "px");	
 	}
