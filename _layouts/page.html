@@ -252,7 +252,7 @@ document.body.onkeydown = function(evt) {
 		toggle();
 		D('editorPanel').focus();
 	}
-	if (evt.keyCode == 32 && D('editorPanel').contains(document.activeElement) && document.activeElement != D('abc') && editorPanel.style.display != "none") {
+	if (evt.keyCode == 32 && D('editorPanel').contains(document.activeElement) && !D('abc').contains(document.activeElement) && editorPanel.style.display != "none") {
 		D("paper").children[0].children[0].click();
 	}
 }
