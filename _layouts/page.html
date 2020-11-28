@@ -65,13 +65,7 @@ function makeInteractive(controller, test, abc) {
 			}
 		});
 	}	
-	else {	
-		
-		let pasteButton = document.createElement("button");
-		pasteButton.classList.add("cornerButton");
-		pasteButton.textContent = "Copy abc code";		
-		D(paper).appendChild(pasteButton);
-		
+	else {			
 		D(controller).style.display = "none";
 		var visualObj = ABCJS.renderAbc(paper, test, { 
 			add_classes: true, 
@@ -81,8 +75,13 @@ function makeInteractive(controller, test, abc) {
 				ABCJS.synth.playEvent(lastClicked, abcElem.midiGraceNotePitches, synthControl.visualObj.millisecondsPerMeasure()).then(function (response) { console.log("note played");
 				}).catch(function (error) {console.log("error playing note", error);});
 			} 
-		})[0];
-
+		})[0];		
+		
+		let pasteButton = document.createElement("button");
+		pasteButton.classList.add("cornerButton");
+		pasteButton.textContent = "Copy abc code";		
+		D(paper).appendChild(pasteButton);
+		
 		synthControl.load("#" + controller, new CursorControl(), {
 			displayLoop: false, 
 			displayRestart: false, 
