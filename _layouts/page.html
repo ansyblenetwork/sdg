@@ -79,7 +79,10 @@ function makeInteractive(controller, test, abc) {
 		
 		let pasteButton = document.createElement("button");
 		pasteButton.classList.add("cornerButton");
-		pasteButton.textContent = "Copy abc code";		
+		pasteButton.textContent = "Copy abc code";
+		
+		
+		pasteButton.onclick = function () { e.clipboardData.setData('text/html', test); }
 		D(paper).appendChild(pasteButton);
 		
 		synthControl.load("#" + controller, new CursorControl(), {
