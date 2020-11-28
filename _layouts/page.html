@@ -247,7 +247,10 @@ function toggle() {
 	else editorPanel.style.display = "";
 }	
 document.body.onkeydown = function(evt) {
-	if (evt.ctrlKey && evt.keyCode == 69) toggle();
+	if (evt.ctrlKey && evt.keyCode == 69) {
+		evt.preventDefault();
+		toggle();
+	}
 	 if (evt.keyCode == 32 && D('editorPanel').contains(document.activeElement) && visible('editorPanel')) D("paper").nextElementChild.tempController.children[0].children[0].focus();
 }
 	
