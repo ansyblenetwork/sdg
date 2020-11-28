@@ -25,8 +25,7 @@ function makeInteractive(controller, test, abc) {
 	D(controller).classList.add("controller");
 	D(controller).parentNode.insertBefore(newDiv, D(controller));
 
-	let tempController = D(controller);
-	if (test) newDiv.onclick = function() { tempController.children[0].children[0].focus(); };
+	if (test) newDiv.onclick = function() { D(controller).children[0].children[0].focus(); };
 	var synthControl = new ABCJS.synth.SynthController();
 	
 	if (!test) {		
@@ -67,6 +66,9 @@ function makeInteractive(controller, test, abc) {
 		});
 	}	
 	else {	
+		
+		let pasteButton = document.createElement("button");
+		pasteButton.classList.add("cornerButton");
 		
 		D(controller).style.display = "none";
 		var visualObj = ABCJS.renderAbc(paper, test, { 
