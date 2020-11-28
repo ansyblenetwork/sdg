@@ -2129,7 +2129,7 @@ Editor.prototype.redrawMidi = function () {
       this.synth.synthControl.load(this.synth.el, this.synth.cursorControl, this.synth.options);
     }
 
-    this.synth.synthControl.setTune(this.tunes[0], true, this.synth.options);
+    this.synth.synthControl.setTune(this.tunes[0], false, this.synth.options);
   }
 };
 
