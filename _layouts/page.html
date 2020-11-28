@@ -254,6 +254,7 @@ document.body.onkeydown = function(evt) {
 	}
 	if (evt.keyCode == 32 && D('editorPanel').contains(document.activeElement) && !D('abc').contains(document.activeElement) && editorPanel.style.display != "none") {
 		evt.preventDefault();
+		console.log("play click triggered");
 		D("paper").children[0].children[0].click();
 	}
 }
