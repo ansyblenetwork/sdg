@@ -114,6 +114,8 @@ function makeInteractive(controller, test, abc) {
 						let bars = document.querySelectorAll(".abcjs-midi-progress-background");
 						for (let i = 0; i < bars.length; i++) {
 							bars[i].onclick = function() {
+								console.log(bars[i]);
+								console.log(bars[i].previousSibling);
 								bars[i].previousSibling.focus();
 							}
 						}
