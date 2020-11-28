@@ -114,9 +114,7 @@ function makeInteractive(controller, test, abc) {
 						let bars = document.querySelectorAll(".abcjs-midi-progress-background");
 						for (let i = 0; i < bars.length; i++) {
 							bars[i].onclick = function() {
-								console.log(bars[i]);
-								console.log(bars[i].previousSibling);
-								bars[i].previousSibling.focus();
+								bars[i].previousElementSibling.focus();
 							}
 						}
 						
@@ -267,7 +265,7 @@ function toggle() {
 		let bars = document.querySelectorAll(".abcjs-midi-progress-background");
 		for (let i = 0; i < bars.length; i++) {
 			bars[i].onclick = function() {
-				bars[i].previousSibling.focus();
+				bars[i].previousElementSibling.focus();
 			}
 		}
 		
