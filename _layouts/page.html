@@ -77,16 +77,15 @@ function makeInteractive(controller, test, abc) {
 			} 
 		})[0];		
 		
-		let auxPasteButton = document.createElement("input");
+		let auxPasteButton = document.createElement("textarea");
 		auxPasteButton.classList.add("cornerButton");
-		auxPasteButton.value = test;
+		auxPasteButton.textContent = test;
 		
 		let pasteButton = document.createElement("button");
 		pasteButton.classList.add("cornerButton");
 		pasteButton.textContent = "Copy abc code";
 		
 		pasteButton.onclick = function () { 
-			console.log(test);
 			D(paper).appendChild(auxPasteButton);
 			auxPasteButton.select();
 			auxPasteButton.setSelectionRange(0, 99999);
