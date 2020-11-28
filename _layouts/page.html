@@ -249,8 +249,8 @@ function toggle() {
 document.body.onkeydown = function(evt) {
 	if (evt.ctrlKey && evt.keyCode == 69) {
 		evt.preventDefault();
-		D('editorPanel').focus();
 		toggle();
+		D('editorPanel').focus();
 	}
 	if (evt.keyCode == 32 && D('editorPanel').contains(document.activeElement) && document.activeElement != D('abc') && editorPanel.style.display != "none") {
 		D("paper").children[0].children[0].click();
