@@ -83,7 +83,6 @@ function makeInteractive(controller, test, abc) {
 		
 		let pasteButtonHolder = document.createElement("div");
 		pasteButtonHolder.style.position = "relative";
-		pasteButtonHolder.style.float = "top";
 		pasteButtonHolder.style.width = "100%";
 		pasteButtonHolder.style.maxWidth = "800px";
 		pasteButtonHolder.style.margin = "0 auto";
@@ -100,7 +99,7 @@ function makeInteractive(controller, test, abc) {
 			D(paper).removeChild(auxPasteButton);
 		}
 		pasteButtonHolder.appendChild(pasteButton);
-		D(paper).appendChild(pasteButtonHolder);
+		D(paper).insertBefore(pasteButtonHolder, D(paper).firstChild);
 		
 		synthControl.load("#" + controller, new CursorControl(), {
 			displayLoop: false, 
