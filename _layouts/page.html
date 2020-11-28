@@ -26,7 +26,7 @@ function makeInteractive(controller, test, abc) {
 	D(controller).parentNode.insertBefore(newDiv, D(controller));
 
 	let tempController = D(controller);
-	//if (test) 
+	eif (test) 
 		newDiv.onclick = function() { tempController.children[0].children[0].focus(); };
 	var synthControl = new ABCJS.synth.SynthController();
 	
@@ -45,6 +45,7 @@ function makeInteractive(controller, test, abc) {
 				}
 			},
 			abcjsParams: { 
+				userAction: true,
 				add_classes: true, 
 				clickListener: function(abcElem) {
 					var lastClicked = abcElem.midiPitches;
