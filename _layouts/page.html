@@ -77,30 +77,6 @@ function makeInteractive(controller, test, abc) {
 			} 
 		})[0];		
 		
-		let auxPasteButton = document.createElement("textarea");
-		auxPasteButton.classList.add("cornerButton");
-		auxPasteButton.textContent = test;
-		
-		let pasteButtonHolder = document.createElement("div");
-		pasteButtonHolder.style.position = "relative";
-		pasteButtonHolder.style.width = "100%";
-		pasteButtonHolder.style.maxWidth = "800px";
-		pasteButtonHolder.style.margin = "0 auto";
-		
-		let pasteButton = document.createElement("button");
-		pasteButton.classList.add("cornerButton");
-		pasteButton.textContent = "Copy abc code";
-		
-		pasteButton.onclick = function () { 
-			D(paper).appendChild(auxPasteButton);
-			auxPasteButton.select();
-			auxPasteButton.setSelectionRange(0, 99999);
-  			document.execCommand("copy");
-			D(paper).removeChild(auxPasteButton);
-		}
-		pasteButtonHolder.appendChild(pasteButton);
-		D(paper).insertBefore(pasteButtonHolder, D(paper).firstChild);
-		
 		synthControl.load("#" + controller, new CursorControl(), {
 			displayLoop: false, 
 			displayRestart: false, 
@@ -151,12 +127,38 @@ function makeInteractive(controller, test, abc) {
 			});
 		}
 		
-		var  mysvg = D(paper).firstChild.nextElementSibling;
+		var  mysvg = D(paper).firstChild;
 		// Get the bounds of the SVG content
 		var  bbox = mysvg.getBBox();
 		// Update the width and height using the size of the contents
 		mysvg.setAttribute("width", bbox.x + bbox.width + bbox.x);
 		mysvg.setAttribute("height", bbox.y + bbox.height + bbox.y);
+		
+		if (test) {			
+			let auxPasteButton = document.createElement("textarea");
+			auxPasteButton.classList.add("cornerButton");
+			auxPasteButton.textContent = test;
+
+			let pasteButtonHolder = document.createElement("div");
+			pasteButtonHolder.style.position = "relative";
+			pasteButtonHolder.style.width = "100%";
+			pasteButtonHolder.style.maxWidth = "800px";
+			pasteButtonHolder.style.margin = "0 auto";
+
+			let pasteButton = document.createElement("button");
+			pasteButton.classList.add("cornerButton");
+			pasteButton.textContent = "Copy abc code";
+
+			pasteButton.onclick = function () { 
+				D(paper).appendChild(auxPasteButton);
+				auxPasteButton.select();
+				auxPasteButton.setSelectionRange(0, 99999);
+				document.execCommand("copy");
+				D(paper).removeChild(auxPasteButton);
+			}
+			pasteButtonHolder.appendChild(pasteButton);
+			D(paper).insertBefore(pasteButtonHolder, D(paper).firstChild);
+		}
 	}
 	
 	function CursorControl() {
