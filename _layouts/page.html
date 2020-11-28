@@ -102,6 +102,7 @@ function makeInteractive(controller, test, abc) {
 				}).then(function (response) {
 					synthControl.setTune(visualObj, true, { options:{} }).then(function () {
 						console.log("Audio successfully loaded.");
+						D(controller).style.display = "inline";
 						let tempos = document.querySelectorAll(".abcjs-midi-tempo");
 						for (let i = 0; i < tempos.length; i++) {
 							tempos[i].parentNode.nextSibling.firstElementChild.innerHTML = 240000/visualObj.millisecondsPerMeasure();
