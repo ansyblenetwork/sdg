@@ -85,10 +85,12 @@ function makeInteractive(controller, test, abc) {
 		pasteButton.classList.add("cornerButton");
 		pasteButton.textContent = "Copy abc code";
 		
-		pasteButton.onclick = function () { 
+		pasteButton.onclick = function () { 			
+			D(paper).appendChild(auxPasteButton);
 			auxPasteButton.select();
 			auxPasteButton.setSelectionRange(0, 99999);
   			document.execCommand("copy");
+			D(paper).removeChild(auxPasteButton);
 		}
 		D(paper).appendChild(pasteButton);
 		
