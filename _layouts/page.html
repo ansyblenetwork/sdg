@@ -29,7 +29,7 @@ function makeInteractive(controller, test, abc) {
 	var synthControl = new ABCJS.synth.SynthController();
 	
 	if (!test) {	
-		controller.style.maxWidth = "";
+		D(controller).style.maxWidth = "";
 		D(controller).classList.add("widthFixer");
 		new ABCJS.Editor("abc", { 
 			canvas_id: paper,
