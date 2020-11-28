@@ -30,8 +30,8 @@ function makeInteractive(controller, test, abc) {
 	var synthControl = new ABCJS.synth.SynthController();
 	
 	if (!test) {		
-		D(controller).classList.add("widthFixer");		
-		setCSS('--fixWidth', (screen.width - 800) + "px");
+		D(controller).classList.add("widthFixer");
+		setCSS('--fixWidth', (screen.width - D('editorPanel').offsetWidth) + "px");
 		new ABCJS.Editor("abc", { 
 			canvas_id: paper,
 			synth: {
@@ -248,6 +248,7 @@ C,D,E,F,|G,A,B,C|]
 
 <script>
 function toggle() {
+	setCSS('--fixWidth', (screen.width - D('editorPanel').offsetWidth) + "px");
 	if (D('editorPanel').style.display != "none") D('editorPanel').style.display = "none";
 	else {
 		D('editorPanel').style.display = "";
