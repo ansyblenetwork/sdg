@@ -29,7 +29,9 @@ function makeInteractive(controller, test, abc) {
 	if (test) newDiv.onclick = function() { tempController.children[0].children[0].focus(); };
 	var synthControl = new ABCJS.synth.SynthController();
 	
-	if (!test) {
+	if (!test) {		
+		D(controller).classList.add("widthFixer");		
+		setCSS('--fixWidth', (screen.width - 800) + "px");
 		new ABCJS.Editor("abc", { 
 			canvas_id: paper,
 			synth: {
