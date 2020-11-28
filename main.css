@@ -483,7 +483,8 @@ ul::-webkit-scrollbar-thumb:hover {
     bottom:15px;
   }
     
-  .contentHolder {
+  .contentHolder {	  
+     padding:0px;
      min-height:125vh;
   }
 
