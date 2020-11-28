@@ -251,7 +251,7 @@ document.body.onkeydown = function(evt) {
 		evt.preventDefault();
 		toggle();
 	}
-	 if (evt.keyCode == 32 && D('editorPanel').contains(document.activeElement) && visible('editorPanel')) {
+	 if (evt.keyCode == 32 && D('editorPanel').contains(document.activeElement) && editorPanel.style.display != "none") {
 		D("paper").nextElementChild.tempController.children[0].children[0].click();
 		
 	 }
