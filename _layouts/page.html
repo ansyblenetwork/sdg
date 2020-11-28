@@ -31,8 +31,6 @@ function makeInteractive(controller, test, abc) {
 	
 	if (!test) {		
 		D(controller).classList.add("widthFixer");
-		console.log("width: " + D('editorPanel').offsetWidth);
-		setCSS('--fixWidth', (document.body.offsetWidth - D('editorPanel').offsetWidth) + "px");
 		new ABCJS.Editor("abc", { 
 			canvas_id: paper,
 			synth: {
@@ -251,13 +249,12 @@ C,D,E,F,|G,A,B,C|]
 
 <script>
 function toggle() {
-	
-		console.log("width: " + D('editorPanel').offsetWidth);
-		setCSS('--fixWidth', (document.body.offsetWidth - D('editorPanel').offsetWidth) + "px");
 	if (D('editorPanel').style.display != "none") D('editorPanel').style.display = "none";
 	else {
 		D('editorPanel').style.display = "";
-		D('editorPanel').focus();
+		D('editorPanel').focus();	
+		console.log("width: " + D('editorPanel').offsetWidth);
+		setCSS('--fixWidth', (document.body.offsetWidth - D('editorPanel').offsetWidth) + "px");	
 	}
 }	
 document.body.onkeydown = function(evt) {
