@@ -342,7 +342,7 @@ button:hover:enabled {
 }
 
 .abcjs-midi-progress-background:hover {	
-/*  background-color: #ccc !important;  */
+	 background-color: #f4f4f4;
 	border: 1px solid #333;
 }
 
