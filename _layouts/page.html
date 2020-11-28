@@ -251,7 +251,10 @@ document.body.onkeydown = function(evt) {
 		evt.preventDefault();
 		toggle();
 	}
-	 if (evt.keyCode == 32 && D('editorPanel').contains(document.activeElement) && visible('editorPanel')) D("paper").nextElementChild.tempController.children[0].children[0].focus();
+	 if (evt.keyCode == 32 && D('editorPanel').contains(document.activeElement) && visible('editorPanel')) {
+		D("paper").nextElementChild.tempController.children[0].children[0].click();
+		
+	 }
 }
 	
 
