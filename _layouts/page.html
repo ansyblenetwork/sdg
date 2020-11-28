@@ -97,6 +97,7 @@ function makeInteractive(controller, test, abc) {
 					options: {
 						soundFontUrl: '',
 						onEnded: function() {console.log("hi");}
+						program:23;
 					}
 				}).then(function (response) {
 					synthControl.setTune(visualObj, true, { options:{} }).then(function () {
