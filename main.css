@@ -23,7 +23,6 @@ div:focus {
 }
 
 .controller {
-	position:relative; 
 	width:100%;
 	padding-bottom:20px;
 }
@@ -288,7 +287,6 @@ input[type=number] {
 }
 
 .main {  
-  position: absolute;
   padding-left:calc(330px + 20px);
   top:0px;
   padding:20px;
