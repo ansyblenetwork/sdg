@@ -25,9 +25,6 @@ div:focus {
 .controller {
 	position:relative; 
 	width:100%;
-/*	width:calc(100% + 360px + 35px); 
-	left:calc(-360px - 35px); 
-	padding-left:calc(360px + 35px); */
 	padding-bottom:20px;
 }
 
