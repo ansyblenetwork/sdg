@@ -250,7 +250,7 @@ C,D,E,F,|G,A,B,C|]
 
 <script>
 function toggle() {
-	setCSS('--fixWidth', (screen.width - D('editorPanel').offsetWidth) + "px");
+		setCSS('--fixWidth', (document.body.offsetWidth - D('editorPanel').offsetWidth) + "px");
 	if (D('editorPanel').style.display != "none") D('editorPanel').style.display = "none";
 	else {
 		D('editorPanel').style.display = "";
