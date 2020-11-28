@@ -18,6 +18,7 @@ Parallel motion:
 <div id="score"></div>
 <script>
 makeInteractive("score", `
+%%staves{1 2}
 X:1
 L:1/4
 K:C
@@ -33,6 +34,7 @@ Contrary motion:
 <div id="score2"></div>
 <script>
 makeInteractive("score2", `
+%%staves{1 2}
 X:1
 L:1/4
 K:C
@@ -48,6 +50,7 @@ Oblique motion:
 <div id="score3"></div>
 <script>
 makeInteractive("score3", `
+%%staves{1 2}
 X:1
 L:1/4
 K:C
@@ -64,6 +67,7 @@ Similar motion:
 <div id="score4"></div>
 <script>
 makeInteractive("score4", `
+%%staves{1 2}
 X:1
 L:1/4
 K:C
