@@ -238,9 +238,6 @@ input[type=number] {
 .sidebar {
   position: fixed;
   z-index: 1;
-  top: 0;
-  left: 0;
-  
   background-color: white;
   box-shadow: #d4d4d4 0px 0px 7px;
   height: 100%;
