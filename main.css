@@ -1,3 +1,13 @@
+:root {
+  --fixWidth: 0px;
+}
+
+.widthFixer {
+	position:relative;
+	padding-left:var(--fixWidth);
+	left: calc(0px - var(--fixWidth));	
+}
+
 /* Some basic CSS to make the Audio controls in abcjs presentable. */
 .titlepanel {
 	display:flex; 
