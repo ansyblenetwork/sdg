@@ -44,8 +44,9 @@ function makeInteractive(controller, test, abc) {
 				}
 			},
 			abcjsParams: { 
-				add_classes: false, 
+				add_classes: true, 
 				clickListener: function(abcElem) {
+					console.log("clicked!");
 					var lastClicked = abcElem.midiPitches;
 					if (!lastClicked) return;
 					ABCJS.synth.playEvent(lastClicked, abcElem.midiGraceNotePitches, synthControl.visualObj.millisecondsPerMeasure()).then(function (response) { console.log("note played");
