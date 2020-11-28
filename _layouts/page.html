@@ -243,18 +243,18 @@ C,D,E,F,|G,A,B,C|]
 
 <script>
 function toggle() {
-	if (editorPanel.style.display != "none") editorPanel.style.display = "none";
+	if (D('editorPanel').style.display != "none") D('editorPanel').style.display = "none";
 	else {
-		editorPanel.style.display = "";
+		D('editorPanel').style.display = "";
 		D('editorPanel').focus();
 	}
 }	
 document.body.onkeydown = function(evt) {
-	if (evt.ctrlKey && evt.keyCode == 69) {
+	if ((evt.ctrlKey && evt.keyCode == 69) || (evt.keyCode == 27 && D('editorPanel').style.display != "none") {
 		evt.preventDefault();
 		toggle();
 	}
-	if (evt.keyCode == 32 && D('editorPanel').contains(document.activeElement) && !D('abc').contains(document.activeElement) && editorPanel.style.display != "none") {
+	if (evt.keyCode == 32 && D('editorPanel').contains(document.activeElement) && !D('abc').contains(document.activeElement) && D('editorPanel').style.display != "none") {
 		evt.preventDefault();
 		console.log("play click triggered");
 		if (document.activeElement != D("paper").children[0].children[0]) D("paper").children[0].children[0].click();
