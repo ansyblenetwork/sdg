@@ -77,12 +77,19 @@ function makeInteractive(controller, test, abc) {
 			} 
 		})[0];		
 		
+		let auxPasteButton = document.createElement("input");
+		auxPasteButton.classList.add("cornerButton");
+		auxPasteButton.value = test;
+		
 		let pasteButton = document.createElement("button");
 		pasteButton.classList.add("cornerButton");
 		pasteButton.textContent = "Copy abc code";
 		
-		
-		pasteButton.onclick = function () { e.clipboardData.setData('text/html', test); }
+		pasteButton.onclick = function () { 
+			auxPasteButton.select();
+			auxPasteButton.setSelectionRange(0, 99999);
+  			document.execCommand("copy");
+		}
 		D(paper).appendChild(pasteButton);
 		
 		synthControl.load("#" + controller, new CursorControl(), {
