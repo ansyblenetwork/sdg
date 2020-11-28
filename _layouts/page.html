@@ -284,8 +284,8 @@ else {
 	D("accountPanel").onclick = resizeFunction;
 	resizeFunction();
 	function resizeFunction() { 
-		var w = D('accountPanel').offsetWidth + 10;
-		D("main").style.marginLeft = `${w}px`;
+		var w = D('accountPanel').offsetWidth + 30;
+		D("main").style.paddingLeft = `${w}px`;
 		D("main").style.width = `calc(100% - ${w}px)`;
 		
 		let controllers = document.querySelectorAll(".controller");
