@@ -50,7 +50,7 @@ function makeInteractive(controller, test, abc) {
 					console.log(abcElem);
 					var lastClicked = abcElem.midiPitches;
 					if (!lastClicked) return;
-					ABCJS.synth.playEvent(lastClicked, abcElem.midiGraceNotePitches, synthControl.visualObj.millisecondsPerMeasure()).then(function (response) { console.log("note played");
+					ABCJS.synth.playEvent(lastClicked, abcElem.midiGraceNotePitches, this.millisecondsPerMeasure()).then(function (response) { console.log("note played");
 					}).catch(function (error) {console.log("error playing note", error);});
 				}
 			},
