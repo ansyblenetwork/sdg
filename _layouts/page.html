@@ -81,6 +81,11 @@ function makeInteractive(controller, test, abc) {
 		auxPasteButton.classList.add("cornerButton");
 		auxPasteButton.textContent = test;
 		
+		let pasteButtonHolder = document.createElement("div");
+		pasteButtonHolder.style.width = "100%";
+		pasteButtonHolder.style.maxWidth = "800px";
+		pasteButtonHolder.style.margin = "0 auto";
+		
 		let pasteButton = document.createElement("button");
 		pasteButton.classList.add("cornerButton");
 		pasteButton.textContent = "Copy abc code";
@@ -92,7 +97,8 @@ function makeInteractive(controller, test, abc) {
   			document.execCommand("copy");
 			D(paper).removeChild(auxPasteButton);
 		}
-		D(paper).appendChild(pasteButton);
+		pasteButtonHolder.appendChild(pasteButton);
+		D(paper).appendChild(pasteButtonHolder);
 		
 		synthControl.load("#" + controller, new CursorControl(), {
 			displayLoop: false, 
