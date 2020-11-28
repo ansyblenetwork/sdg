@@ -250,7 +250,7 @@ function toggle() {
 	}
 }	
 document.body.onkeydown = function(evt) {
-	if ((evt.ctrlKey && evt.keyCode == 69) || (evt.keyCode == 27 && D('editorPanel').style.display != "none") {
+	if ((evt.ctrlKey && evt.keyCode == 69) || (evt.keyCode == 27 && D('editorPanel').style.display != "none")) {
 		evt.preventDefault();
 		toggle();
 	}
