@@ -6,7 +6,7 @@ This post is a crash course on musical terminology.
 
 ### Scale degree names
 
-<br>
+The following are the long-form names of the notes of a scale:
 <div id="scale"></div>
 <script>
 makeInteractive("scale", `
