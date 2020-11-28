@@ -4,8 +4,8 @@
 
 .cornerButton {
 	position:absolute; 
-	bottom:10px;
-	right:5px;	
+	top:10px;
+	left:5px;	
 }
 
 .widthFixer {
