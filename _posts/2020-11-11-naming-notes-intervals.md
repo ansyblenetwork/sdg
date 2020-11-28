@@ -6,6 +6,7 @@ This post is a crash course on musical terminology.
 
 ### Scale degree names
 
+<br>
 <div id="scale"></div>
 <script>
 makeInteractive("scale", `
