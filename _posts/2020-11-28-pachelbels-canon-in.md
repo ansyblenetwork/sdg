@@ -1,5 +1,5 @@
 ---
-title: "Pachelbel's Canon in species counterpoint
+title: "Pachelbel's Canon in species counterpoint"
 ---
 
 
