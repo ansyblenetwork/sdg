@@ -46,7 +46,7 @@ input[type=number] {
 			fill: #008B8B;
 		}
 		.abcjs-cursor {
-			/*stroke: red;*/
+			stroke: red;
 		}
 
 .abcjs-inline-audio {
