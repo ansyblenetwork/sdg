@@ -15,6 +15,10 @@
 	margin:15px 10px 15px 10px;
 }
 
+.abcbox:focus {
+	border: 2px solid #008B8B;
+}
+
 div:focus {
 	outline:none;	
 }
