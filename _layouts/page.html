@@ -151,7 +151,7 @@ function makeInteractive(controller, test, abc) {
 			});
 		}
 		
-		var  mysvg = D(paper).firstChild;
+		var  mysvg = D(paper).firstChild.nextElementSibling;
 		// Get the bounds of the SVG content
 		var  bbox = mysvg.getBBox();
 		// Update the width and height using the size of the contents
