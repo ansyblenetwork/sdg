@@ -82,7 +82,8 @@ function makeInteractive(controller, test, abc) {
 		auxPasteButton.textContent = test;
 		
 		let pasteButtonHolder = document.createElement("div");
-		pasteButtonHolder.classList.add("cornerButton");
+		pasteButtonHolder.style.position = "relative";
+		pasteButtonHolder.style.float = "top";
 		pasteButtonHolder.style.width = "100%";
 		pasteButtonHolder.style.maxWidth = "800px";
 		pasteButtonHolder.style.margin = "0 auto";
