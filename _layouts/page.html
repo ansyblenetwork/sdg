@@ -56,7 +56,6 @@ function makeInteractive(controller, test, abc) {
 			generate_warnings: true,
 			warnings_id:"warnings",
 			onchange: function() {	
-				this.redrawMidi();
 				setTimeout( function() {
 				var  mysvg = D(paper).firstChild;
 				var  bbox = mysvg.getBBox();
