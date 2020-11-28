@@ -217,7 +217,7 @@ function D(string) { return document.getElementById(string); }
 		{{ content }}	
 		</div>
 	</div>	
-	<div id="editorPanel" class="main" style="display:none; position:fixed; top:unset; bottom:0px; right:0px; max-height:60%; background-color:white; box-shadow: #d4d4d4 0px 0px 7px;">
+	<div id="editorPanel" class="main" tabIndex="-1" style="display:none; position:fixed; top:unset; bottom:0px; right:0px; max-height:60%; background-color:white; box-shadow: #d4d4d4 0px 0px 7px;">
 		
 		<div id="paper"></div>
 		<textarea id="abc" style="width:100%; height:125px">
@@ -245,6 +245,10 @@ C,D,E,F,|G,A,B,C|]
 function toggle() {
 	if (editorPanel.style.display != "none") editorPanel.style.display = "none";
 	else editorPanel.style.display = "";
+}	
+document.body.onkeydown = function(evt) {
+	if (evt.ctrlKey && evt.keyCode == 69) toggle();
+	 if (evt.keyCode == 32 && D('editorPanel').contains(document.activeElement) && visible('editorPanel')) D("paper").nextElementChild.tempController.children[0].children[0].focus();
 }
 	
 
