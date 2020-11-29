@@ -98,11 +98,11 @@ function makeInteractive(controller, test, abc) {
 					audioContext: audioContext,
 					millisecondsPerMeasure: visualObj.millisecondsPerMeasure(),
 					options: {	
-					//	soundFontUrl: "https://paulrosen.github.io/midi-js-soundfonts/FluidR3_GM/"
+						soundFontUrl: "https://paulrosen.github.io/midi-js-soundfonts/FluidR3_GM/"
 					}
 				}).then(function (response) {
 					synthControl.setTune(visualObj, true, { 
-						program: 52
+						program: 72
 					}).then(function () {
 						console.log("Audio successfully loaded.");
 						D(controller).style.display = "";
