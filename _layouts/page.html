@@ -15,7 +15,7 @@
 	
 <script>
 	
-function makeInteractive(controller, test, abc) {
+function makeInteractive(controller, test, instrument, abc) {
 	let paper = controller + "sheet";
 	
 	let newDiv = document.createElement("div");
@@ -102,7 +102,7 @@ function makeInteractive(controller, test, abc) {
 					}
 				}).then(function (response) {
 					synthControl.setTune(visualObj, true, { 
-						program: 72
+						program: instrument
 					}).then(function () {
 						console.log("Audio successfully loaded.");
 						D(controller).style.display = "";
@@ -274,7 +274,7 @@ C,D,E,F,|G,A,B,C|]
 		<div id="warnings"></div>
 
 		<script>
-		makeInteractive("paper", "", abc);
+		makeInteractive("paper", "", 0, abc);
 		</script>
 
 	</div>
