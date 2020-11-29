@@ -45,6 +45,7 @@ function makeInteractive(controller, test, abc) {
 				}
 			},
 			abcjsParams: { 
+				program:53,
 				userAction: true,
 				add_classes: true, 
 				clickListener: function(abcElem) {
@@ -98,12 +99,10 @@ function makeInteractive(controller, test, abc) {
 					millisecondsPerMeasure: visualObj.millisecondsPerMeasure(),
 					options: {	
 					//	soundFontUrl: "https://paulrosen.github.io/midi-js-soundfonts/FluidR3_GM/"
-					//	program: 11
 					}
 				}).then(function (response) {
 					synthControl.setTune(visualObj, true, { 
-						//soundFontUrl: "https://paulrosen.github.io/midi-js-soundfonts/FluidR3_GM/",
-						program: 73	
+						program: 52
 					}).then(function () {
 						console.log("Audio successfully loaded.");
 						D(controller).style.display = "";
