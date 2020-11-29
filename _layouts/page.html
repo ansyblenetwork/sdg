@@ -101,7 +101,12 @@ function makeInteractive(controller, test, abc) {
                 				program: 23	
 					}
 				}).then(function (response) {
-					synthControl.setTune(visualObj, true, { options:{} }).then(function () {
+					synthControl.setTune(visualObj, true, { options:{					
+						options: {	
+							soundFontUrl: "https://paulrosen.github.io/midi-js-soundfonts/FluidR3_GM/",
+							program: 23	
+						}
+					} }).then(function () {
 						console.log("Audio successfully loaded.");
 						D(controller).style.display = "";
 						let tempos = document.querySelectorAll(".abcjs-midi-tempo");
