@@ -96,10 +96,8 @@ function makeInteractive(controller, test, abc) {
 					visualObj: visualObj,
 					audioContext: audioContext,
 					millisecondsPerMeasure: visualObj.millisecondsPerMeasure(),
-					options: {
-						//soundFontUrl: '',					
-                				program: 4,
-						onEnded: function() {console.log("hi");}	
+					options: {				
+                				program: 4	
 					}
 				}).then(function (response) {
 					synthControl.setTune(visualObj, true, { options:{} }).then(function () {
