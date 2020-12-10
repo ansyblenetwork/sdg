@@ -265,11 +265,11 @@ function D(string) { return document.getElementById(string); }
 		
 		<div id="paper"></div>
 		<textarea id="abc" class="abcbox" style="width:100%; height:125px">
-%%staves{1 2}
-Q:1/2=60
-M:4/4
-L:1/4
-K:C
+%%staves{1 2}   % number of staves and their names
+Q:1/2=60        % tempo
+M:4/4           % time signature
+L:1/4           % default note length
+K:C major       % key signature
 V:1
 CDEF|GABc|]
 V:2 clef=bass
