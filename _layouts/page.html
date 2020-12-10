@@ -274,13 +274,22 @@ K:D minor       % key signature
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%staves {(R1 R2) (L1 L2)}
 V:R1 clef=treble
-V:R2 clef=treble
 V:L1 clef=bass
-V:L2 clef=bass
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-[V:R1] z8      |z8      |x8          |x8          |a,4 d4  |c4 a,4  |^g,4 a,2 =b,2|c4-cdcb,     |]
-[V:R2] d,4 a,4 |f,4 d,4 |^c,4 d,2 e,2|f,4-f,g,f,e,|x8      |x8      |x8           |x8          |]
-[V:L1] x8      |x8      |x8          |x8          |x8      |x8      |x8           |x8          |]
+[V:R1] z8      |z8      |z8          |z8          |a,4 d4       |c4 a,4                |
+[V:R2] d,4 a,4 |f,4 d,4 |^c,4 d,2 e,2|f,4-f,g,f,e,|d,2e,2f,2g,2 |a,2 a,,=b,,c,a,, f,2- |
+[V:L1] x8      |x8      |x8          |x8          |x8           |x8                    |
+[V:L2] x8      |x8      |x8          |x8          |x8           |x8                    |
+%
+[V:R1]^g,4 a,2 =b,2       |c4-cdcb,      |a,d, d4^c2  |da,c2-ca,b,2- |-b,e,a,6-       |-a, c2 =b,c4-   |
+[V:R2]-f,=b,,e,2- e,f,e,d, |e,2^f,2g,4-   |g,2 f,2 e,4|d,3e,f,3d,    |g,3g, f,e,d,^c, |d,2 g,4 c,2     |
+[V:L1] x8                 |x8            |x8          |x8            |x8             |x8               |
+[V:L2] x8                 |x8            |d,,4 a,,4   |f,,4 d,,4     |^c,,4 d,,2 e,,2|f,,4-f,,g,,f,,e,,|
+%
+[V:R1]-cd,c2-ca,=b,2-    |b,2a,^g,a,4                  | =b,4 c2 d2              |g,b,a,2-a,b,a,g,  |
+[V:R2] f,3 e, f,3 ^g,,   |e,6 d,c,                     |d,f,e,d,c,2 z2           |z8                |
+[V:L1] a,,4 d,4          |c,4 a,,4                     |^g,,4 a,,2 =b,,2         |c,4-c,d,c,b,,     |
+[V:L2] d,,4 z4           |z2a,,,=b,,, c,,a,,, f,,2-    |f,,=b,,, e,,2e,,f,,e,,d,,|e,,g,,^f,,a,,g,,4 |
 		</textarea>
 		<div id="warnings"></div>
 
