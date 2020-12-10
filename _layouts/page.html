@@ -265,19 +265,22 @@ function D(string) { return document.getElementById(string); }
 		
 		<div id="paper"></div>
 		<textarea id="abc" class="abcbox" style="width:100%; height:125px">
-T: C Major Scale
-C: The Western Tradition
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%staves{1 2}   % number of staves and their names
+T: Die Kunst der Fuge: Fuga I
+C: J. S. Bach
 Q:1/2=60        % tempo
-M:4/4           % time signature
-L:1/4           % default note length
-K:C major       % key signature
+M:C|            % time signature
+L:1/8           % default note length
+K:D minor       % key signature
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-V:1
-c,d,e,f,|g,a,b,c|]
-V:2 clef=bass
-c,,d,,e,,f,,|g,,a,,b,,c,|]
+%%staves {(R1 R2) (L1 L2)}
+V:R1 clef=treble
+V:R2 clef=treble
+V:L1 clef=bass
+V:L2 clef=bass
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+[V:R1] z8      |z8      |x8          |x8          |]
+[V:R2] d,4 a,4 |f,4 d,4 |^c,4 d,2 e,2|f,4-f,g,f,e,|]
+[V:L1] x8      |x8      |x8          |x8          |]
 		</textarea>
 		<div id="warnings"></div>
 
