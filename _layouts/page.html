@@ -376,7 +376,7 @@ for (let i = 0; i < list.length; i++) {
 	if (match && match[2].length == 11) ytString[i] = match[2];
 	let temp = document.createElement("div");
 	temp.innerHTML = "hi";
-	list[i].parentNode.appendBefore(temp, list[i]);
+	list[i].parentNode.insertBefore(temp, list[i]);
 }
 	
 	
