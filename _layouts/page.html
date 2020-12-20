@@ -389,7 +389,12 @@ for (let i = 0; i < list.length; i++) {
 	
 		let myPreBut = make("button");
 		myPreBut.textContent = "Embedded player";
-
+		let placeHolder = make("div");		
+		placeHolder.style.textAlign = 'center';
+		placeHolder.style.padding = "0.75em";
+		placeHolder.appendChild(myPreBut);
+		holder[i].appendChild(placeHolder);
+		
 		function makeDiv(li) {		
 			let tempdiv = make('div', 'videoWrapWrap');
 
