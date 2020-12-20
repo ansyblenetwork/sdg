@@ -372,7 +372,7 @@ var ytRegex = /^.*(youtu\.be\/|vi?\/|u\/\w\/|embed\/|\?vi?=|\&vi?=)([^#\&\?]*).*
 	
 var list = document.getElementsByTagName("a");
 for (let i = 0; i < list.length; i++) {
-	var match = list[i].src.match(ytRegex);
+	var match = list[i].href.match(ytRegex);
 	if (match && match[2].length == 11) ytString[i] = match[2];
 	let temp = document.createElement("div");
 	temp.innerHTML = "hi";
