@@ -411,29 +411,23 @@ for (let i = 0; i < list.length; i++) {
 
 		myPreBut.onclick = function() {
 			remove(myPreBut.parentNode);
-			for (let i = 0; i < ytString.length; i++) {	
-				let tempdiv = makeDiv(temp[i]);		
-				tempdiv.style.paddingTop = "0.75em";
-				tempdiv.firstChild.style.display = "block";
+			let tempdiv = makeDiv(holder[i]);
+			tempdiv.style.paddingTop = "0.75em";
+			tempdiv.firstChild.style.display = "block";
 
-				let theVideo = make('div');
-				theVideo.id = `player${cid}${time}${i}`;
-				tempdiv.firstChild.appendChild(theVideo);
+			let theVideo = make('div');
+			theVideo.id = `player${i}`;
+			tempdiv.firstChild.appendChild(theVideo);
 
-				let myBut = make("button");
-				hide(myBut);
-				let player = new YT.Player(`player${cid}${time}${i}`, {
-						playerVars: { 'modestbranding': 1},
-						videoId: ytString[i],
-						events: {
-							onReady: function() { show(myBut); },
-							onStateChange: function() {updateMediaParticipants(`${cid}${time}${i}`, allRecip);},
-							onPlaybackRateChange: function() {updateMediaParticipants(`${cid}${time}${i}`, allRecip);}
-						}
-				});	
-
-				makeRecipRow("viewing", myBut, li, tempdiv, cid, `${cid}${time}${i}`, allRecip, player, "viewing", ytString[i]);				
-			}
+			let myBut = make("button");
+			hide(myBut);
+			let player = new YT.Player(`player${i}`, {
+					playerVars: { 'modestbranding': 1},
+					videoId: ytString[i],
+					events: {
+						onReady: function() { show(myBut); },
+					}
+			});	
 		}
 	}
 }
