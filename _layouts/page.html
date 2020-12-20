@@ -367,59 +367,77 @@ else {
 }
 
 var ytString = [];
+var holder = [];
 	
 var ytRegex = /^.*(youtu\.be\/|vi?\/|u\/\w\/|embed\/|\?vi?=|\&vi?=)([^#\&\?]*).*/;	
 	
 var list = document.getElementsByTagName("a");
 for (let i = 0; i < list.length; i++) {
 	var match = list[i].href.match(ytRegex);
-	if (match && match[2].length == 11) ytString[i] = match[2];
-	let temp = document.createElement("div");
-	temp.innerHTML = "hi";
-	list[i].parentNode.insertBefore(temp, list[i]);
-}
-	
-	
-	
-	
+	if (match && match[2].length == 11) {
+		ytString[i] = match[2];
+		let temp[i] = document.createElement("div");
+		holder.innerHTML = "hi";
+		list[i].nextSibling.parentNode.insertBefore(temp, list[i]);
 
-if (ytString.length < 0) {
-	li.appendChild(make("br"));		
-	let myPreBut = make("button");		
-	myPreBut.textContent = "Embedded player";
-	let placeHolder = make("div");		
-	placeHolder.style.textAlign = 'center';
-	placeHolder.style.padding = "0.75em";
-	placeHolder.appendChild(myPreBut);
-	li.appendChild(placeHolder);
+		holder.appendChild(make("br"));		
+		let myPreBut = make("button");		
+		myPreBut.textContent = "Embedded player";
+		let placeHolder = make("div");		
+		placeHolder.style.textAlign = 'center';
+		placeHolder.style.padding = "0.75em";
+		placeHolder.appendChild(myPreBut);
+		holder.appendChild(placeHolder);
 
-	myPreBut.onclick = function() {
-		remove(myPreBut.parentNode);
-		for (let i = 0; i < ytString.length; i++) {	
-			let tempdiv = makeDiv(li);				
-			tempdiv.style.paddingTop = "0.75em";
-			tempdiv.firstChild.style.display = "block";
 
-			let theVideo = make('div');
-			theVideo.id = `player${cid}${time}${i}`;
-			tempdiv.firstChild.appendChild(theVideo);
+		function make(string, myClass) { 
+			let myObj = document.createElement(string);
+			if (myClass) myObj.classList.add(myClass);
+			return myObj;
+		}
 
-			let myBut = make("button");
-			hide(myBut);
-			let player = new YT.Player(`player${cid}${time}${i}`, {
-					playerVars: { 'modestbranding': 1},
-					videoId: ytString[i],
-					events: {
-						onReady: function() { show(myBut); },
-						onStateChange: function() {updateMediaParticipants(`${cid}${time}${i}`, allRecip);},
-						onPlaybackRateChange: function() {updateMediaParticipants(`${cid}${time}${i}`, allRecip);}
-					}
-			});	
+		function makeDiv(li) {		
+			let tempdiv = make('div', 'videoWrapWrap');
 
-			makeRecipRow("viewing", myBut, li, tempdiv, cid, `${cid}${time}${i}`, allRecip, player, "viewing", ytString[i]);				
+			let wrapOne = make('div', 'mediaVideoWrapper');
+			wrapOne.innerHTML = `<svg class='placeholder-svg' height="100%" width="100%" viewBox="0 0 1600 900" style='stroke-width: 0px; background-color: black;'></svg>`;
+			hide(wrapOne);
+
+			tempdiv.appendChild(wrapOne);
+			li.appendChild(tempdiv);
+
+			return tempdiv;
+		}
+
+		myPreBut.onclick = function() {
+			remove(myPreBut.parentNode);
+			for (let i = 0; i < ytString.length; i++) {	
+				let tempdiv = makeDiv(temp[i]);		
+				tempdiv.style.paddingTop = "0.75em";
+				tempdiv.firstChild.style.display = "block";
+
+				let theVideo = make('div');
+				theVideo.id = `player${cid}${time}${i}`;
+				tempdiv.firstChild.appendChild(theVideo);
+
+				let myBut = make("button");
+				hide(myBut);
+				let player = new YT.Player(`player${cid}${time}${i}`, {
+						playerVars: { 'modestbranding': 1},
+						videoId: ytString[i],
+						events: {
+							onReady: function() { show(myBut); },
+							onStateChange: function() {updateMediaParticipants(`${cid}${time}${i}`, allRecip);},
+							onPlaybackRateChange: function() {updateMediaParticipants(`${cid}${time}${i}`, allRecip);}
+						}
+				});	
+
+				makeRecipRow("viewing", myBut, li, tempdiv, cid, `${cid}${time}${i}`, allRecip, player, "viewing", ytString[i]);				
+			}
 		}
 	}
 }
+	
 	
 </script>
 </html>
