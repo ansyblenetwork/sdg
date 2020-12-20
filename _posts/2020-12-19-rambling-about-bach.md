@@ -20,4 +20,4 @@ It is the athiest's interpretation of Bach, or perhaps the humanist's. It is an 
 
 The interpretation is unfortunately almost certainly wrong. Any sensible interpretation, Occam's razor, the very title of this site, the signature SDG, Solid Deo gloria, indicates that any reading beyond Bach's religious obligation, is just the listener's imagination. But even the mathematician needs sometimes to indulge in trying to believe things that are not true.
 
-[link](https://www.youtube.com/watch?v=b7-Pgo2lmlU)
+Currently listening: [Sonata for Solo Violin No.3: Largo](https://www.youtube.com/watch?v=b7-Pgo2lmlU)
