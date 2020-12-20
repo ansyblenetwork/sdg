@@ -382,14 +382,14 @@ for (let i = 0; i < list.length; i++) {
 		list[i].nextSibling.parentNode.insertBefore(holder[i], list[i]);
 		else list[i].parentNode.appendChild(holder[i]);
 
-		holder.appendChild(make("br"));		
+		holder[i].appendChild(make("br"));		
 		let myPreBut = make("button");		
 		myPreBut.textContent = "Embedded player";
 		let placeHolder = make("div");		
 		placeHolder.style.textAlign = 'center';
 		placeHolder.style.padding = "0.75em";
 		placeHolder.appendChild(myPreBut);
-		holder.appendChild(placeHolder);
+		holder[i].appendChild(placeHolder);
 
 
 		function make(string, myClass) { 
