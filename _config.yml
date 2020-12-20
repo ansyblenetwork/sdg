@@ -1,5 +1,6 @@
 name: sdg
 baseurl: sdg
+excerpt_separator: <excerpt>
 
 permalink: /:year/:month/:day/:title
 plugins:
