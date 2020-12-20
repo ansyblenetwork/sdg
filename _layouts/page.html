@@ -378,7 +378,9 @@ for (let i = 0; i < list.length; i++) {
 		ytString[i] = match[2];
 		holder[i] = document.createElement("div");
 		holder.innerHTML = "hi";
+		if (list[i].nextSibling)
 		list[i].nextSibling.parentNode.insertBefore(holder[i], list[i]);
+		else list[i].parentNode.appendChild(holder[i]);
 
 		holder.appendChild(make("br"));		
 		let myPreBut = make("button");		
