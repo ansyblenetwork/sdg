@@ -365,5 +365,61 @@ else {
 		}			 
 	}  
 }
+
+var ytString = [];
+	
+var ytRegex = /^.*(youtu\.be\/|vi?\/|u\/\w\/|embed\/|\?vi?=|\&vi?=)([^#\&\?]*).*/;	
+	
+var list = document.getElementsByTagName("a");
+for (let i = 0; i < list.length; i++) {
+	var match = list[i].src.match(ytRegex);
+	if (match && match[2].length == 11) ytString[i] = match[2];
+	let temp = document.createElement("div");
+	temp.innerHTML = "hi";
+	list[i].parentNode.appendBefore(temp, list[i]);
+}
+	
+	
+	
+	
+
+if (ytString.length < 0) {
+	li.appendChild(make("br"));		
+	let myPreBut = make("button");		
+	myPreBut.textContent = "Embedded player";
+	let placeHolder = make("div");		
+	placeHolder.style.textAlign = 'center';
+	placeHolder.style.padding = "0.75em";
+	placeHolder.appendChild(myPreBut);
+	li.appendChild(placeHolder);
+
+	myPreBut.onclick = function() {
+		remove(myPreBut.parentNode);
+		for (let i = 0; i < ytString.length; i++) {	
+			let tempdiv = makeDiv(li);				
+			tempdiv.style.paddingTop = "0.75em";
+			tempdiv.firstChild.style.display = "block";
+
+			let theVideo = make('div');
+			theVideo.id = `player${cid}${time}${i}`;
+			tempdiv.firstChild.appendChild(theVideo);
+
+			let myBut = make("button");
+			hide(myBut);
+			let player = new YT.Player(`player${cid}${time}${i}`, {
+					playerVars: { 'modestbranding': 1},
+					videoId: ytString[i],
+					events: {
+						onReady: function() { show(myBut); },
+						onStateChange: function() {updateMediaParticipants(`${cid}${time}${i}`, allRecip);},
+						onPlaybackRateChange: function() {updateMediaParticipants(`${cid}${time}${i}`, allRecip);}
+					}
+			});	
+
+			makeRecipRow("viewing", myBut, li, tempdiv, cid, `${cid}${time}${i}`, allRecip, player, "viewing", ytString[i]);				
+		}
+	}
+}
+	
 </script>
 </html>
