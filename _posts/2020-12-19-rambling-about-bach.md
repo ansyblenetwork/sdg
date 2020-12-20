@@ -1,6 +1,6 @@
 ---
 title: "Rambling about Bach"
-excerpt_separator:<excerpt>
+excerpt_separator: <excerpt>
 ---
 
 #### What is it about Bach, that captures so well the human spirit?
