@@ -384,20 +384,11 @@ for (let i = 0; i < list.length; i++) {
 		ytString[i] = match[2];
 		holder[i] = document.createElement("div");
 		holder.innerHTML = "hi";
-		if (list[i].nextSibling)
-		list[i].nextSibling.parentNode.insertBefore(holder[i], list[i]);
+		if (list[i].nextSibling) list[i].nextSibling.parentNode.insertBefore(holder[i], list[i]);
 		else list[i].parentNode.appendChild(holder[i]);
-
-		holder[i].appendChild(make("br"));		
-		let myPreBut = make("button");		
+	
+		let myPreBut = make("button");
 		myPreBut.textContent = "Embedded player";
-		let placeHolder = make("div");		
-		placeHolder.style.textAlign = 'center';
-		placeHolder.style.padding = "0.75em";
-		placeHolder.appendChild(myPreBut);
-		holder[i].appendChild(placeHolder);
-
-
 
 		function makeDiv(li) {		
 			let tempdiv = make('div', 'videoWrapWrap');
