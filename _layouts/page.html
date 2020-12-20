@@ -383,10 +383,10 @@ for (let i = 0; i < list.length; i++) {
 	if (match && match[2].length == 11) {
 		ytString[i] = match[2];
 		holder[i] = document.createElement("div");
-		holder.innerHTML = "hi";
 		if (list[i].nextSibling) list[i].nextSibling.parentNode.insertBefore(holder[i], list[i]);
 		else list[i].parentNode.appendChild(holder[i]);
-	
+		
+		list[i].appendChild(make("br"));		
 		let myPreBut = make("button");
 		myPreBut.textContent = "Embedded player";
 		let placeHolder = make("div");		
