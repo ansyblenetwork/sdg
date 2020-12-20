@@ -367,7 +367,7 @@ else {
 }
 
 var ytString = [];
-var holder = [];
+let holder = [];
 	
 var ytRegex = /^.*(youtu\.be\/|vi?\/|u\/\w\/|embed\/|\?vi?=|\&vi?=)([^#\&\?]*).*/;	
 	
@@ -376,7 +376,7 @@ for (let i = 0; i < list.length; i++) {
 	var match = list[i].href.match(ytRegex);
 	if (match && match[2].length == 11) {
 		ytString[i] = match[2];
-		let holder[i] = document.createElement("div");
+		holder[i] = document.createElement("div");
 		holder.innerHTML = "hi";
 		list[i].nextSibling.parentNode.insertBefore(holder[i], list[i]);
 
