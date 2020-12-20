@@ -3,6 +3,15 @@
 }
 
 
+.placeholder-svg {
+  box-sizing: border-box;
+  display:block;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  pointer-events:none;
+}
+
 .mediaVideoWrapper {
   position:relative; 
   max-height:calc(100% - 26px - 0.75em - 0.75em);
