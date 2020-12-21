@@ -46,6 +46,7 @@ Next, we have the second variation:
 <div id="score2"></div>
 <script>
 makeInteractive("score2", `
+
 T: Second Species Canon
 C: J. S. Bach
 Q:1/2=100       % tempo
@@ -57,15 +58,17 @@ K:D major       % key signature
 V:R1 clef=treble
 V:L1 clef=bass
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-[V:R1] x8      |x8      |x8       |x8          |x8           |x8                   | x8 | 
-[V:R2] d,4 f,4 |a,4 g,4 |f,4 d,4  |f,4  e,4    |d,4 b,,4      |d,4 a,4   |g,4 b,4  |a,4 g,4 |
-[V:L1] x8      |x8      |x8       |x8          |x8           |x8                    | x8 |
-[V:L2] d,,8    |a,,,8   |b,,,8    |f,,,8       |g,,,8       |d,,,8       |g,,,8   |a,,,8 |
+[V:R1] x8      |x8      |x8       |x8          |x8           |x8         | x8     | x8    |
+[V:R2] d,4 f,4 |a,4 g,4 |f,4 d,4  |f,4  e,4    |d,4 b,,4    |d,4 a,4     |g,4 b,4 |a,4 g,4 |
+[V:L1] x8      |x8      |x8       |x8          |x8           |x8         | x8     | x8    |  
+[V:L2] d,,8    |a,,,8   |b,,,8    |f,,,8       |g,,,8       |d,,,8       |g,,,8   |a,,,8   |
 %
-[V:R1] x8      |x8      |x8          |x8          |x8           |x8                    | x8 | x8 |
-[V:R2] f8      |e8      |d8          |c8          |b,8           |a,8         | b,8 |    c8 | d8
-[V:L1] x8      |x8      |x8          |x8          |x8           |x8                    | x8 | x8 |
-[V:L2] d,,8      |a,,,8      |b,,,8    |f,,,8       |g,,,8       |d,,,8       |g,,,8   |e,,8 |d,,8 |
+[V:R1] x8      |x8      |x8          |x8          |x8          |x8         | x8     | x8     | x8  |]
+[V:R2] f,4 d,4 |e,4 c4  |d4 f4       |a4 a,4      |b,4  g,4    |a,4 f,4    | d,4 d4 | d6 c2  | d8  |]
+[V:L1] x8      |x8      |x8          |x8          |x8          |x8         | x8     | x8     |x8   |]
+[V:L2] d,,8    |a,,,8   |b,,,8       |f,,,8       |g,,,8       |d,,,8      |g,,,8   |e,,8    |d,,8 |]
 %	
 `, 73);
 </script>
+
+The second variation breaks from second species a bit more, though not in a strict sense. There are some repeated 
