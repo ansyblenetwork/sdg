@@ -2,7 +2,7 @@
 title: "Species counterpoint in Pachelbel's Canon"
 ---
 
-[Open music theory](http://openmusictheory.com/firstSpecies.html) is already an excellent resource on species counterpoint, so I thought that instead of reproducing a post on it, I would analyze Pachelbel's Canon from the point of view of species counterpoint.
+[Open music theory](http://openmusictheory.com/firstSpecies.html) is already an excellent resource on species counterpoint, so I thought that instead of reproducing a post on it, I would analyze Pachelbel's Canon from the point of view of species counterpoint. As it turns out, the first three variations, at least in framework, almost perfectly parallel the first three species of counterpoint: one note to one, one to two, and then one to four.
 
 ### First species
 
