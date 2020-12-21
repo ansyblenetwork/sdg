@@ -35,7 +35,7 @@ V:L1 clef=bass
 `, 73);
 </script>
 
-Does this deviate at all from first species counterpoint? Other than the last f of the ostinato into an e, not really. There is a large number of octaves, but they are always separated by imperfect consonances (thirds or sixths) except at the last two measures of the first 8 bar phrase, where an octave is followed by a perfect fifth.
+Does this deviate at all from first species counterpoint? Other than fudging the last f of the ostinato (in the second to last bar) into an e, not really. There is a large number of octaves, but they are always separated by imperfect consonances (thirds or sixths) except at the last two measures of the first 8 bar phrase, where an octave is followed by a perfect fifth.
 
 
 ### Second species
@@ -71,4 +71,4 @@ V:L1 clef=bass
 `, 73);
 </script>
 
-The second variation breaks from second species a bit more, with the triple of octaives in measures 6, 7, and 8. Otherwise, it is a pretty good second species counterpoint as well.
+The second variation breaks from second species a bit more, with the triple of octaives in measures 6, 7, and 8. If I understand things correctly, this is a big no-no, breaking voice independence. Otherwise, it seems to be a pretty good second species counterpoint as well.
