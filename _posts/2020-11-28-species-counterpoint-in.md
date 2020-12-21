@@ -71,4 +71,6 @@ V:L1 clef=bass
 `, 73);
 </script>
 
-The second variation breaks from second species a bit more, with the triple of octaives in measures 6, 7, and 8. If I understand things correctly, this is a big no-no, breaking voice independence. Otherwise, it seems to be a pretty good second species counterpoint as well.
+The second variation breaks from second species a bit more, with the parallel octaves (on the downbeat) right at the outset, and the triplet of parallel octaves in measures 6, 7, and 8. If I understand things correctly, this is a big no-no, breaking voice independence. Otherwise, it seems to be a pretty good second species counterpoint as well.
+
+My guess is that the parallel octaves are acceptable because in the full canon, the second variation introduces at the same time the third voice, which is simply the first variation above, which was a proper species counterpoint. There are hence at least two independent voices already, and so the occasional loss of the third voice is not a dealbreaker.
