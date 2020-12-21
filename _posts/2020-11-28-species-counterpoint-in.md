@@ -22,9 +22,9 @@ K:D major       % key signature
 V:R1 clef=treble
 V:L1 clef=bass
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-[V:R1] x8      |x8      |x8       |x8          |x8           |x8                   | x8 | 
+[V:R1] x8      |x8      |x8       |x8          |x8           |x8          |x8         | x8 | 
 [V:R2] d8      |c8      |b,8       |a,8          |g,8          |f,8         |g,8      |e,8    |
-[V:L1] x8      |x8      |x8       |x8          |x8           |x8                    | x8 |
+[V:L1] x8      |x8      |x8       |x8          |x8           |x8         |x8           | x8 |
 [V:L2] d,,8    |a,,,8   |b,,,8    |f,,,8       |g,,,8       |d,,,8       |g,,,8   |a,,,8 |
 %
 [V:R1] x8      |x8      |x8          |x8          |x8           |x8           |x8        | x8 | x8 |]
