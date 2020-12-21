@@ -12,7 +12,7 @@ The first variation of the Canon is essentially already in species counterpoint.
 <script>
 makeInteractive("score", `
 T: First Species Canon
-C: J. S. Bach
+C: Pachelbel
 Q:1/2=100       % tempo
 M:C|            % time signature
 L:1/8           % default note length
@@ -48,7 +48,7 @@ Next, we have the second variation:
 makeInteractive("score2", `
 
 T: Second Species Canon
-C: J. S. Bach
+C: Pachelbel
 Q:1/2=100       % tempo
 M:C|            % time signature
 L:1/8           % default note length
