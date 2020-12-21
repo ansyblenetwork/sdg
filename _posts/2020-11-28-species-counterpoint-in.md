@@ -71,4 +71,4 @@ V:L1 clef=bass
 `, 73);
 </script>
 
-The second variation breaks from second species a bit more, though not in a strict sense. There are some repeated 
+The second variation breaks from second species a bit more, with the triple of octaives in measures 6, 7, and 8. Otherwise, it is a pretty good second species counterpoint as well.
