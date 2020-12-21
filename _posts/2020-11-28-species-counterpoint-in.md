@@ -27,10 +27,12 @@ V:L1 clef=bass
 [V:L1] x8      |x8      |x8       |x8          |x8           |x8                    | x8 |
 [V:L2] d,,8    |a,,,8   |b,,,8    |f,,,8       |g,,,8       |d,,,8       |g,,,8   |a,,,8 |
 %
-[V:R1] x8      |x8      |x8          |x8          |x8           |x8                    | x8 | x8 |
-[V:R2] f8      |e8      |d8          |c8          |b,8           |a,8         | b,8 |    c8 | d8
-[V:L1] x8      |x8      |x8          |x8          |x8           |x8                    | x8 | x8 |
-[V:L2] d,,8      |a,,,8      |b,,,8    |f,,,8       |g,,,8       |d,,,8       |g,,,8   |e,,8 |d,,8 |
+[V:R1] x8      |x8      |x8          |x8          |x8           |x8                    | x8 | x8 |]
+[V:R2] f8      |e8      |d8          |c8          |b,8           |a,8         | b,8 |    c8 | d8 |]
+[V:L1] x8      |x8      |x8          |x8          |x8           |x8                    | x8 | x8 |]
+[V:L2] d,,8      |a,,,8      |b,,,8    |f,,,8       |g,,,8       |d,,,8       |g,,,8   |e,,8 |d,,8 |]
 %	
 `, 73);
 </script>
+
+Does this deviate at all from first species counterpoint? Other than the last f of the ostinato into an e, not really.
