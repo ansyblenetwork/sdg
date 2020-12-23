@@ -5,7 +5,7 @@ excerpt_separator: <!--excerpt-->
 
 #### What is it about Bach, that captures so well the human spirit?
 
-I am not going to answer that question in this post. I am ill-equipped to answer that question, in any case. But I wanted to pose it, long in advance of any attempted answer, so that it is understood to be on my mind.
+I am ill-equipped to answer this question. But I wanted to pose it, long in advance of any attempted answer.
 <!--excerpt-->
 
 When I try to think about words to describe Bach and his music, I usually come to some remarks Bernard Chazelle said in a podcast on [_On Being_](https://onbeing.org/programs/bernard-chazelle-discovering-the-cosmology-of-bach/#transcript):
